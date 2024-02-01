@@ -7,6 +7,10 @@ const globalStyles = StyleSheet.create({
     padding: 10,
     alignItems: "center",
   },
+  title: {
+    fontSize: 20,
+    fontWeight: "700",
+  },
   button: {
     width: 20,
   },
