@@ -1,27 +1,23 @@
-const initialState = {city:"",state:""}
+const initialState = { city: "", state: "" };
+import { action } from "../types";
 
-interface action{
-    type:string,
-    payload:string
-}
-
-const rootReducer = (state = initialState,action:action) => {
-    switch(action.type){
-        case 'CHANGE_CITY':{
-            return {
-                ...state,
-                city:action.payload
-            };
-        }
-        case 'CHANGE_STATE':{
-            return {
-                ...state,
-                state:action.payload
-            };
-        }
-        default:
-            return state;
+const rootReducer = (state = initialState, action: action) => {
+  switch (action.type) {
+    case "CHANGE_CITY": {
+      return {
+        ...state,
+        city: action.payload,
+      };
     }
-}
+    case "CHANGE_STATE": {
+      return {
+        ...state,
+        state: action.payload,
+      };
+    }
+    default:
+      return state;
+  }
+};
 
 export default rootReducer;

@@ -1,6 +1,6 @@
 import { createDrawerNavigator } from "@react-navigation/drawer";
-import RootParamList from "../types";
+import { DrawerParamList } from "../types";
 
-const Drawer = createDrawerNavigator<RootParamList>();
+const Drawer = createDrawerNavigator<DrawerParamList>();
 
 export default Drawer;
