@@ -1,20 +1,26 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import "react-native-gesture-handler";
+import { Platform, StyleSheet, Text, View, StatusBar } from "react-native";
+import { Provider } from "react-redux";
+import store from "./Components/Redux/Store";
+import { StackNavigation } from "./Components/Utils/Navigation/StackNavigation";
+import { DrawerNavigation } from "./Components/Utils/Navigation/DrawerNavigation";
+import { TabNavigation } from "./Components/Utils/Navigation/TabNavigation";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <Provider store={store}>
+      <StatusBar backgroundColor="white" />
+      <StackNavigation />
+    </Provider>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
+    paddingTop: Platform.OS == "android" ? 10 : 0,
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
   },
 });
