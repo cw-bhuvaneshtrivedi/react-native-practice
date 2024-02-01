@@ -1,0 +1,1 @@
+export const EDIT_LOCATION = "EDIT_LOCATION";
