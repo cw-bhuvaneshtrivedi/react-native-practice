@@ -8,7 +8,6 @@ import { Screentmp } from "../components/Screentmp";
 export const TabContainer = () => {
   return (
     <Tab.Navigator
-      initialRouteName="Screen2"
       screenOptions={{
         headerShown: false,
       }}
