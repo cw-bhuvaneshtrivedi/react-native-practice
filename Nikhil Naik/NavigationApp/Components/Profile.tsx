@@ -9,11 +9,10 @@ import React from "react";
 const renderfn = () => console.log("Rendered");
 
 const Profile = ({ route, navigation }: ProfileProps) => {
-  let location = useSelector<RootState, editLocationType>(
+  const location = useSelector<RootState, editLocationType>(
     (state) => state.location
   );
   const [temp, setTemp] = useState<editLocationType>({ city: "", state: "" });
-  let name = "Nikhil";
   useFocusEffect(
     useCallback(() => {
       // whatever
