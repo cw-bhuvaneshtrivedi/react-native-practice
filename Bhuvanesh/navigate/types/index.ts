@@ -3,18 +3,18 @@ type RootParamList = {
   Screen2: undefined;
   Screen3: undefined;
   StackContainer: undefined;
-  Screentmp: { id: number };
 };
 
 export type DrawerParamList = {
-  Tab: undefined;
-  StackContainer: undefined;
+  TabContainer: undefined;
+  Stack1: undefined;
 };
 
 export type StackParamList = {
-  Screen1: undefined;
-  Screen2: undefined;
-  Screen3: undefined;
+  Stack1: undefined;
+  Stack2: undefined;
+  Stack3: undefined;
+  Drawer: undefined;
 };
 
 export interface action {
