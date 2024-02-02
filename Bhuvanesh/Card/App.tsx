@@ -1,20 +1,20 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from "expo-status-bar";
+import { View } from "react-native";
+import globalStyles from "./Styles";
+import { Card } from "./components/Card";
+import { FlashList } from "@shopify/flash-list";
+import tmp from "./tmp.json";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
+    <View style={globalStyles.body}>
+      <StatusBar />
+      <FlashList
+        data={tmp.models}
+        estimatedItemSize={360}
+        renderItem={({ item }) => <Card carData={item} />}
+      />
+      {/* <Card /> */}
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
