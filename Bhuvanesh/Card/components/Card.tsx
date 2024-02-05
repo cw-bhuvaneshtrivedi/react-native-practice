@@ -54,8 +54,9 @@ export const Card = ({ carData }: CardProps) => {
         style={{
           height: globalStyles.card.height,
           width: 6,
-          backgroundColor: count > 0 ? globalStyles.versionName.color : "white",
+          backgroundColor: count > 0 ? "#00afa0" : "white",
         }}
+        testID="LeftMargin"
       ></View>
       <View style={globalStyles.card}>
         <TopRow
@@ -76,6 +77,7 @@ export const Card = ({ carData }: CardProps) => {
         /> */}
         <FlashList
           horizontal={true}
+          // initialNumToRender={100}
           estimatedItemSize={321}
           showsHorizontalScrollIndicator={false}
           data={versions}
