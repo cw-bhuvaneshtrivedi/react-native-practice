@@ -5,6 +5,7 @@ import {
   ScrollView,
   FlatList,
   ListRenderItemInfo,
+  Dimensions,
 } from "react-native";
 import { InfoCard } from "./InfoCard";
 import { DescriptionCard } from "./DescriptionCard";
@@ -13,6 +14,7 @@ import { useState } from "react";
 import { FlashList } from "@shopify/flash-list";
 
 export const Card = ({ item }) => {
+  const windowWidth = Dimensions.get("window").width;
   const [save, SetSave] = useState(0);
   return (
     <View>
@@ -40,8 +42,20 @@ export const Card = ({ item }) => {
             )}
             horizontal={true}
             showsHorizontalScrollIndicator={false}
-            estimatedItemSize={10}
+            estimatedItemSize={321}
+            estimatedListSize={{
+              height: 170,
+              width: windowWidth,
+            }}
           />
+          {/* <FlatList
+            data={item.versions}
+            renderItem={(ver: ListRenderItemInfo<any>) => (
+              <InfoCard ver={ver.item} border={SetSave} />
+            )}
+            horizontal={true}
+            showsHorizontalScrollIndicator={false}
+          /> */}
         </View>
       </View>
     </View>

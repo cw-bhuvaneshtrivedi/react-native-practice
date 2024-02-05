@@ -7,8 +7,8 @@ const mock = data[1];
 describe("Card", () => {
   it("should", () => {
     render(<Card item={mock} />);
-    const result = screen.getAllByText("EMI");
-    expect(result[0].children).not.toBeNull();
+    const result = screen.getAllByTestId("carName");
+    expect(result.length).toBeGreaterThanOrEqual(2);
   });
 
   it("should change sidebar color", () => {
@@ -17,17 +17,25 @@ describe("Card", () => {
 
     const beforeBgColor = sideBar.props.style.backgroundColor;
 
-    const button = screen.getByTestId("shortlistOptionButton");
+    const button = screen.getAllByTestId("shortlistOptionButton");
 
-    fireEvent(button, "click");
+    fireEvent(button[0], "click");
 
     const afterBgColor = sideBar.props.style.backgroundColor;
 
-    fireEvent(button, "click");
+    expect(beforeBgColor).not.toEqual(afterBgColor);
+
+    fireEvent(button[1], "click");
 
     const againBgColor = sideBar.props.style.backgroundColor;
 
-    expect(beforeBgColor).toEqual(againBgColor);
-    expect(beforeBgColor).not.toEqual(afterBgColor);
+    expect(againBgColor).toEqual(afterBgColor);
+
+    fireEvent(button[0], "click");
+    fireEvent(button[1], "click");
+
+    const finalBgColor = sideBar.props.style.backgroundColor;
+
+    expect(beforeBgColor).toEqual(finalBgColor);
   });
 });

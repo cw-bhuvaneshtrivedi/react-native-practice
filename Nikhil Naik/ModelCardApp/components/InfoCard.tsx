@@ -9,7 +9,9 @@ export const InfoCard = ({ ver, border }: any) => {
   return (
     <View style={style.container}>
       <View style={style.containerMain}>
-        <Text style={style.containerName}>{ver.name}</Text>
+        <Text style={style.containerName} testID="carName">
+          {ver.name}
+        </Text>
         <View style={style.carDescriptionContainer}>
           <Text style={style.carDescriptionContainerText}>{ver.maxPower}</Text>
           <Text style={style.carDescriptionContainerText}>

@@ -10,8 +10,13 @@ export const Result = ({ data }) => {
       <FlashList
         data={data}
         renderItem={({ item }) => <Card item={item} />}
-        estimatedItemSize={30}
+        estimatedItemSize={314}
+        estimatedListSize={{
+          height: windowHeight,
+          width: windowWidth,
+        }}
       />
+      {/* <FlatList data={data} renderItem={({ item }) => <Card item={item} />} /> */}
     </View>
   );
 };
