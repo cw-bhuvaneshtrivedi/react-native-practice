@@ -39,5 +39,14 @@ describe("List Item", () => {
     let element = getByTestId("CompareBtn");
     fireEvent(element, "click");
     expect(getByText("Remove from Compare")).not.toBeNull();
+    element = getByTestId("ShortlistBtn");
+    fireEvent(element, "click");
+    expect(setCount).toHaveBeenCalledTimes(1);
+  });
+
+  it("Should match snapshot", () => {
+    const setCount = jest.fn();
+    const snap = render(<ListItem version={version} setCount={setCount} />);
+    expect(snap).toMatchSnapshot();
   });
 });

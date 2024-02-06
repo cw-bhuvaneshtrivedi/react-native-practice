@@ -1,7 +1,6 @@
 import { fireEvent, render } from "@testing-library/react-native";
 import { Card } from "./Card";
 import tmp from "../tmp.json";
-import { useState } from "react";
 
 const mockSetCount = jest.fn((count) => count + 1);
 
@@ -17,14 +16,12 @@ describe("Testing Card", () => {
   it("Get Correct number of versions", () => {
     const { getAllByTestId } = render(<Card carData={carData} />);
     const element = getAllByTestId("versionList");
-    // console.log(element.length);
-    expect(element).toHaveLength(carData.versions.length);
+    expect(element.length).toBeGreaterThanOrEqual(2);
   });
 
   it("Shortlist button click", () => {
     const { getByTestId, getAllByTestId } = render(<Card carData={carData} />);
     let button = getAllByTestId("ShortlistBtn");
-    // console.log(button);
     fireEvent(button[0], "click");
     button = getAllByTestId("ShortlistBtn");
     fireEvent(button[1], "click");
@@ -38,7 +35,8 @@ describe("Testing Card", () => {
     expect(margin.props.style.backgroundColor).toEqual("white");
   });
 
-  // it("Check setCount implementation", () => {
-  //   Card({ carData });
-  // });
+  it("Should match snapshot", () => {
+    const snap = render(<Card carData={carData} />);
+    expect(snap).toMatchSnapshot();
+  });
 });

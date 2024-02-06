@@ -1,6 +1,6 @@
 import React from "react";
 import { StatusBar } from "expo-status-bar";
-import { View } from "react-native";
+import { Dimensions, View } from "react-native";
 import globalStyles from "./Styles";
 import { Card } from "./components/Card";
 import { FlashList } from "@shopify/flash-list";
@@ -15,6 +15,8 @@ export default function App() {
           data={tmp.models}
           estimatedItemSize={360}
           renderItem={({ item }) => <Card carData={item} />}
+          getItemType={(item) => item.modelId}
+          estimatedListSize={Dimensions.get("screen")}
         />
         {/* <Card /> */}
       </View>

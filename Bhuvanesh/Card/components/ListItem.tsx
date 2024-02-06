@@ -118,16 +118,14 @@ export const ListItem = ({ version, setCount }: ListItemProps) => {
             { width: 120, justifyContent: "center", alignItems: "center" },
           ]}
           onPress={handleShortlistPress}
+          testID="ShortlistBtn"
         >
           <Ionicons
             name={isShortList ? "bookmark" : "bookmark-outline"}
             size={12}
             color={isShortList ? colorAfterClick : colorBeforeClick}
           />
-          <Text
-            style={[buttonText, isShortList ? { color: "#484848" } : {}]}
-            testID="ShortlistBtn"
-          >
+          <Text style={[buttonText, isShortList ? { color: "#484848" } : {}]}>
             {isShortList ? "Shortlisted" : "Shortlist"}
           </Text>
         </TouchableOpacity>
@@ -138,16 +136,14 @@ export const ListItem = ({ version, setCount }: ListItemProps) => {
             { width: 200, justifyContent: "center", alignItems: "center" },
           ]}
           onPress={handleComparePress}
+          testID="CompareBtn"
         >
           <FontAwesome
             name="balance-scale"
             size={12}
             color={isCompare ? colorAfterClick : colorBeforeClick}
           />
-          <Text
-            style={[buttonText, isCompare ? { color: "#484848" } : {}]}
-            testID="CompareBtn"
-          >
+          <Text style={[buttonText, isCompare ? { color: "#484848" } : {}]}>
             {isCompare ? "Remove from Compare" : "Add to Compare"}
           </Text>
         </TouchableOpacity>

@@ -1,0 +1,2526 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Card Should match snapshot 1`] = `
+<View
+  style={
+    {
+      "flexDirection": "row",
+    }
+  }
+>
+  <View
+    style={
+      {
+        "backgroundColor": "white",
+        "height": 300,
+        "width": 6,
+      }
+    }
+    testID="LeftMargin"
+  />
+  <View
+    style={
+      {
+        "backgroundColor": "white",
+        "height": 300,
+        "paddingLeft": 4,
+        "paddingTop": 12,
+        "width": 360,
+      }
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "flexDirection": "row",
+          },
+          {
+            "justifyContent": "space-between",
+          },
+          {
+            "alignItems": "center",
+            "paddingBottom": 15,
+            "paddingLeft": 15,
+            "paddingRight": 15,
+          },
+        ]
+      }
+    >
+      <Image
+        source={
+          {
+            "uri": "https://imgd.aeplcdn.com//600x337/n/cw/ec/112947/wagon-r-2022-exterior-right-front-three-quarter-3.jpeg?isig=0",
+          }
+        }
+        style={
+          {
+            "height": 73,
+            "width": 130,
+          }
+        }
+        testID="image"
+      />
+      <View>
+        <Text
+          style={
+            {
+              "color": "#aaaaaa",
+              "fontSize": 13,
+            }
+          }
+          testID="mkName"
+        >
+          Maruti Suzuki
+        </Text>
+        <Text
+          style={
+            {
+              "color": "#484848",
+              "fontSize": 18,
+              "fontWeight": "600",
+            }
+          }
+          testID="mdName"
+        >
+          Wagon R
+        </Text>
+      </View>
+      <Text
+        allowFontScaling={false}
+        selectable={false}
+        style={
+          [
+            {
+              "color": "#6f6f6f",
+              "fontSize": 24,
+            },
+            undefined,
+            {
+              "fontFamily": "entypo",
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+            },
+            {},
+          ]
+        }
+      >
+        
+      </Text>
+    </View>
+    <View
+      style={{}}
+    >
+      <RCTScrollView
+        applyWindowCorrection={[Function]}
+        canChangeSize={true}
+        contentContainerStyle={
+          {
+            "backgroundColor": undefined,
+            "minHeight": 1,
+            "minWidth": 1,
+            "paddingBottom": 0,
+            "paddingTop": 0,
+          }
+        }
+        contentHeight={1334}
+        contentWidth={2889}
+        data={
+          [
+            {
+              "displacement": "998 cc",
+              "emi": "Rs. 13,117",
+              "fuelType": " CNG ",
+              "id": 13641,
+              "maskingName": "lxi-10-cng",
+              "maxPower": "56 bhp",
+              "name": "LXI 1.0 CNG",
+              "offers": {
+                "categoryOffers": [],
+                "dealerId": 0,
+                "isMultiDealer": false,
+                "isOfferAvailable": false,
+                "offerValue": 0,
+              },
+              "priceOverview": {
+                "label": "On-Road Price, Mumbai",
+                "price": "Rs. 7,26,315",
+                "reasonText": "",
+              },
+              "transmission": "Manual",
+            },
+            {
+              "displacement": "1197 cc",
+              "emi": "Rs. 13,347",
+              "fuelType": " Petrol ",
+              "id": 13629,
+              "maskingName": "zxi-12",
+              "maxPower": "89 bhp",
+              "name": "ZXI 1.2",
+              "offers": {
+                "categoryOffers": [],
+                "dealerId": 0,
+                "isMultiDealer": false,
+                "isOfferAvailable": false,
+                "offerValue": 0,
+              },
+              "priceOverview": {
+                "label": "On-Road Price, Mumbai",
+                "price": "Rs. 7,39,042",
+                "reasonText": "",
+              },
+              "transmission": "Manual",
+            },
+            {
+              "displacement": "998 cc",
+              "emi": "Rs. 13,689",
+              "fuelType": " Petrol ",
+              "id": 13627,
+              "maskingName": "vxi-10-ags",
+              "maxPower": "66 bhp",
+              "name": "VXI 1.0 AGS",
+              "offers": {
+                "categoryOffers": [],
+                "dealerId": 0,
+                "isMultiDealer": false,
+                "isOfferAvailable": false,
+                "offerValue": 0,
+              },
+              "priceOverview": {
+                "label": "On-Road Price, Mumbai",
+                "price": "Rs. 7,57,963",
+                "reasonText": "",
+              },
+              "transmission": "Automatic (AMT)",
+            },
+            {
+              "displacement": "998 cc",
+              "emi": "Rs. 14,013",
+              "fuelType": " CNG ",
+              "id": 13643,
+              "maskingName": "vxi-10-cng",
+              "maxPower": "56 bhp",
+              "name": "VXI 1.0 CNG",
+              "offers": {
+                "categoryOffers": [],
+                "dealerId": 0,
+                "isMultiDealer": false,
+                "isOfferAvailable": false,
+                "offerValue": 0,
+              },
+              "priceOverview": {
+                "label": "On-Road Price, Mumbai",
+                "price": "Rs. 7,75,932",
+                "reasonText": "",
+              },
+              "transmission": "Manual",
+            },
+            {
+              "displacement": "1197 cc",
+              "emi": "Rs. 14,329",
+              "fuelType": " Petrol ",
+              "id": 13633,
+              "maskingName": "zxi-plus-12",
+              "maxPower": "89 bhp",
+              "name": "ZXI Plus 1.2",
+              "offers": {
+                "categoryOffers": [],
+                "dealerId": 0,
+                "isMultiDealer": false,
+                "isOfferAvailable": false,
+                "offerValue": 0,
+              },
+              "priceOverview": {
+                "label": "On-Road Price, Mumbai",
+                "price": "Rs. 7,93,391",
+                "reasonText": "",
+              },
+              "transmission": "Manual",
+            },
+            {
+              "displacement": "1197 cc",
+              "emi": "Rs. 14,380",
+              "fuelType": " Petrol ",
+              "id": 13631,
+              "maskingName": "zxi-12-ags",
+              "maxPower": "89 bhp",
+              "name": "ZXI 1.2 AGS",
+              "offers": {
+                "categoryOffers": [],
+                "dealerId": 0,
+                "isMultiDealer": false,
+                "isOfferAvailable": false,
+                "offerValue": 0,
+              },
+              "priceOverview": {
+                "label": "On-Road Price, Mumbai",
+                "price": "Rs. 7,96,252",
+                "reasonText": "",
+              },
+              "transmission": "Automatic (AMT)",
+            },
+            {
+              "displacement": "1197 cc",
+              "emi": "Rs. 14,577",
+              "fuelType": " Petrol ",
+              "id": 13637,
+              "maskingName": "zxi-plus-12-dual-tone",
+              "maxPower": "89 bhp",
+              "name": "ZXI Plus 1.2 Dual Tone",
+              "offers": {
+                "categoryOffers": [],
+                "dealerId": 0,
+                "isMultiDealer": false,
+                "isOfferAvailable": false,
+                "offerValue": 0,
+              },
+              "priceOverview": {
+                "label": "On-Road Price, Mumbai",
+                "price": "Rs. 8,07,122",
+                "reasonText": "",
+              },
+              "transmission": "Manual",
+            },
+            {
+              "displacement": "1197 cc",
+              "emi": "Rs. 15,362",
+              "fuelType": " Petrol ",
+              "id": 13635,
+              "maskingName": "zxi-plus-12-ags",
+              "maxPower": "89 bhp",
+              "name": "ZXI Plus 1.2 AGS",
+              "offers": {
+                "categoryOffers": [],
+                "dealerId": 0,
+                "isMultiDealer": false,
+                "isOfferAvailable": false,
+                "offerValue": 0,
+              },
+              "priceOverview": {
+                "label": "On-Road Price, Mumbai",
+                "price": "Rs. 8,50,600",
+                "reasonText": "",
+              },
+              "transmission": "Automatic (AMT)",
+            },
+            {
+              "displacement": "1197 cc",
+              "emi": "Rs. 15,610",
+              "fuelType": " Petrol ",
+              "id": 13639,
+              "maskingName": "zxi-plus-12-ags-dual-tone",
+              "maxPower": "89 bhp",
+              "name": "ZXI Plus 1.2 AGS Dual Tone",
+              "offers": {
+                "categoryOffers": [],
+                "dealerId": 0,
+                "isMultiDealer": false,
+                "isOfferAvailable": false,
+                "offerValue": 0,
+              },
+              "priceOverview": {
+                "label": "On-Road Price, Mumbai",
+                "price": "Rs. 8,64,331",
+                "reasonText": "",
+              },
+              "transmission": "Automatic (AMT)",
+            },
+          ]
+        }
+        dataProvider={
+          DataProvider {
+            "_data": [
+              {
+                "displacement": "998 cc",
+                "emi": "Rs. 13,117",
+                "fuelType": " CNG ",
+                "id": 13641,
+                "maskingName": "lxi-10-cng",
+                "maxPower": "56 bhp",
+                "name": "LXI 1.0 CNG",
+                "offers": {
+                  "categoryOffers": [],
+                  "dealerId": 0,
+                  "isMultiDealer": false,
+                  "isOfferAvailable": false,
+                  "offerValue": 0,
+                },
+                "priceOverview": {
+                  "label": "On-Road Price, Mumbai",
+                  "price": "Rs. 7,26,315",
+                  "reasonText": "",
+                },
+                "transmission": "Manual",
+              },
+              {
+                "displacement": "1197 cc",
+                "emi": "Rs. 13,347",
+                "fuelType": " Petrol ",
+                "id": 13629,
+                "maskingName": "zxi-12",
+                "maxPower": "89 bhp",
+                "name": "ZXI 1.2",
+                "offers": {
+                  "categoryOffers": [],
+                  "dealerId": 0,
+                  "isMultiDealer": false,
+                  "isOfferAvailable": false,
+                  "offerValue": 0,
+                },
+                "priceOverview": {
+                  "label": "On-Road Price, Mumbai",
+                  "price": "Rs. 7,39,042",
+                  "reasonText": "",
+                },
+                "transmission": "Manual",
+              },
+              {
+                "displacement": "998 cc",
+                "emi": "Rs. 13,689",
+                "fuelType": " Petrol ",
+                "id": 13627,
+                "maskingName": "vxi-10-ags",
+                "maxPower": "66 bhp",
+                "name": "VXI 1.0 AGS",
+                "offers": {
+                  "categoryOffers": [],
+                  "dealerId": 0,
+                  "isMultiDealer": false,
+                  "isOfferAvailable": false,
+                  "offerValue": 0,
+                },
+                "priceOverview": {
+                  "label": "On-Road Price, Mumbai",
+                  "price": "Rs. 7,57,963",
+                  "reasonText": "",
+                },
+                "transmission": "Automatic (AMT)",
+              },
+              {
+                "displacement": "998 cc",
+                "emi": "Rs. 14,013",
+                "fuelType": " CNG ",
+                "id": 13643,
+                "maskingName": "vxi-10-cng",
+                "maxPower": "56 bhp",
+                "name": "VXI 1.0 CNG",
+                "offers": {
+                  "categoryOffers": [],
+                  "dealerId": 0,
+                  "isMultiDealer": false,
+                  "isOfferAvailable": false,
+                  "offerValue": 0,
+                },
+                "priceOverview": {
+                  "label": "On-Road Price, Mumbai",
+                  "price": "Rs. 7,75,932",
+                  "reasonText": "",
+                },
+                "transmission": "Manual",
+              },
+              {
+                "displacement": "1197 cc",
+                "emi": "Rs. 14,329",
+                "fuelType": " Petrol ",
+                "id": 13633,
+                "maskingName": "zxi-plus-12",
+                "maxPower": "89 bhp",
+                "name": "ZXI Plus 1.2",
+                "offers": {
+                  "categoryOffers": [],
+                  "dealerId": 0,
+                  "isMultiDealer": false,
+                  "isOfferAvailable": false,
+                  "offerValue": 0,
+                },
+                "priceOverview": {
+                  "label": "On-Road Price, Mumbai",
+                  "price": "Rs. 7,93,391",
+                  "reasonText": "",
+                },
+                "transmission": "Manual",
+              },
+              {
+                "displacement": "1197 cc",
+                "emi": "Rs. 14,380",
+                "fuelType": " Petrol ",
+                "id": 13631,
+                "maskingName": "zxi-12-ags",
+                "maxPower": "89 bhp",
+                "name": "ZXI 1.2 AGS",
+                "offers": {
+                  "categoryOffers": [],
+                  "dealerId": 0,
+                  "isMultiDealer": false,
+                  "isOfferAvailable": false,
+                  "offerValue": 0,
+                },
+                "priceOverview": {
+                  "label": "On-Road Price, Mumbai",
+                  "price": "Rs. 7,96,252",
+                  "reasonText": "",
+                },
+                "transmission": "Automatic (AMT)",
+              },
+              {
+                "displacement": "1197 cc",
+                "emi": "Rs. 14,577",
+                "fuelType": " Petrol ",
+                "id": 13637,
+                "maskingName": "zxi-plus-12-dual-tone",
+                "maxPower": "89 bhp",
+                "name": "ZXI Plus 1.2 Dual Tone",
+                "offers": {
+                  "categoryOffers": [],
+                  "dealerId": 0,
+                  "isMultiDealer": false,
+                  "isOfferAvailable": false,
+                  "offerValue": 0,
+                },
+                "priceOverview": {
+                  "label": "On-Road Price, Mumbai",
+                  "price": "Rs. 8,07,122",
+                  "reasonText": "",
+                },
+                "transmission": "Manual",
+              },
+              {
+                "displacement": "1197 cc",
+                "emi": "Rs. 15,362",
+                "fuelType": " Petrol ",
+                "id": 13635,
+                "maskingName": "zxi-plus-12-ags",
+                "maxPower": "89 bhp",
+                "name": "ZXI Plus 1.2 AGS",
+                "offers": {
+                  "categoryOffers": [],
+                  "dealerId": 0,
+                  "isMultiDealer": false,
+                  "isOfferAvailable": false,
+                  "offerValue": 0,
+                },
+                "priceOverview": {
+                  "label": "On-Road Price, Mumbai",
+                  "price": "Rs. 8,50,600",
+                  "reasonText": "",
+                },
+                "transmission": "Automatic (AMT)",
+              },
+              {
+                "displacement": "1197 cc",
+                "emi": "Rs. 15,610",
+                "fuelType": " Petrol ",
+                "id": 13639,
+                "maskingName": "zxi-plus-12-ags-dual-tone",
+                "maxPower": "89 bhp",
+                "name": "ZXI Plus 1.2 AGS Dual Tone",
+                "offers": {
+                  "categoryOffers": [],
+                  "dealerId": 0,
+                  "isMultiDealer": false,
+                  "isOfferAvailable": false,
+                  "offerValue": 0,
+                },
+                "priceOverview": {
+                  "label": "On-Road Price, Mumbai",
+                  "price": "Rs. 8,64,331",
+                  "reasonText": "",
+                },
+                "transmission": "Automatic (AMT)",
+              },
+            ],
+            "_firstIndexToProcess": 0,
+            "_hasStableIds": false,
+            "_requiresDataChangeHandling": false,
+            "_size": 9,
+            "getStableId": [Function],
+            "rowHasChanged": [Function],
+          }
+        }
+        disableRecycling={false}
+        estimatedItemSize={321}
+        extendedState={{}}
+        externalScrollView={[Function]}
+        finalRenderAheadOffset={250}
+        forceNonDeterministicRendering={true}
+        getItemType={[Function]}
+        horizontal={true}
+        initialOffset={0}
+        initialRenderIndex={0}
+        isHorizontal={true}
+        layoutProvider={
+          GridLayoutProviderWithProps {
+            "_acceptableRelayoutDelta": 1,
+            "_getHeightOrWidth": [Function],
+            "_getLayoutTypeForIndex": [Function],
+            "_getSpan": [Function],
+            "_hasExpired": false,
+            "_isHorizontal": true,
+            "_lastLayoutManager": GridLayoutManager {
+              "_acceptableRelayoutDelta": 1,
+              "_getSpan": [Function],
+              "_isGridHorizontal": true,
+              "_isHorizontal": true,
+              "_layoutProvider": [Circular],
+              "_layouts": [
+                {
+                  "height": 1334,
+                  "type": "LXI 1.0 CNG",
+                  "width": 321,
+                  "x": 0,
+                  "y": 0,
+                },
+                {
+                  "height": 1334,
+                  "type": "ZXI 1.2",
+                  "width": 321,
+                  "x": 321,
+                  "y": 0,
+                },
+                {
+                  "height": 1334,
+                  "type": "VXI 1.0 AGS",
+                  "width": 321,
+                  "x": 642,
+                  "y": 0,
+                },
+                {
+                  "height": 1334,
+                  "type": "VXI 1.0 CNG",
+                  "width": 321,
+                  "x": 963,
+                  "y": 0,
+                },
+                {
+                  "height": 1334,
+                  "type": "ZXI Plus 1.2",
+                  "width": 321,
+                  "x": 1284,
+                  "y": 0,
+                },
+                {
+                  "height": 1334,
+                  "type": "ZXI 1.2 AGS",
+                  "width": 321,
+                  "x": 1605,
+                  "y": 0,
+                },
+                {
+                  "height": 1334,
+                  "type": "ZXI Plus 1.2 Dual Tone",
+                  "width": 321,
+                  "x": 1926,
+                  "y": 0,
+                },
+                {
+                  "height": 1334,
+                  "type": "ZXI Plus 1.2 AGS",
+                  "width": 321,
+                  "x": 2247,
+                  "y": 0,
+                },
+                {
+                  "height": 1334,
+                  "type": "ZXI Plus 1.2 AGS Dual Tone",
+                  "width": 321,
+                  "x": 2568,
+                  "y": 0,
+                },
+              ],
+              "_maxSpan": 1,
+              "_renderWindowSize": {
+                "height": 1334,
+                "width": 750,
+              },
+              "_totalHeight": 1334,
+              "_totalWidth": 2889,
+              "_window": {
+                "height": 1334,
+                "width": 750,
+              },
+            },
+            "_maxSpan": 1,
+            "_renderWindowSize": {
+              "height": 1334,
+              "width": 750,
+            },
+            "_setLayoutForType": [Function],
+            "_tempDim": {
+              "height": 0,
+              "width": 0,
+            },
+            "averageWindow": AverageWindow {
+              "currentAverage": 321,
+              "currentCount": 1,
+              "inputValues": [
+                321,
+                ,
+                ,
+                ,
+                ,
+                ,
+              ],
+              "nextIndex": 1,
+            },
+            "defaultEstimatedItemSize": 100,
+            "layoutObject": {
+              "size": undefined,
+              "span": undefined,
+            },
+            "props": {
+              "data": [
+                {
+                  "displacement": "998 cc",
+                  "emi": "Rs. 13,117",
+                  "fuelType": " CNG ",
+                  "id": 13641,
+                  "maskingName": "lxi-10-cng",
+                  "maxPower": "56 bhp",
+                  "name": "LXI 1.0 CNG",
+                  "offers": {
+                    "categoryOffers": [],
+                    "dealerId": 0,
+                    "isMultiDealer": false,
+                    "isOfferAvailable": false,
+                    "offerValue": 0,
+                  },
+                  "priceOverview": {
+                    "label": "On-Road Price, Mumbai",
+                    "price": "Rs. 7,26,315",
+                    "reasonText": "",
+                  },
+                  "transmission": "Manual",
+                },
+                {
+                  "displacement": "1197 cc",
+                  "emi": "Rs. 13,347",
+                  "fuelType": " Petrol ",
+                  "id": 13629,
+                  "maskingName": "zxi-12",
+                  "maxPower": "89 bhp",
+                  "name": "ZXI 1.2",
+                  "offers": {
+                    "categoryOffers": [],
+                    "dealerId": 0,
+                    "isMultiDealer": false,
+                    "isOfferAvailable": false,
+                    "offerValue": 0,
+                  },
+                  "priceOverview": {
+                    "label": "On-Road Price, Mumbai",
+                    "price": "Rs. 7,39,042",
+                    "reasonText": "",
+                  },
+                  "transmission": "Manual",
+                },
+                {
+                  "displacement": "998 cc",
+                  "emi": "Rs. 13,689",
+                  "fuelType": " Petrol ",
+                  "id": 13627,
+                  "maskingName": "vxi-10-ags",
+                  "maxPower": "66 bhp",
+                  "name": "VXI 1.0 AGS",
+                  "offers": {
+                    "categoryOffers": [],
+                    "dealerId": 0,
+                    "isMultiDealer": false,
+                    "isOfferAvailable": false,
+                    "offerValue": 0,
+                  },
+                  "priceOverview": {
+                    "label": "On-Road Price, Mumbai",
+                    "price": "Rs. 7,57,963",
+                    "reasonText": "",
+                  },
+                  "transmission": "Automatic (AMT)",
+                },
+                {
+                  "displacement": "998 cc",
+                  "emi": "Rs. 14,013",
+                  "fuelType": " CNG ",
+                  "id": 13643,
+                  "maskingName": "vxi-10-cng",
+                  "maxPower": "56 bhp",
+                  "name": "VXI 1.0 CNG",
+                  "offers": {
+                    "categoryOffers": [],
+                    "dealerId": 0,
+                    "isMultiDealer": false,
+                    "isOfferAvailable": false,
+                    "offerValue": 0,
+                  },
+                  "priceOverview": {
+                    "label": "On-Road Price, Mumbai",
+                    "price": "Rs. 7,75,932",
+                    "reasonText": "",
+                  },
+                  "transmission": "Manual",
+                },
+                {
+                  "displacement": "1197 cc",
+                  "emi": "Rs. 14,329",
+                  "fuelType": " Petrol ",
+                  "id": 13633,
+                  "maskingName": "zxi-plus-12",
+                  "maxPower": "89 bhp",
+                  "name": "ZXI Plus 1.2",
+                  "offers": {
+                    "categoryOffers": [],
+                    "dealerId": 0,
+                    "isMultiDealer": false,
+                    "isOfferAvailable": false,
+                    "offerValue": 0,
+                  },
+                  "priceOverview": {
+                    "label": "On-Road Price, Mumbai",
+                    "price": "Rs. 7,93,391",
+                    "reasonText": "",
+                  },
+                  "transmission": "Manual",
+                },
+                {
+                  "displacement": "1197 cc",
+                  "emi": "Rs. 14,380",
+                  "fuelType": " Petrol ",
+                  "id": 13631,
+                  "maskingName": "zxi-12-ags",
+                  "maxPower": "89 bhp",
+                  "name": "ZXI 1.2 AGS",
+                  "offers": {
+                    "categoryOffers": [],
+                    "dealerId": 0,
+                    "isMultiDealer": false,
+                    "isOfferAvailable": false,
+                    "offerValue": 0,
+                  },
+                  "priceOverview": {
+                    "label": "On-Road Price, Mumbai",
+                    "price": "Rs. 7,96,252",
+                    "reasonText": "",
+                  },
+                  "transmission": "Automatic (AMT)",
+                },
+                {
+                  "displacement": "1197 cc",
+                  "emi": "Rs. 14,577",
+                  "fuelType": " Petrol ",
+                  "id": 13637,
+                  "maskingName": "zxi-plus-12-dual-tone",
+                  "maxPower": "89 bhp",
+                  "name": "ZXI Plus 1.2 Dual Tone",
+                  "offers": {
+                    "categoryOffers": [],
+                    "dealerId": 0,
+                    "isMultiDealer": false,
+                    "isOfferAvailable": false,
+                    "offerValue": 0,
+                  },
+                  "priceOverview": {
+                    "label": "On-Road Price, Mumbai",
+                    "price": "Rs. 8,07,122",
+                    "reasonText": "",
+                  },
+                  "transmission": "Manual",
+                },
+                {
+                  "displacement": "1197 cc",
+                  "emi": "Rs. 15,362",
+                  "fuelType": " Petrol ",
+                  "id": 13635,
+                  "maskingName": "zxi-plus-12-ags",
+                  "maxPower": "89 bhp",
+                  "name": "ZXI Plus 1.2 AGS",
+                  "offers": {
+                    "categoryOffers": [],
+                    "dealerId": 0,
+                    "isMultiDealer": false,
+                    "isOfferAvailable": false,
+                    "offerValue": 0,
+                  },
+                  "priceOverview": {
+                    "label": "On-Road Price, Mumbai",
+                    "price": "Rs. 8,50,600",
+                    "reasonText": "",
+                  },
+                  "transmission": "Automatic (AMT)",
+                },
+                {
+                  "displacement": "1197 cc",
+                  "emi": "Rs. 15,610",
+                  "fuelType": " Petrol ",
+                  "id": 13639,
+                  "maskingName": "zxi-plus-12-ags-dual-tone",
+                  "maxPower": "89 bhp",
+                  "name": "ZXI Plus 1.2 AGS Dual Tone",
+                  "offers": {
+                    "categoryOffers": [],
+                    "dealerId": 0,
+                    "isMultiDealer": false,
+                    "isOfferAvailable": false,
+                    "offerValue": 0,
+                  },
+                  "priceOverview": {
+                    "label": "On-Road Price, Mumbai",
+                    "price": "Rs. 8,64,331",
+                    "reasonText": "",
+                  },
+                  "transmission": "Automatic (AMT)",
+                },
+              ],
+              "estimatedItemSize": 321,
+              "estimatedListSize": {
+                "fontScale": 2,
+                "height": 1334,
+                "scale": 2,
+                "width": 750,
+              },
+              "getItemType": [Function],
+              "horizontal": true,
+              "numColumns": 1,
+              "renderItem": [Function],
+              "showsHorizontalScrollIndicator": false,
+            },
+            "renderWindowInsets": {
+              "height": 0,
+              "width": 0,
+            },
+            "shouldRefreshWithAnchoring": true,
+          }
+        }
+        layoutSize={
+          {
+            "fontScale": 2,
+            "height": 1334,
+            "scale": 2,
+            "width": 750,
+          }
+        }
+        maxRenderAhead={750}
+        numColumns={1}
+        onEndReached={[Function]}
+        onEndReachedThreshold={0}
+        onEndReachedThresholdRelative={0}
+        onItemLayout={[Function]}
+        onLayout={[Function]}
+        onScroll={[Function]}
+        onScrollBeginDrag={[Function]}
+        onSizeChanged={[Function]}
+        onVisibleIndicesChanged={[Function]}
+        removeClippedSubviews={false}
+        renderAheadOffset={0}
+        renderAheadStep={250}
+        renderContentContainer={[Function]}
+        renderItem={[Function]}
+        renderItemContainer={[Function]}
+        rowRenderer={[Function]}
+        scrollEventThrottle={16}
+        scrollThrottle={16}
+        scrollViewProps={
+          {
+            "contentContainerStyle": {
+              "backgroundColor": undefined,
+              "minHeight": 1,
+              "minWidth": 1,
+              "paddingBottom": 0,
+              "paddingTop": 0,
+            },
+            "onLayout": [Function],
+            "onScrollBeginDrag": [Function],
+            "refreshControl": undefined,
+            "style": {
+              "minHeight": 1,
+              "minWidth": 1,
+            },
+          }
+        }
+        showsHorizontalScrollIndicator={false}
+        style={
+          {
+            "minHeight": 1,
+            "minWidth": 1,
+          }
+        }
+        suppressBoundedSizeException={true}
+        windowCorrectionConfig={
+          {
+            "applyToInitialOffset": true,
+            "applyToItemScroll": true,
+            "value": {
+              "endCorrection": 0,
+              "startCorrection": 0,
+              "windowShift": -0,
+            },
+          }
+        }
+      >
+        <View>
+          <View
+            style={
+              {
+                "flexDirection": "row",
+              }
+            }
+          >
+            <View
+              style={
+                {
+                  "paddingLeft": 0,
+                  "paddingTop": 0,
+                }
+              }
+            />
+            <View
+              style={
+                [
+                  undefined,
+                  undefined,
+                ]
+              }
+            />
+            <AutoLayoutView
+              enableInstrumentation={false}
+              horizontal={true}
+              onBlankAreaEvent={[Function]}
+              onLayout={[Function]}
+              renderAheadOffset={0}
+              scrollOffset={0}
+              style={
+                {
+                  "height": 1334,
+                  "width": 2889,
+                }
+              }
+              windowSize={750}
+            >
+              <CellContainer
+                index={0}
+                onLayout={[Function]}
+                style={
+                  {
+                    "alignItems": "stretch",
+                    "flexDirection": "row",
+                    "height": 1334,
+                    "left": 0,
+                    "position": "absolute",
+                    "top": 0,
+                  }
+                }
+              >
+                <View
+                  style={
+                    {
+                      "flexDirection": "column",
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      {
+                        "borderColor": "#e1e1e1",
+                        "borderRadius": 3,
+                        "borderWidth": 1,
+                        "height": 170,
+                        "justifyContent": "space-between",
+                        "margin": 7,
+                        "width": 321,
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        {
+                          "flexDirection": "column",
+                          "height": 130,
+                          "justifyContent": "space-between",
+                          "padding": 12,
+                        }
+                      }
+                    >
+                      <Text
+                        style={
+                          {
+                            "color": "#0288d1",
+                            "fontSize": 16,
+                          }
+                        }
+                      >
+                        LXI 1.0 CNG
+                      </Text>
+                      <View
+                        style={
+                          [
+                            {
+                              "flexDirection": "row",
+                            },
+                            {
+                              "justifyContent": "space-between",
+                            },
+                            {
+                              "alignItems": "flex-end",
+                            },
+                          ]
+                        }
+                        testID="Specs"
+                      >
+                        <Text
+                          style={
+                            {
+                              "color": "#aaaaaa",
+                              "fontSize": 13,
+                              "fontWeight": "600",
+                            }
+                          }
+                        >
+                          56 bhp
+                        </Text>
+                        <Text
+                          style={
+                            {
+                              "color": "#aaaaaa",
+                              "fontSize": 13,
+                              "fontWeight": "600",
+                            }
+                          }
+                        >
+                          998 cc
+                        </Text>
+                        <Text
+                          style={
+                            {
+                              "color": "#aaaaaa",
+                              "fontSize": 13,
+                              "fontWeight": "600",
+                            }
+                          }
+                        >
+                          Manual
+                        </Text>
+                        <Text
+                          style={
+                            {
+                              "color": "#aaaaaa",
+                              "fontSize": 13,
+                              "fontWeight": "600",
+                            }
+                          }
+                        >
+                           CNG 
+                        </Text>
+                      </View>
+                      <View
+                        style={
+                          [
+                            {
+                              "flexDirection": "row",
+                            },
+                            {
+                              "justifyContent": "space-between",
+                            },
+                            {
+                              "alignItems": "flex-end",
+                            },
+                          ]
+                        }
+                        testID="Price"
+                      >
+                        <Text
+                          style={
+                            {
+                              "color": "#484848",
+                              "fontSize": 16,
+                              "fontWeight": "bold",
+                            }
+                          }
+                        >
+                          Rs. 7,26,315
+                        </Text>
+                        <Text
+                          style={
+                            {
+                              "color": "#0288d1",
+                              "fontSize": 13,
+                            }
+                          }
+                        >
+                          Show price in my city
+                        </Text>
+                        <Text
+                          style={
+                            {
+                              "color": "#aaaaaa",
+                              "fontSize": 13,
+                              "fontStyle": "italic",
+                            }
+                          }
+                          testID="versionList"
+                        >
+                          EMI
+                        </Text>
+                      </View>
+                      <View
+                        style={
+                          [
+                            {
+                              "flexDirection": "row",
+                            },
+                            {
+                              "justifyContent": "space-between",
+                            },
+                            {
+                              "alignItems": "flex-end",
+                            },
+                          ]
+                        }
+                      >
+                        <Text
+                          style={
+                            {
+                              "color": "#aaaaaa",
+                              "fontSize": 12,
+                            }
+                          }
+                        >
+                          On-Road Price, Mumbai
+                        </Text>
+                        <Text
+                          style={
+                            {
+                              "color": "#484848",
+                              "fontStyle": "italic",
+                            }
+                          }
+                        >
+                          Rs. 13,117
+                        </Text>
+                      </View>
+                    </View>
+                    <View
+                      style={
+                        [
+                          {
+                            "alignItems": "center",
+                            "backgroundColor": "#f9f9f9",
+                            "height": 40,
+                          },
+                          {
+                            "flexDirection": "row",
+                          },
+                        ]
+                      }
+                    >
+                      <View
+                        accessibilityState={
+                          {
+                            "busy": undefined,
+                            "checked": undefined,
+                            "disabled": undefined,
+                            "expanded": undefined,
+                            "selected": undefined,
+                          }
+                        }
+                        accessibilityValue={
+                          {
+                            "max": undefined,
+                            "min": undefined,
+                            "now": undefined,
+                            "text": undefined,
+                          }
+                        }
+                        accessible={true}
+                        collapsable={false}
+                        focusable={true}
+                        onClick={[Function]}
+                        onResponderGrant={[Function]}
+                        onResponderMove={[Function]}
+                        onResponderRelease={[Function]}
+                        onResponderTerminate={[Function]}
+                        onResponderTerminationRequest={[Function]}
+                        onStartShouldSetResponder={[Function]}
+                        style={
+                          {
+                            "alignItems": "center",
+                            "flexDirection": "row",
+                            "justifyContent": "center",
+                            "opacity": 1,
+                            "width": 120,
+                          }
+                        }
+                        testID="ShortlistBtn"
+                      >
+                        <Text
+                          allowFontScaling={false}
+                          selectable={false}
+                          style={
+                            [
+                              {
+                                "color": "#6f6f6f",
+                                "fontSize": 12,
+                              },
+                              undefined,
+                              {
+                                "fontFamily": "ionicons",
+                                "fontStyle": "normal",
+                                "fontWeight": "normal",
+                              },
+                              {},
+                            ]
+                          }
+                        >
+                          
+                        </Text>
+                        <Text
+                          style={
+                            [
+                              {
+                                "color": "#6f6f6f",
+                                "fontSize": 13,
+                                "textAlign": "center",
+                              },
+                              {},
+                            ]
+                          }
+                        >
+                          Shortlist
+                        </Text>
+                      </View>
+                      <Text
+                        style={
+                          {
+                            "color": "#e1e1e1",
+                            "fontSize": 30,
+                          }
+                        }
+                      >
+                        |
+                      </Text>
+                      <View
+                        accessibilityState={
+                          {
+                            "busy": undefined,
+                            "checked": undefined,
+                            "disabled": undefined,
+                            "expanded": undefined,
+                            "selected": undefined,
+                          }
+                        }
+                        accessibilityValue={
+                          {
+                            "max": undefined,
+                            "min": undefined,
+                            "now": undefined,
+                            "text": undefined,
+                          }
+                        }
+                        accessible={true}
+                        collapsable={false}
+                        focusable={true}
+                        onClick={[Function]}
+                        onResponderGrant={[Function]}
+                        onResponderMove={[Function]}
+                        onResponderRelease={[Function]}
+                        onResponderTerminate={[Function]}
+                        onResponderTerminationRequest={[Function]}
+                        onStartShouldSetResponder={[Function]}
+                        style={
+                          {
+                            "alignItems": "center",
+                            "flexDirection": "row",
+                            "justifyContent": "center",
+                            "opacity": 1,
+                            "width": 200,
+                          }
+                        }
+                        testID="CompareBtn"
+                      >
+                        <Text
+                          allowFontScaling={false}
+                          selectable={false}
+                          style={
+                            [
+                              {
+                                "color": "#6f6f6f",
+                                "fontSize": 12,
+                              },
+                              undefined,
+                              {
+                                "fontFamily": "FontAwesome",
+                                "fontStyle": "normal",
+                                "fontWeight": "normal",
+                              },
+                              {},
+                            ]
+                          }
+                        >
+                          
+                        </Text>
+                        <Text
+                          style={
+                            [
+                              {
+                                "color": "#6f6f6f",
+                                "fontSize": 13,
+                                "textAlign": "center",
+                              },
+                              {},
+                            ]
+                          }
+                        >
+                          Add to Compare
+                        </Text>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </CellContainer>
+              <CellContainer
+                index={1}
+                onLayout={[Function]}
+                style={
+                  {
+                    "alignItems": "stretch",
+                    "flexDirection": "row",
+                    "height": 1334,
+                    "left": 321,
+                    "position": "absolute",
+                    "top": 0,
+                  }
+                }
+              >
+                <View
+                  style={
+                    {
+                      "flexDirection": "column",
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      {
+                        "borderColor": "#e1e1e1",
+                        "borderRadius": 3,
+                        "borderWidth": 1,
+                        "height": 170,
+                        "justifyContent": "space-between",
+                        "margin": 7,
+                        "width": 321,
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        {
+                          "flexDirection": "column",
+                          "height": 130,
+                          "justifyContent": "space-between",
+                          "padding": 12,
+                        }
+                      }
+                    >
+                      <Text
+                        style={
+                          {
+                            "color": "#0288d1",
+                            "fontSize": 16,
+                          }
+                        }
+                      >
+                        ZXI 1.2
+                      </Text>
+                      <View
+                        style={
+                          [
+                            {
+                              "flexDirection": "row",
+                            },
+                            {
+                              "justifyContent": "space-between",
+                            },
+                            {
+                              "alignItems": "flex-end",
+                            },
+                          ]
+                        }
+                        testID="Specs"
+                      >
+                        <Text
+                          style={
+                            {
+                              "color": "#aaaaaa",
+                              "fontSize": 13,
+                              "fontWeight": "600",
+                            }
+                          }
+                        >
+                          89 bhp
+                        </Text>
+                        <Text
+                          style={
+                            {
+                              "color": "#aaaaaa",
+                              "fontSize": 13,
+                              "fontWeight": "600",
+                            }
+                          }
+                        >
+                          1197 cc
+                        </Text>
+                        <Text
+                          style={
+                            {
+                              "color": "#aaaaaa",
+                              "fontSize": 13,
+                              "fontWeight": "600",
+                            }
+                          }
+                        >
+                          Manual
+                        </Text>
+                        <Text
+                          style={
+                            {
+                              "color": "#aaaaaa",
+                              "fontSize": 13,
+                              "fontWeight": "600",
+                            }
+                          }
+                        >
+                           Petrol 
+                        </Text>
+                      </View>
+                      <View
+                        style={
+                          [
+                            {
+                              "flexDirection": "row",
+                            },
+                            {
+                              "justifyContent": "space-between",
+                            },
+                            {
+                              "alignItems": "flex-end",
+                            },
+                          ]
+                        }
+                        testID="Price"
+                      >
+                        <Text
+                          style={
+                            {
+                              "color": "#484848",
+                              "fontSize": 16,
+                              "fontWeight": "bold",
+                            }
+                          }
+                        >
+                          Rs. 7,39,042
+                        </Text>
+                        <Text
+                          style={
+                            {
+                              "color": "#0288d1",
+                              "fontSize": 13,
+                            }
+                          }
+                        >
+                          Show price in my city
+                        </Text>
+                        <Text
+                          style={
+                            {
+                              "color": "#aaaaaa",
+                              "fontSize": 13,
+                              "fontStyle": "italic",
+                            }
+                          }
+                          testID="versionList"
+                        >
+                          EMI
+                        </Text>
+                      </View>
+                      <View
+                        style={
+                          [
+                            {
+                              "flexDirection": "row",
+                            },
+                            {
+                              "justifyContent": "space-between",
+                            },
+                            {
+                              "alignItems": "flex-end",
+                            },
+                          ]
+                        }
+                      >
+                        <Text
+                          style={
+                            {
+                              "color": "#aaaaaa",
+                              "fontSize": 12,
+                            }
+                          }
+                        >
+                          On-Road Price, Mumbai
+                        </Text>
+                        <Text
+                          style={
+                            {
+                              "color": "#484848",
+                              "fontStyle": "italic",
+                            }
+                          }
+                        >
+                          Rs. 13,347
+                        </Text>
+                      </View>
+                    </View>
+                    <View
+                      style={
+                        [
+                          {
+                            "alignItems": "center",
+                            "backgroundColor": "#f9f9f9",
+                            "height": 40,
+                          },
+                          {
+                            "flexDirection": "row",
+                          },
+                        ]
+                      }
+                    >
+                      <View
+                        accessibilityState={
+                          {
+                            "busy": undefined,
+                            "checked": undefined,
+                            "disabled": undefined,
+                            "expanded": undefined,
+                            "selected": undefined,
+                          }
+                        }
+                        accessibilityValue={
+                          {
+                            "max": undefined,
+                            "min": undefined,
+                            "now": undefined,
+                            "text": undefined,
+                          }
+                        }
+                        accessible={true}
+                        collapsable={false}
+                        focusable={true}
+                        onClick={[Function]}
+                        onResponderGrant={[Function]}
+                        onResponderMove={[Function]}
+                        onResponderRelease={[Function]}
+                        onResponderTerminate={[Function]}
+                        onResponderTerminationRequest={[Function]}
+                        onStartShouldSetResponder={[Function]}
+                        style={
+                          {
+                            "alignItems": "center",
+                            "flexDirection": "row",
+                            "justifyContent": "center",
+                            "opacity": 1,
+                            "width": 120,
+                          }
+                        }
+                        testID="ShortlistBtn"
+                      >
+                        <Text
+                          allowFontScaling={false}
+                          selectable={false}
+                          style={
+                            [
+                              {
+                                "color": "#6f6f6f",
+                                "fontSize": 12,
+                              },
+                              undefined,
+                              {
+                                "fontFamily": "ionicons",
+                                "fontStyle": "normal",
+                                "fontWeight": "normal",
+                              },
+                              {},
+                            ]
+                          }
+                        >
+                          
+                        </Text>
+                        <Text
+                          style={
+                            [
+                              {
+                                "color": "#6f6f6f",
+                                "fontSize": 13,
+                                "textAlign": "center",
+                              },
+                              {},
+                            ]
+                          }
+                        >
+                          Shortlist
+                        </Text>
+                      </View>
+                      <Text
+                        style={
+                          {
+                            "color": "#e1e1e1",
+                            "fontSize": 30,
+                          }
+                        }
+                      >
+                        |
+                      </Text>
+                      <View
+                        accessibilityState={
+                          {
+                            "busy": undefined,
+                            "checked": undefined,
+                            "disabled": undefined,
+                            "expanded": undefined,
+                            "selected": undefined,
+                          }
+                        }
+                        accessibilityValue={
+                          {
+                            "max": undefined,
+                            "min": undefined,
+                            "now": undefined,
+                            "text": undefined,
+                          }
+                        }
+                        accessible={true}
+                        collapsable={false}
+                        focusable={true}
+                        onClick={[Function]}
+                        onResponderGrant={[Function]}
+                        onResponderMove={[Function]}
+                        onResponderRelease={[Function]}
+                        onResponderTerminate={[Function]}
+                        onResponderTerminationRequest={[Function]}
+                        onStartShouldSetResponder={[Function]}
+                        style={
+                          {
+                            "alignItems": "center",
+                            "flexDirection": "row",
+                            "justifyContent": "center",
+                            "opacity": 1,
+                            "width": 200,
+                          }
+                        }
+                        testID="CompareBtn"
+                      >
+                        <Text
+                          allowFontScaling={false}
+                          selectable={false}
+                          style={
+                            [
+                              {
+                                "color": "#6f6f6f",
+                                "fontSize": 12,
+                              },
+                              undefined,
+                              {
+                                "fontFamily": "FontAwesome",
+                                "fontStyle": "normal",
+                                "fontWeight": "normal",
+                              },
+                              {},
+                            ]
+                          }
+                        >
+                          
+                        </Text>
+                        <Text
+                          style={
+                            [
+                              {
+                                "color": "#6f6f6f",
+                                "fontSize": 13,
+                                "textAlign": "center",
+                              },
+                              {},
+                            ]
+                          }
+                        >
+                          Add to Compare
+                        </Text>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </CellContainer>
+              <CellContainer
+                index={2}
+                onLayout={[Function]}
+                style={
+                  {
+                    "alignItems": "stretch",
+                    "flexDirection": "row",
+                    "height": 1334,
+                    "left": 642,
+                    "position": "absolute",
+                    "top": 0,
+                  }
+                }
+              >
+                <View
+                  style={
+                    {
+                      "flexDirection": "column",
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      {
+                        "borderColor": "#e1e1e1",
+                        "borderRadius": 3,
+                        "borderWidth": 1,
+                        "height": 170,
+                        "justifyContent": "space-between",
+                        "margin": 7,
+                        "width": 321,
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        {
+                          "flexDirection": "column",
+                          "height": 130,
+                          "justifyContent": "space-between",
+                          "padding": 12,
+                        }
+                      }
+                    >
+                      <Text
+                        style={
+                          {
+                            "color": "#0288d1",
+                            "fontSize": 16,
+                          }
+                        }
+                      >
+                        VXI 1.0 AGS
+                      </Text>
+                      <View
+                        style={
+                          [
+                            {
+                              "flexDirection": "row",
+                            },
+                            {
+                              "justifyContent": "space-between",
+                            },
+                            {
+                              "alignItems": "flex-end",
+                            },
+                          ]
+                        }
+                        testID="Specs"
+                      >
+                        <Text
+                          style={
+                            {
+                              "color": "#aaaaaa",
+                              "fontSize": 13,
+                              "fontWeight": "600",
+                            }
+                          }
+                        >
+                          66 bhp
+                        </Text>
+                        <Text
+                          style={
+                            {
+                              "color": "#aaaaaa",
+                              "fontSize": 13,
+                              "fontWeight": "600",
+                            }
+                          }
+                        >
+                          998 cc
+                        </Text>
+                        <Text
+                          style={
+                            {
+                              "color": "#aaaaaa",
+                              "fontSize": 13,
+                              "fontWeight": "600",
+                            }
+                          }
+                        >
+                          Automatic (AMT)
+                        </Text>
+                        <Text
+                          style={
+                            {
+                              "color": "#aaaaaa",
+                              "fontSize": 13,
+                              "fontWeight": "600",
+                            }
+                          }
+                        >
+                           Petrol 
+                        </Text>
+                      </View>
+                      <View
+                        style={
+                          [
+                            {
+                              "flexDirection": "row",
+                            },
+                            {
+                              "justifyContent": "space-between",
+                            },
+                            {
+                              "alignItems": "flex-end",
+                            },
+                          ]
+                        }
+                        testID="Price"
+                      >
+                        <Text
+                          style={
+                            {
+                              "color": "#484848",
+                              "fontSize": 16,
+                              "fontWeight": "bold",
+                            }
+                          }
+                        >
+                          Rs. 7,57,963
+                        </Text>
+                        <Text
+                          style={
+                            {
+                              "color": "#0288d1",
+                              "fontSize": 13,
+                            }
+                          }
+                        >
+                          Show price in my city
+                        </Text>
+                        <Text
+                          style={
+                            {
+                              "color": "#aaaaaa",
+                              "fontSize": 13,
+                              "fontStyle": "italic",
+                            }
+                          }
+                          testID="versionList"
+                        >
+                          EMI
+                        </Text>
+                      </View>
+                      <View
+                        style={
+                          [
+                            {
+                              "flexDirection": "row",
+                            },
+                            {
+                              "justifyContent": "space-between",
+                            },
+                            {
+                              "alignItems": "flex-end",
+                            },
+                          ]
+                        }
+                      >
+                        <Text
+                          style={
+                            {
+                              "color": "#aaaaaa",
+                              "fontSize": 12,
+                            }
+                          }
+                        >
+                          On-Road Price, Mumbai
+                        </Text>
+                        <Text
+                          style={
+                            {
+                              "color": "#484848",
+                              "fontStyle": "italic",
+                            }
+                          }
+                        >
+                          Rs. 13,689
+                        </Text>
+                      </View>
+                    </View>
+                    <View
+                      style={
+                        [
+                          {
+                            "alignItems": "center",
+                            "backgroundColor": "#f9f9f9",
+                            "height": 40,
+                          },
+                          {
+                            "flexDirection": "row",
+                          },
+                        ]
+                      }
+                    >
+                      <View
+                        accessibilityState={
+                          {
+                            "busy": undefined,
+                            "checked": undefined,
+                            "disabled": undefined,
+                            "expanded": undefined,
+                            "selected": undefined,
+                          }
+                        }
+                        accessibilityValue={
+                          {
+                            "max": undefined,
+                            "min": undefined,
+                            "now": undefined,
+                            "text": undefined,
+                          }
+                        }
+                        accessible={true}
+                        collapsable={false}
+                        focusable={true}
+                        onClick={[Function]}
+                        onResponderGrant={[Function]}
+                        onResponderMove={[Function]}
+                        onResponderRelease={[Function]}
+                        onResponderTerminate={[Function]}
+                        onResponderTerminationRequest={[Function]}
+                        onStartShouldSetResponder={[Function]}
+                        style={
+                          {
+                            "alignItems": "center",
+                            "flexDirection": "row",
+                            "justifyContent": "center",
+                            "opacity": 1,
+                            "width": 120,
+                          }
+                        }
+                        testID="ShortlistBtn"
+                      >
+                        <Text
+                          allowFontScaling={false}
+                          selectable={false}
+                          style={
+                            [
+                              {
+                                "color": "#6f6f6f",
+                                "fontSize": 12,
+                              },
+                              undefined,
+                              {
+                                "fontFamily": "ionicons",
+                                "fontStyle": "normal",
+                                "fontWeight": "normal",
+                              },
+                              {},
+                            ]
+                          }
+                        >
+                          
+                        </Text>
+                        <Text
+                          style={
+                            [
+                              {
+                                "color": "#6f6f6f",
+                                "fontSize": 13,
+                                "textAlign": "center",
+                              },
+                              {},
+                            ]
+                          }
+                        >
+                          Shortlist
+                        </Text>
+                      </View>
+                      <Text
+                        style={
+                          {
+                            "color": "#e1e1e1",
+                            "fontSize": 30,
+                          }
+                        }
+                      >
+                        |
+                      </Text>
+                      <View
+                        accessibilityState={
+                          {
+                            "busy": undefined,
+                            "checked": undefined,
+                            "disabled": undefined,
+                            "expanded": undefined,
+                            "selected": undefined,
+                          }
+                        }
+                        accessibilityValue={
+                          {
+                            "max": undefined,
+                            "min": undefined,
+                            "now": undefined,
+                            "text": undefined,
+                          }
+                        }
+                        accessible={true}
+                        collapsable={false}
+                        focusable={true}
+                        onClick={[Function]}
+                        onResponderGrant={[Function]}
+                        onResponderMove={[Function]}
+                        onResponderRelease={[Function]}
+                        onResponderTerminate={[Function]}
+                        onResponderTerminationRequest={[Function]}
+                        onStartShouldSetResponder={[Function]}
+                        style={
+                          {
+                            "alignItems": "center",
+                            "flexDirection": "row",
+                            "justifyContent": "center",
+                            "opacity": 1,
+                            "width": 200,
+                          }
+                        }
+                        testID="CompareBtn"
+                      >
+                        <Text
+                          allowFontScaling={false}
+                          selectable={false}
+                          style={
+                            [
+                              {
+                                "color": "#6f6f6f",
+                                "fontSize": 12,
+                              },
+                              undefined,
+                              {
+                                "fontFamily": "FontAwesome",
+                                "fontStyle": "normal",
+                                "fontWeight": "normal",
+                              },
+                              {},
+                            ]
+                          }
+                        >
+                          
+                        </Text>
+                        <Text
+                          style={
+                            [
+                              {
+                                "color": "#6f6f6f",
+                                "fontSize": 13,
+                                "textAlign": "center",
+                              },
+                              {},
+                            ]
+                          }
+                        >
+                          Add to Compare
+                        </Text>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </CellContainer>
+            </AutoLayoutView>
+            <CellContainer
+              index={-1}
+              style={
+                [
+                  undefined,
+                  undefined,
+                ]
+              }
+            />
+            <View
+              style={
+                {
+                  "paddingBottom": 0,
+                  "paddingRight": 0,
+                }
+              }
+            />
+            <View
+              pointerEvents="none"
+              style={
+                {
+                  "opacity": 0,
+                }
+              }
+            >
+              <View
+                style={
+                  {
+                    "borderColor": "#e1e1e1",
+                    "borderRadius": 3,
+                    "borderWidth": 1,
+                    "height": 170,
+                    "justifyContent": "space-between",
+                    "margin": 7,
+                    "width": 321,
+                  }
+                }
+              >
+                <View
+                  style={
+                    {
+                      "flexDirection": "column",
+                      "height": 130,
+                      "justifyContent": "space-between",
+                      "padding": 12,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#0288d1",
+                        "fontSize": 16,
+                      }
+                    }
+                  >
+                    ZXI 1.2
+                  </Text>
+                  <View
+                    style={
+                      [
+                        {
+                          "flexDirection": "row",
+                        },
+                        {
+                          "justifyContent": "space-between",
+                        },
+                        {
+                          "alignItems": "flex-end",
+                        },
+                      ]
+                    }
+                    testID="Specs"
+                  >
+                    <Text
+                      style={
+                        {
+                          "color": "#aaaaaa",
+                          "fontSize": 13,
+                          "fontWeight": "600",
+                        }
+                      }
+                    >
+                      89 bhp
+                    </Text>
+                    <Text
+                      style={
+                        {
+                          "color": "#aaaaaa",
+                          "fontSize": 13,
+                          "fontWeight": "600",
+                        }
+                      }
+                    >
+                      1197 cc
+                    </Text>
+                    <Text
+                      style={
+                        {
+                          "color": "#aaaaaa",
+                          "fontSize": 13,
+                          "fontWeight": "600",
+                        }
+                      }
+                    >
+                      Manual
+                    </Text>
+                    <Text
+                      style={
+                        {
+                          "color": "#aaaaaa",
+                          "fontSize": 13,
+                          "fontWeight": "600",
+                        }
+                      }
+                    >
+                       Petrol 
+                    </Text>
+                  </View>
+                  <View
+                    style={
+                      [
+                        {
+                          "flexDirection": "row",
+                        },
+                        {
+                          "justifyContent": "space-between",
+                        },
+                        {
+                          "alignItems": "flex-end",
+                        },
+                      ]
+                    }
+                    testID="Price"
+                  >
+                    <Text
+                      style={
+                        {
+                          "color": "#484848",
+                          "fontSize": 16,
+                          "fontWeight": "bold",
+                        }
+                      }
+                    >
+                      Rs. 7,39,042
+                    </Text>
+                    <Text
+                      style={
+                        {
+                          "color": "#0288d1",
+                          "fontSize": 13,
+                        }
+                      }
+                    >
+                      Show price in my city
+                    </Text>
+                    <Text
+                      style={
+                        {
+                          "color": "#aaaaaa",
+                          "fontSize": 13,
+                          "fontStyle": "italic",
+                        }
+                      }
+                      testID="versionList"
+                    >
+                      EMI
+                    </Text>
+                  </View>
+                  <View
+                    style={
+                      [
+                        {
+                          "flexDirection": "row",
+                        },
+                        {
+                          "justifyContent": "space-between",
+                        },
+                        {
+                          "alignItems": "flex-end",
+                        },
+                      ]
+                    }
+                  >
+                    <Text
+                      style={
+                        {
+                          "color": "#aaaaaa",
+                          "fontSize": 12,
+                        }
+                      }
+                    >
+                      On-Road Price, Mumbai
+                    </Text>
+                    <Text
+                      style={
+                        {
+                          "color": "#484848",
+                          "fontStyle": "italic",
+                        }
+                      }
+                    >
+                      Rs. 13,347
+                    </Text>
+                  </View>
+                </View>
+                <View
+                  style={
+                    [
+                      {
+                        "alignItems": "center",
+                        "backgroundColor": "#f9f9f9",
+                        "height": 40,
+                      },
+                      {
+                        "flexDirection": "row",
+                      },
+                    ]
+                  }
+                >
+                  <View
+                    accessibilityState={
+                      {
+                        "busy": undefined,
+                        "checked": undefined,
+                        "disabled": undefined,
+                        "expanded": undefined,
+                        "selected": undefined,
+                      }
+                    }
+                    accessibilityValue={
+                      {
+                        "max": undefined,
+                        "min": undefined,
+                        "now": undefined,
+                        "text": undefined,
+                      }
+                    }
+                    accessible={true}
+                    collapsable={false}
+                    focusable={true}
+                    onClick={[Function]}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    style={
+                      {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "justifyContent": "center",
+                        "opacity": 1,
+                        "width": 120,
+                      }
+                    }
+                    testID="ShortlistBtn"
+                  >
+                    <Text
+                      allowFontScaling={false}
+                      selectable={false}
+                      style={
+                        [
+                          {
+                            "color": "#6f6f6f",
+                            "fontSize": 12,
+                          },
+                          undefined,
+                          {
+                            "fontFamily": "ionicons",
+                            "fontStyle": "normal",
+                            "fontWeight": "normal",
+                          },
+                          {},
+                        ]
+                      }
+                    >
+                      
+                    </Text>
+                    <Text
+                      style={
+                        [
+                          {
+                            "color": "#6f6f6f",
+                            "fontSize": 13,
+                            "textAlign": "center",
+                          },
+                          {},
+                        ]
+                      }
+                    >
+                      Shortlist
+                    </Text>
+                  </View>
+                  <Text
+                    style={
+                      {
+                        "color": "#e1e1e1",
+                        "fontSize": 30,
+                      }
+                    }
+                  >
+                    |
+                  </Text>
+                  <View
+                    accessibilityState={
+                      {
+                        "busy": undefined,
+                        "checked": undefined,
+                        "disabled": undefined,
+                        "expanded": undefined,
+                        "selected": undefined,
+                      }
+                    }
+                    accessibilityValue={
+                      {
+                        "max": undefined,
+                        "min": undefined,
+                        "now": undefined,
+                        "text": undefined,
+                      }
+                    }
+                    accessible={true}
+                    collapsable={false}
+                    focusable={true}
+                    onClick={[Function]}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    style={
+                      {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "justifyContent": "center",
+                        "opacity": 1,
+                        "width": 200,
+                      }
+                    }
+                    testID="CompareBtn"
+                  >
+                    <Text
+                      allowFontScaling={false}
+                      selectable={false}
+                      style={
+                        [
+                          {
+                            "color": "#6f6f6f",
+                            "fontSize": 12,
+                          },
+                          undefined,
+                          {
+                            "fontFamily": "FontAwesome",
+                            "fontStyle": "normal",
+                            "fontWeight": "normal",
+                          },
+                          {},
+                        ]
+                      }
+                    >
+                      
+                    </Text>
+                    <Text
+                      style={
+                        [
+                          {
+                            "color": "#6f6f6f",
+                            "fontSize": 13,
+                            "textAlign": "center",
+                          },
+                          {},
+                        ]
+                      }
+                    >
+                      Add to Compare
+                    </Text>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </RCTScrollView>
+    </View>
+  </View>
+</View>
+`;

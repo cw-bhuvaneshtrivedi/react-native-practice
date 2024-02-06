@@ -1,5 +1,5 @@
 import React, { useCallback, useRef, useState } from "react";
-import { View, FlatList } from "react-native";
+import { View, FlatList, Dimensions } from "react-native";
 import globalStyles from "../Styles";
 import { TopRow } from "./TopRow";
 import { ListItem } from "./ListItem";
@@ -70,6 +70,7 @@ export const Card = ({ carData }: CardProps) => {
         {/* <FlatList
           showsHorizontalScrollIndicator={false}
           horizontal={true}
+          initialNumToRender={100}
           data={versions}
           renderItem={({ item }) => (
             <ListItem version={item} setCount={setCount} />
@@ -77,13 +78,14 @@ export const Card = ({ carData }: CardProps) => {
         /> */}
         <FlashList
           horizontal={true}
-          // initialNumToRender={100}
           estimatedItemSize={321}
           showsHorizontalScrollIndicator={false}
           data={versions}
+          estimatedListSize={Dimensions.get("screen")}
           renderItem={({ item }) => (
             <ListItem version={item} setCount={setCount} />
           )}
+          getItemType={(item) => item.name}
         />
       </View>
     </View>
