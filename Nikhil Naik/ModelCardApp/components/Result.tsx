@@ -15,6 +15,7 @@ export const Result = ({ data }) => {
           height: windowHeight,
           width: windowWidth,
         }}
+        getItemType={(item) => item.modelId}
       />
       {/* <FlatList data={data} renderItem={({ item }) => <Card item={item} />} /> */}
     </View>

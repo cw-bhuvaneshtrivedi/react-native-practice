@@ -1,4 +1,11 @@
-import { StyleSheet, View, Text, Image, Pressable } from "react-native";
+import {
+  StyleSheet,
+  View,
+  Text,
+  Image,
+  Pressable,
+  TouchableOpacity,
+} from "react-native";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { FontAwesome } from "@expo/vector-icons";
 import { useState } from "react";
@@ -41,7 +48,7 @@ export const InfoCard = ({ ver, border }: any) => {
         </View>
       </View>
       <View style={style.containerOptions}>
-        <Pressable
+        <TouchableOpacity
           onPress={(e) => {
             setSave(!save);
             border((count: number) => {
@@ -66,9 +73,9 @@ export const InfoCard = ({ ver, border }: any) => {
               <Text style={style.containerOptionsText}>Shortlist</Text>
             )}
           </View>
-        </Pressable>
+        </TouchableOpacity>
         <View style={style.containerOptionsElementCenter}></View>
-        <Pressable
+        <TouchableOpacity
           onPress={(e) => setCompare(!compare)}
           style={{ justifyContent: "center" }}
           testID="compareOptionButton"
@@ -90,7 +97,7 @@ export const InfoCard = ({ ver, border }: any) => {
               <Text style={style.containerOptionsText}>Add to Compare</Text>
             )}
           </View>
-        </Pressable>
+        </TouchableOpacity>
       </View>
     </View>
   );

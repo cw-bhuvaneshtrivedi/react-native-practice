@@ -38,4 +38,9 @@ describe("Card", () => {
 
     expect(beforeBgColor).toEqual(finalBgColor);
   });
+
+  it("should match snapshot", () => {
+    const result = render(<Card item={mock} />);
+    expect(result).toMatchSnapshot();
+  });
 });

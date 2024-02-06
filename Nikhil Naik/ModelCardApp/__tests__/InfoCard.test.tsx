@@ -30,7 +30,14 @@ describe("Info Card", () => {
     fireEvent(button, "click");
     const after = result.props.children[1].props.children;
 
+    expect(setSave).toHaveBeenCalled();
+    expect(setSave).toHaveBeenCalledTimes(1);
     expect(before).toBe("Shortlist");
     expect(after).toBe("Shortlisted");
+  });
+
+  it("should match snapshot", () => {
+    const result = render(<InfoCard ver={mock} border={jest.fn()} />);
+    expect(result).toMatchSnapshot();
   });
 });

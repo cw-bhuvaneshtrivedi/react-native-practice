@@ -47,6 +47,7 @@ export const Card = ({ item }) => {
               height: 170,
               width: windowWidth,
             }}
+            getItemType={(item) => item.name}
           />
           {/* <FlatList
             data={item.versions}

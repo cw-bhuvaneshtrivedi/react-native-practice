@@ -34,4 +34,9 @@ describe("Description Block", () => {
       "https://imgd.aeplcdn.com/600x337/n/cw/ec/126463/s-presso-exterior-right-front-three-quarter-3.jpeg?isig=0"
     );
   });
+
+  it("should match snapshot", () => {
+    const result = setUp();
+    expect(result).toMatchSnapshot();
+  });
 });
