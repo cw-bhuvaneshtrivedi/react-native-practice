@@ -6,6 +6,7 @@ import {
   Dimensions,
   TextInput,
   TouchableOpacity,
+  FlatList,
 } from "react-native";
 import React, { useEffect } from "react";
 import Animated, {
@@ -15,6 +16,7 @@ import Animated, {
 } from "react-native-reanimated";
 import Accordion from "./Accordion";
 import { AntDesign } from "@expo/vector-icons";
+import { data } from "./Mock/data";
 
 const HEIGHT = Dimensions.get("screen").height;
 const WIDTH = Dimensions.get("screen").width;
@@ -53,10 +55,10 @@ const BottomDrawer = ({ open }: any) => {
           style={styles.searchBox}
         />
       </View>
-      <Accordion />
-      <Accordion />
-      <Accordion />
-      <Accordion />
+      <FlatList
+        data={data}
+        renderItem={({ item }) => <Accordion data={item} />}
+      />
     </Animated.View>
   );
 };

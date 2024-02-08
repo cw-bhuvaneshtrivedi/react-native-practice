@@ -1,4 +1,10 @@
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import {
+  ScrollView,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from "react-native";
 import React, { useState } from "react";
 import { Feather } from "@expo/vector-icons";
 import AccordionAnimation from "./AccordionAnimation";
@@ -8,7 +14,7 @@ import Animated, {
   withTiming,
 } from "react-native-reanimated";
 
-const Accordion = () => {
+const Accordion = ({ data }: { data: string[] }) => {
   const [close, setClose] = useState(false);
   const rotateZ = useSharedValue(0);
   const style = useAnimatedStyle(() => ({
@@ -20,12 +26,13 @@ const Accordion = () => {
     else rotateZ.value = withTiming(rotateZ.value - 180, { duration: 300 });
   };
   return (
-    <View>
+    <ScrollView>
       <TouchableOpacity
         onPress={() => {
           setClose(!close);
           handle();
         }}
+        testID="accordionButton"
       >
         <View style={styles.container}>
           <Text style={styles.accordionText}>Maruti</Text>
@@ -35,8 +42,8 @@ const Accordion = () => {
         </View>
       </TouchableOpacity>
       <View style={styles.seperator}></View>
-      <AccordionAnimation open={close} />
-    </View>
+      <AccordionAnimation open={close} data={data} />
+    </ScrollView>
   );
 };
 

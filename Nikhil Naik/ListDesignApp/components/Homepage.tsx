@@ -7,7 +7,12 @@ const Homepage = () => {
   return (
     <View>
       {open ? <BottomDrawer open={setOpen} /> : null}
-      <TouchableOpacity onPress={() => setOpen(true)}>
+      <TouchableOpacity
+        onPress={(e) => {
+          setOpen(true);
+        }}
+        testID="homepageButton"
+      >
         <View style={styles.button}>
           <Text style={styles.text}>Open</Text>
         </View>
