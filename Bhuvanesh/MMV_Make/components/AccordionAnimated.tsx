@@ -1,38 +1,41 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Animated, {
-  FadeInUp,
   useAnimatedStyle,
   useSharedValue,
   withTiming,
 } from "react-native-reanimated";
-import { Text, StyleSheet, View } from "react-native";
-
-type AccordionProps = {
-  name: string;
-};
+import {
+  Text,
+  StyleSheet,
+  View,
+  LayoutChangeEvent,
+  ScrollView,
+} from "react-native";
+import { FlatList } from "react-native";
 
 type AccordionAnimatedProps = {
   name: string;
   open: boolean;
+  data: string[];
 };
 
-const Card = ({ name }: AccordionProps) => {
+const Card = ({ name }: { name: string }) => {
   const accordion = StyleSheet.create({
     text: { fontSize: 15 },
-    container: { height: 50 },
   });
   return (
-    <View style={accordion.container}>
+    <View>
       <Text style={accordion.text}>{name}</Text>
     </View>
   );
 };
 
-const AccordionAnimated = ({ name, open }: AccordionAnimatedProps) => {
+const AccordionAnimated = ({ name, open, data }: AccordionAnimatedProps) => {
   const height = useSharedValue(0);
+  const [tmpHeight, setTmpHeight] = useState(0);
 
   useEffect(() => {
-    if (open) height.value = withTiming(150);
+    if (open) height.value = withTiming(tmpHeight);
     else height.value = withTiming(0);
   }, [open]);
 
@@ -41,13 +44,25 @@ const AccordionAnimated = ({ name, open }: AccordionAnimatedProps) => {
   }));
 
   const style = StyleSheet.create({
-    view: { justifyContent: "center", paddingLeft: 20, overflow: "hidden" },
+    view: {
+      justifyContent: "center",
+      paddingLeft: 20,
+      overflow: "hidden",
+    },
   });
   return (
-    <Animated.View style={[style.view, aniStyle]}>
-      <Card name="Hyundai" />
-      <Card name="Hyundai" />
-      <Card name="Hyundai" />
+    <Animated.View style={[style.view, aniStyle]} testID="AnimatedH">
+      <ScrollView
+        style={{ position: "absolute" }}
+        onLayout={(e: LayoutChangeEvent) => {
+          setTmpHeight(e.nativeEvent.layout.height);
+        }}
+      >
+        <FlatList
+          data={data}
+          renderItem={({ item }) => <Card name={`${item}`} />}
+        />
+      </ScrollView>
     </Animated.View>
   );
 };

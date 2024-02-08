@@ -11,7 +11,7 @@ export default function App() {
       <StatusBar style="auto" />
       <View style={styles.body}>
         {isOpen && <Home setOpen={setIsOpen} />}
-        <Button title="Open" onPress={() => setIsOpen(true)} />
+        <Button title="Open" onPress={() => setIsOpen(true)} testID="Open" />
       </View>
     </>
   );

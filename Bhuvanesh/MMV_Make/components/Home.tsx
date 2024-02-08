@@ -5,6 +5,7 @@ import {
   Dimensions,
   TouchableOpacity,
   TextInput,
+  FlatList,
 } from "react-native";
 import React, { useEffect } from "react";
 import Animated, {
@@ -14,6 +15,7 @@ import Animated, {
 } from "react-native-reanimated";
 import { Entypo } from "@expo/vector-icons";
 import Accordion from "./Accordion";
+import data from "./data";
 
 const { height: SCREEN_HEIGHT } = Dimensions.get("screen");
 
@@ -48,10 +50,12 @@ export default function Home({ setOpen }: any) {
       </View>
       {/* <AntDesign name="search1" size={24} color="black" /> */}
       <TextInput placeholder="Type to Select Make" style={styles.input} />
-      <Accordion name="Maruti Suzuki" />
-      <Accordion name="Maruti Suzuki" />
-      <Accordion name="Maruti Suzuki" />
-      <Accordion name="Maruti Suzuki" />
+      <FlatList
+        data={data}
+        renderItem={({ item }) => (
+          <Accordion name={"Maruti Suzuki"} data={item} />
+        )}
+      />
     </Animated.View>
   );
 }
