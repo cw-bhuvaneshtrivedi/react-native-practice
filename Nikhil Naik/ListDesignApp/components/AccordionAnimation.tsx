@@ -1,40 +1,44 @@
-import { Dimensions, StyleSheet, Text, View } from "react-native";
-import React, { useEffect } from "react";
+import { Dimensions, FlatList, StyleSheet, Text, View } from "react-native";
+import React, { useEffect, useState } from "react";
 import Card from "./Card";
 import Animated, {
   useSharedValue,
   useAnimatedStyle,
   withTiming,
-  FadeInUp,
-  FadeOutUp,
-  Easing,
 } from "react-native-reanimated";
 
-export default function AccordionAnimation({ open }: { open: boolean }) {
+export default function AccordionAnimation({
+  open,
+  data,
+}: {
+  open: boolean;
+  data: string[];
+}) {
+  const [temp, setTemp] = useState(0);
   const height = useSharedValue(0);
   const style = useAnimatedStyle(() => ({
     height: height.value,
   }));
   useEffect(() => {
     if (open) {
-      height.value = withTiming(260, { duration: 300 });
+      height.value = withTiming(temp);
     } else {
-      height.value = withTiming(0, { duration: 300 });
+      height.value = withTiming(0);
     }
   }, [open]);
   return (
-    <Animated.View style={[style, styles.container]}>
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
+    <Animated.View style={[styles.container, style]} testID="card">
+      <View style={{ position: "absolute" }}>
+        <FlatList
+          data={data}
+          renderItem={({ item }) => <Card data={item} />}
+          onLayout={(e) => setTemp(e.nativeEvent.layout.height)}
+        />
+      </View>
     </Animated.View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    overflow: "hidden",
-  },
+  container: { overflow: "hidden" },
 });

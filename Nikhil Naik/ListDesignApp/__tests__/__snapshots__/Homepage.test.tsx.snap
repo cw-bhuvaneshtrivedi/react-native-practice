@@ -1,0 +1,3105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Homepage should again hide drawer after clicking 1`] = `
+<View>
+  <View
+    animatedStyle={
+      {
+        "value": {
+          "transform": [
+            {
+              "translateY": 1334,
+            },
+          ],
+        },
+      }
+    }
+    collapsable={false}
+    style={
+      {
+        "backgroundColor": "white",
+        "height": 1334,
+        "transform": [
+          {
+            "translateY": 1334,
+          },
+        ],
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "height": 120,
+          "marginBottom": 4,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "paddingTop": 16,
+        }
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            {
+              "color": "#484848",
+              "fontSize": 16,
+              "fontWeight": "bold",
+            }
+          }
+        >
+          Select Your Make or Model
+        </Text>
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "opacity": 1,
+            }
+          }
+        >
+          <Text
+            allowFontScaling={false}
+            selectable={false}
+            style={
+              [
+                {
+                  "color": "#484848",
+                  "fontSize": 24,
+                },
+                undefined,
+                {
+                  "fontFamily": "anticon",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+                {},
+              ]
+            }
+          >
+            
+          </Text>
+        </View>
+      </View>
+      <TextInput
+        placeholder="Type to Select Make "
+        style={
+          {
+            "borderColor": "#d5d5d5",
+            "borderRadius": 4,
+            "borderStyle": "solid",
+            "borderWidth": 2,
+            "fontSize": 20,
+            "height": 50,
+            "marginTop": 10,
+            "padding": 5,
+            "width": "100%",
+          }
+        }
+      />
+    </View>
+    <RCTScrollView
+      data={
+        [
+          [
+            "Nikhil",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lobortis tellus dolor. Donec sed enim fringilla, congue tortor at, venenatis nunc. Morbi in magna vitae ex iaculis vehicula non non sem. Sed euismod in nulla eget feugiat. Praesent tempor molestie leo, id iaculis lectus. Pellentesque a nulla nunc. Aliquam id.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mi.",
+          ],
+          [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lobortis tellus dolor. Donec sed enim fringilla, congue tortor at, venenatis nunc. Morbi in magna vitae ex iaculis vehicula non non sem. Sed euismod in nulla eget feugiat. Praesent tempor molestie leo, id iaculis lectus. Pellentesque a nulla nunc. Aliquam id.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mi.",
+          ],
+          [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla miLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mi",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lobortis tellus dolor. Donec sed enim fringilla, congue tortor at, venenatis nunc. Morbi in magna vitae ex iaculis vehicula non non sem. Sed euismod in nulla eget feugiat. Praesent tempor molestie leo, id iaculis lectus. Pellentesque a nulla nunc. Aliquam id.",
+            "Lorem ipsum dolor sit amet",
+          ],
+          [
+            "Nikhil",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lobortis tellus dolor. Donec sed enim fringilla, congue tortor at, venenatis nunc. Morbi in magna vitae ex iaculis vehicula non non sem. Sed euismod in nulla eget feugiat. Praesent tempor molestie leo, id iaculis lectus. Pellentesque a nulla nunc. Aliquam id.",
+          ],
+          [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mi.",
+          ],
+        ]
+      }
+      getItem={[Function]}
+      getItemCount={[Function]}
+      keyExtractor={[Function]}
+      onContentSizeChange={[Function]}
+      onLayout={[Function]}
+      onMomentumScrollBegin={[Function]}
+      onMomentumScrollEnd={[Function]}
+      onScroll={[Function]}
+      onScrollBeginDrag={[Function]}
+      onScrollEndDrag={[Function]}
+      removeClippedSubviews={false}
+      renderItem={[Function]}
+      scrollEventThrottle={0.0001}
+      stickyHeaderIndices={[]}
+      viewabilityConfigCallbackPairs={[]}
+    >
+      <View>
+        <View
+          onFocusCapture={[Function]}
+          onLayout={[Function]}
+          style={null}
+        >
+          <RCTScrollView>
+            <View>
+              <View
+                accessibilityState={
+                  {
+                    "busy": undefined,
+                    "checked": undefined,
+                    "disabled": undefined,
+                    "expanded": undefined,
+                    "selected": undefined,
+                  }
+                }
+                accessibilityValue={
+                  {
+                    "max": undefined,
+                    "min": undefined,
+                    "now": undefined,
+                    "text": undefined,
+                  }
+                }
+                accessible={true}
+                collapsable={false}
+                focusable={true}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  {
+                    "opacity": 1,
+                  }
+                }
+                testID="accordionButton"
+              >
+                <View
+                  style={
+                    {
+                      "alignItems": "center",
+                      "flexDirection": "row",
+                      "height": 50,
+                      "justifyContent": "space-between",
+                      "paddingLeft": 28,
+                      "paddingRight": 30,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#484848",
+                        "fontSize": 15,
+                      }
+                    }
+                  >
+                    Maruti
+                  </Text>
+                  <View
+                    animatedStyle={
+                      {
+                        "value": {
+                          "transform": [
+                            {
+                              "rotateZ": "0deg",
+                            },
+                          ],
+                        },
+                      }
+                    }
+                    collapsable={false}
+                    style={
+                      {
+                        "transform": [
+                          {
+                            "rotateZ": "0deg",
+                          },
+                        ],
+                      }
+                    }
+                  >
+                    <Text
+                      allowFontScaling={false}
+                      selectable={false}
+                      style={
+                        [
+                          {
+                            "color": "#aaaaaa",
+                            "fontSize": 30,
+                          },
+                          undefined,
+                          {
+                            "fontFamily": "feather",
+                            "fontStyle": "normal",
+                            "fontWeight": "normal",
+                          },
+                          {},
+                        ]
+                      }
+                    >
+                      
+                    </Text>
+                  </View>
+                </View>
+              </View>
+              <View
+                style={
+                  {
+                    "backgroundColor": "#efefef",
+                    "height": 2,
+                    "width": "100%",
+                  }
+                }
+              />
+              <View
+                animatedStyle={
+                  {
+                    "value": {
+                      "height": 0,
+                    },
+                  }
+                }
+                collapsable={false}
+                style={
+                  {
+                    "height": 0,
+                    "overflow": "hidden",
+                  }
+                }
+                testID="card"
+              >
+                <View
+                  style={
+                    {
+                      "position": "absolute",
+                    }
+                  }
+                >
+                  <View
+                    data={
+                      [
+                        "Nikhil",
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lobortis tellus dolor. Donec sed enim fringilla, congue tortor at, venenatis nunc. Morbi in magna vitae ex iaculis vehicula non non sem. Sed euismod in nulla eget feugiat. Praesent tempor molestie leo, id iaculis lectus. Pellentesque a nulla nunc. Aliquam id.",
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mi.",
+                      ]
+                    }
+                    getItem={[Function]}
+                    getItemCount={[Function]}
+                    keyExtractor={[Function]}
+                    onContentSizeChange={[Function]}
+                    onLayout={[Function]}
+                    onMomentumScrollBegin={[Function]}
+                    onMomentumScrollEnd={[Function]}
+                    onScroll={[Function]}
+                    onScrollBeginDrag={[Function]}
+                    onScrollEndDrag={[Function]}
+                    removeClippedSubviews={false}
+                    renderItem={[Function]}
+                    scrollEventThrottle={0.0001}
+                    stickyHeaderIndices={[]}
+                    viewabilityConfigCallbackPairs={[]}
+                  >
+                    <View
+                      onFocusCapture={[Function]}
+                      onLayout={[Function]}
+                      style={null}
+                    >
+                      <View>
+                        <View
+                          style={
+                            {
+                              "alignItems": "center",
+                              "backgroundColor": "#f9f9f9",
+                              "flexDirection": "row",
+                              "justifyContent": "space-between",
+                              "paddingLeft": 36,
+                              "paddingRight": 30,
+                            }
+                          }
+                        >
+                          <Text
+                            style={
+                              {
+                                "color": "#484848",
+                                "fontSize": 15,
+                                "paddingBottom": 16,
+                                "paddingTop": 16,
+                              }
+                            }
+                            testID="cardName"
+                          >
+                            Nikhil
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            {
+                              "backgroundColor": "#efefef",
+                              "height": 2,
+                              "width": "100%",
+                            }
+                          }
+                        />
+                      </View>
+                    </View>
+                    <View
+                      onFocusCapture={[Function]}
+                      onLayout={[Function]}
+                      style={null}
+                    >
+                      <View>
+                        <View
+                          style={
+                            {
+                              "alignItems": "center",
+                              "backgroundColor": "#f9f9f9",
+                              "flexDirection": "row",
+                              "justifyContent": "space-between",
+                              "paddingLeft": 36,
+                              "paddingRight": 30,
+                            }
+                          }
+                        >
+                          <Text
+                            style={
+                              {
+                                "color": "#484848",
+                                "fontSize": 15,
+                                "paddingBottom": 16,
+                                "paddingTop": 16,
+                              }
+                            }
+                            testID="cardName"
+                          >
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lobortis tellus dolor. Donec sed enim fringilla, congue tortor at, venenatis nunc. Morbi in magna vitae ex iaculis vehicula non non sem. Sed euismod in nulla eget feugiat. Praesent tempor molestie leo, id iaculis lectus. Pellentesque a nulla nunc. Aliquam id.
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            {
+                              "backgroundColor": "#efefef",
+                              "height": 2,
+                              "width": "100%",
+                            }
+                          }
+                        />
+                      </View>
+                    </View>
+                    <View
+                      onFocusCapture={[Function]}
+                      onLayout={[Function]}
+                      style={null}
+                    >
+                      <View>
+                        <View
+                          style={
+                            {
+                              "alignItems": "center",
+                              "backgroundColor": "#f9f9f9",
+                              "flexDirection": "row",
+                              "justifyContent": "space-between",
+                              "paddingLeft": 36,
+                              "paddingRight": 30,
+                            }
+                          }
+                        >
+                          <Text
+                            style={
+                              {
+                                "color": "#484848",
+                                "fontSize": 15,
+                                "paddingBottom": 16,
+                                "paddingTop": 16,
+                              }
+                            }
+                            testID="cardName"
+                          >
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mi.
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            {
+                              "backgroundColor": "#efefef",
+                              "height": 2,
+                              "width": "100%",
+                            }
+                          }
+                        />
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </RCTScrollView>
+        </View>
+        <View
+          onFocusCapture={[Function]}
+          onLayout={[Function]}
+          style={null}
+        >
+          <RCTScrollView>
+            <View>
+              <View
+                accessibilityState={
+                  {
+                    "busy": undefined,
+                    "checked": undefined,
+                    "disabled": undefined,
+                    "expanded": undefined,
+                    "selected": undefined,
+                  }
+                }
+                accessibilityValue={
+                  {
+                    "max": undefined,
+                    "min": undefined,
+                    "now": undefined,
+                    "text": undefined,
+                  }
+                }
+                accessible={true}
+                collapsable={false}
+                focusable={true}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  {
+                    "opacity": 1,
+                  }
+                }
+                testID="accordionButton"
+              >
+                <View
+                  style={
+                    {
+                      "alignItems": "center",
+                      "flexDirection": "row",
+                      "height": 50,
+                      "justifyContent": "space-between",
+                      "paddingLeft": 28,
+                      "paddingRight": 30,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#484848",
+                        "fontSize": 15,
+                      }
+                    }
+                  >
+                    Maruti
+                  </Text>
+                  <View
+                    animatedStyle={
+                      {
+                        "value": {
+                          "transform": [
+                            {
+                              "rotateZ": "0deg",
+                            },
+                          ],
+                        },
+                      }
+                    }
+                    collapsable={false}
+                    style={
+                      {
+                        "transform": [
+                          {
+                            "rotateZ": "0deg",
+                          },
+                        ],
+                      }
+                    }
+                  >
+                    <Text
+                      allowFontScaling={false}
+                      selectable={false}
+                      style={
+                        [
+                          {
+                            "color": "#aaaaaa",
+                            "fontSize": 30,
+                          },
+                          undefined,
+                          {
+                            "fontFamily": "feather",
+                            "fontStyle": "normal",
+                            "fontWeight": "normal",
+                          },
+                          {},
+                        ]
+                      }
+                    >
+                      
+                    </Text>
+                  </View>
+                </View>
+              </View>
+              <View
+                style={
+                  {
+                    "backgroundColor": "#efefef",
+                    "height": 2,
+                    "width": "100%",
+                  }
+                }
+              />
+              <View
+                animatedStyle={
+                  {
+                    "value": {
+                      "height": 0,
+                    },
+                  }
+                }
+                collapsable={false}
+                style={
+                  {
+                    "height": 0,
+                    "overflow": "hidden",
+                  }
+                }
+                testID="card"
+              >
+                <View
+                  style={
+                    {
+                      "position": "absolute",
+                    }
+                  }
+                >
+                  <View
+                    data={
+                      [
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lobortis tellus dolor. Donec sed enim fringilla, congue tortor at, venenatis nunc. Morbi in magna vitae ex iaculis vehicula non non sem. Sed euismod in nulla eget feugiat. Praesent tempor molestie leo, id iaculis lectus. Pellentesque a nulla nunc. Aliquam id.",
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mi.",
+                      ]
+                    }
+                    getItem={[Function]}
+                    getItemCount={[Function]}
+                    keyExtractor={[Function]}
+                    onContentSizeChange={[Function]}
+                    onLayout={[Function]}
+                    onMomentumScrollBegin={[Function]}
+                    onMomentumScrollEnd={[Function]}
+                    onScroll={[Function]}
+                    onScrollBeginDrag={[Function]}
+                    onScrollEndDrag={[Function]}
+                    removeClippedSubviews={false}
+                    renderItem={[Function]}
+                    scrollEventThrottle={0.0001}
+                    stickyHeaderIndices={[]}
+                    viewabilityConfigCallbackPairs={[]}
+                  >
+                    <View
+                      onFocusCapture={[Function]}
+                      onLayout={[Function]}
+                      style={null}
+                    >
+                      <View>
+                        <View
+                          style={
+                            {
+                              "alignItems": "center",
+                              "backgroundColor": "#f9f9f9",
+                              "flexDirection": "row",
+                              "justifyContent": "space-between",
+                              "paddingLeft": 36,
+                              "paddingRight": 30,
+                            }
+                          }
+                        >
+                          <Text
+                            style={
+                              {
+                                "color": "#484848",
+                                "fontSize": 15,
+                                "paddingBottom": 16,
+                                "paddingTop": 16,
+                              }
+                            }
+                            testID="cardName"
+                          >
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lobortis tellus dolor. Donec sed enim fringilla, congue tortor at, venenatis nunc. Morbi in magna vitae ex iaculis vehicula non non sem. Sed euismod in nulla eget feugiat. Praesent tempor molestie leo, id iaculis lectus. Pellentesque a nulla nunc. Aliquam id.
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            {
+                              "backgroundColor": "#efefef",
+                              "height": 2,
+                              "width": "100%",
+                            }
+                          }
+                        />
+                      </View>
+                    </View>
+                    <View
+                      onFocusCapture={[Function]}
+                      onLayout={[Function]}
+                      style={null}
+                    >
+                      <View>
+                        <View
+                          style={
+                            {
+                              "alignItems": "center",
+                              "backgroundColor": "#f9f9f9",
+                              "flexDirection": "row",
+                              "justifyContent": "space-between",
+                              "paddingLeft": 36,
+                              "paddingRight": 30,
+                            }
+                          }
+                        >
+                          <Text
+                            style={
+                              {
+                                "color": "#484848",
+                                "fontSize": 15,
+                                "paddingBottom": 16,
+                                "paddingTop": 16,
+                              }
+                            }
+                            testID="cardName"
+                          >
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mi.
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            {
+                              "backgroundColor": "#efefef",
+                              "height": 2,
+                              "width": "100%",
+                            }
+                          }
+                        />
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </RCTScrollView>
+        </View>
+        <View
+          onFocusCapture={[Function]}
+          onLayout={[Function]}
+          style={null}
+        >
+          <RCTScrollView>
+            <View>
+              <View
+                accessibilityState={
+                  {
+                    "busy": undefined,
+                    "checked": undefined,
+                    "disabled": undefined,
+                    "expanded": undefined,
+                    "selected": undefined,
+                  }
+                }
+                accessibilityValue={
+                  {
+                    "max": undefined,
+                    "min": undefined,
+                    "now": undefined,
+                    "text": undefined,
+                  }
+                }
+                accessible={true}
+                collapsable={false}
+                focusable={true}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  {
+                    "opacity": 1,
+                  }
+                }
+                testID="accordionButton"
+              >
+                <View
+                  style={
+                    {
+                      "alignItems": "center",
+                      "flexDirection": "row",
+                      "height": 50,
+                      "justifyContent": "space-between",
+                      "paddingLeft": 28,
+                      "paddingRight": 30,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#484848",
+                        "fontSize": 15,
+                      }
+                    }
+                  >
+                    Maruti
+                  </Text>
+                  <View
+                    animatedStyle={
+                      {
+                        "value": {
+                          "transform": [
+                            {
+                              "rotateZ": "0deg",
+                            },
+                          ],
+                        },
+                      }
+                    }
+                    collapsable={false}
+                    style={
+                      {
+                        "transform": [
+                          {
+                            "rotateZ": "0deg",
+                          },
+                        ],
+                      }
+                    }
+                  >
+                    <Text
+                      allowFontScaling={false}
+                      selectable={false}
+                      style={
+                        [
+                          {
+                            "color": "#aaaaaa",
+                            "fontSize": 30,
+                          },
+                          undefined,
+                          {
+                            "fontFamily": "feather",
+                            "fontStyle": "normal",
+                            "fontWeight": "normal",
+                          },
+                          {},
+                        ]
+                      }
+                    >
+                      
+                    </Text>
+                  </View>
+                </View>
+              </View>
+              <View
+                style={
+                  {
+                    "backgroundColor": "#efefef",
+                    "height": 2,
+                    "width": "100%",
+                  }
+                }
+              />
+              <View
+                animatedStyle={
+                  {
+                    "value": {
+                      "height": 0,
+                    },
+                  }
+                }
+                collapsable={false}
+                style={
+                  {
+                    "height": 0,
+                    "overflow": "hidden",
+                  }
+                }
+                testID="card"
+              >
+                <View
+                  style={
+                    {
+                      "position": "absolute",
+                    }
+                  }
+                >
+                  <View
+                    data={
+                      [
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla miLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mi",
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lobortis tellus dolor. Donec sed enim fringilla, congue tortor at, venenatis nunc. Morbi in magna vitae ex iaculis vehicula non non sem. Sed euismod in nulla eget feugiat. Praesent tempor molestie leo, id iaculis lectus. Pellentesque a nulla nunc. Aliquam id.",
+                        "Lorem ipsum dolor sit amet",
+                      ]
+                    }
+                    getItem={[Function]}
+                    getItemCount={[Function]}
+                    keyExtractor={[Function]}
+                    onContentSizeChange={[Function]}
+                    onLayout={[Function]}
+                    onMomentumScrollBegin={[Function]}
+                    onMomentumScrollEnd={[Function]}
+                    onScroll={[Function]}
+                    onScrollBeginDrag={[Function]}
+                    onScrollEndDrag={[Function]}
+                    removeClippedSubviews={false}
+                    renderItem={[Function]}
+                    scrollEventThrottle={0.0001}
+                    stickyHeaderIndices={[]}
+                    viewabilityConfigCallbackPairs={[]}
+                  >
+                    <View
+                      onFocusCapture={[Function]}
+                      onLayout={[Function]}
+                      style={null}
+                    >
+                      <View>
+                        <View
+                          style={
+                            {
+                              "alignItems": "center",
+                              "backgroundColor": "#f9f9f9",
+                              "flexDirection": "row",
+                              "justifyContent": "space-between",
+                              "paddingLeft": 36,
+                              "paddingRight": 30,
+                            }
+                          }
+                        >
+                          <Text
+                            style={
+                              {
+                                "color": "#484848",
+                                "fontSize": 15,
+                                "paddingBottom": 16,
+                                "paddingTop": 16,
+                              }
+                            }
+                            testID="cardName"
+                          >
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla miLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mi
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            {
+                              "backgroundColor": "#efefef",
+                              "height": 2,
+                              "width": "100%",
+                            }
+                          }
+                        />
+                      </View>
+                    </View>
+                    <View
+                      onFocusCapture={[Function]}
+                      onLayout={[Function]}
+                      style={null}
+                    >
+                      <View>
+                        <View
+                          style={
+                            {
+                              "alignItems": "center",
+                              "backgroundColor": "#f9f9f9",
+                              "flexDirection": "row",
+                              "justifyContent": "space-between",
+                              "paddingLeft": 36,
+                              "paddingRight": 30,
+                            }
+                          }
+                        >
+                          <Text
+                            style={
+                              {
+                                "color": "#484848",
+                                "fontSize": 15,
+                                "paddingBottom": 16,
+                                "paddingTop": 16,
+                              }
+                            }
+                            testID="cardName"
+                          >
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lobortis tellus dolor. Donec sed enim fringilla, congue tortor at, venenatis nunc. Morbi in magna vitae ex iaculis vehicula non non sem. Sed euismod in nulla eget feugiat. Praesent tempor molestie leo, id iaculis lectus. Pellentesque a nulla nunc. Aliquam id.
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            {
+                              "backgroundColor": "#efefef",
+                              "height": 2,
+                              "width": "100%",
+                            }
+                          }
+                        />
+                      </View>
+                    </View>
+                    <View
+                      onFocusCapture={[Function]}
+                      onLayout={[Function]}
+                      style={null}
+                    >
+                      <View>
+                        <View
+                          style={
+                            {
+                              "alignItems": "center",
+                              "backgroundColor": "#f9f9f9",
+                              "flexDirection": "row",
+                              "justifyContent": "space-between",
+                              "paddingLeft": 36,
+                              "paddingRight": 30,
+                            }
+                          }
+                        >
+                          <Text
+                            style={
+                              {
+                                "color": "#484848",
+                                "fontSize": 15,
+                                "paddingBottom": 16,
+                                "paddingTop": 16,
+                              }
+                            }
+                            testID="cardName"
+                          >
+                            Lorem ipsum dolor sit amet
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            {
+                              "backgroundColor": "#efefef",
+                              "height": 2,
+                              "width": "100%",
+                            }
+                          }
+                        />
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </RCTScrollView>
+        </View>
+        <View
+          onFocusCapture={[Function]}
+          onLayout={[Function]}
+          style={null}
+        >
+          <RCTScrollView>
+            <View>
+              <View
+                accessibilityState={
+                  {
+                    "busy": undefined,
+                    "checked": undefined,
+                    "disabled": undefined,
+                    "expanded": undefined,
+                    "selected": undefined,
+                  }
+                }
+                accessibilityValue={
+                  {
+                    "max": undefined,
+                    "min": undefined,
+                    "now": undefined,
+                    "text": undefined,
+                  }
+                }
+                accessible={true}
+                collapsable={false}
+                focusable={true}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  {
+                    "opacity": 1,
+                  }
+                }
+                testID="accordionButton"
+              >
+                <View
+                  style={
+                    {
+                      "alignItems": "center",
+                      "flexDirection": "row",
+                      "height": 50,
+                      "justifyContent": "space-between",
+                      "paddingLeft": 28,
+                      "paddingRight": 30,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#484848",
+                        "fontSize": 15,
+                      }
+                    }
+                  >
+                    Maruti
+                  </Text>
+                  <View
+                    animatedStyle={
+                      {
+                        "value": {
+                          "transform": [
+                            {
+                              "rotateZ": "0deg",
+                            },
+                          ],
+                        },
+                      }
+                    }
+                    collapsable={false}
+                    style={
+                      {
+                        "transform": [
+                          {
+                            "rotateZ": "0deg",
+                          },
+                        ],
+                      }
+                    }
+                  >
+                    <Text
+                      allowFontScaling={false}
+                      selectable={false}
+                      style={
+                        [
+                          {
+                            "color": "#aaaaaa",
+                            "fontSize": 30,
+                          },
+                          undefined,
+                          {
+                            "fontFamily": "feather",
+                            "fontStyle": "normal",
+                            "fontWeight": "normal",
+                          },
+                          {},
+                        ]
+                      }
+                    >
+                      
+                    </Text>
+                  </View>
+                </View>
+              </View>
+              <View
+                style={
+                  {
+                    "backgroundColor": "#efefef",
+                    "height": 2,
+                    "width": "100%",
+                  }
+                }
+              />
+              <View
+                animatedStyle={
+                  {
+                    "value": {
+                      "height": 0,
+                    },
+                  }
+                }
+                collapsable={false}
+                style={
+                  {
+                    "height": 0,
+                    "overflow": "hidden",
+                  }
+                }
+                testID="card"
+              >
+                <View
+                  style={
+                    {
+                      "position": "absolute",
+                    }
+                  }
+                >
+                  <View
+                    data={
+                      [
+                        "Nikhil",
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lobortis tellus dolor. Donec sed enim fringilla, congue tortor at, venenatis nunc. Morbi in magna vitae ex iaculis vehicula non non sem. Sed euismod in nulla eget feugiat. Praesent tempor molestie leo, id iaculis lectus. Pellentesque a nulla nunc. Aliquam id.",
+                      ]
+                    }
+                    getItem={[Function]}
+                    getItemCount={[Function]}
+                    keyExtractor={[Function]}
+                    onContentSizeChange={[Function]}
+                    onLayout={[Function]}
+                    onMomentumScrollBegin={[Function]}
+                    onMomentumScrollEnd={[Function]}
+                    onScroll={[Function]}
+                    onScrollBeginDrag={[Function]}
+                    onScrollEndDrag={[Function]}
+                    removeClippedSubviews={false}
+                    renderItem={[Function]}
+                    scrollEventThrottle={0.0001}
+                    stickyHeaderIndices={[]}
+                    viewabilityConfigCallbackPairs={[]}
+                  >
+                    <View
+                      onFocusCapture={[Function]}
+                      onLayout={[Function]}
+                      style={null}
+                    >
+                      <View>
+                        <View
+                          style={
+                            {
+                              "alignItems": "center",
+                              "backgroundColor": "#f9f9f9",
+                              "flexDirection": "row",
+                              "justifyContent": "space-between",
+                              "paddingLeft": 36,
+                              "paddingRight": 30,
+                            }
+                          }
+                        >
+                          <Text
+                            style={
+                              {
+                                "color": "#484848",
+                                "fontSize": 15,
+                                "paddingBottom": 16,
+                                "paddingTop": 16,
+                              }
+                            }
+                            testID="cardName"
+                          >
+                            Nikhil
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            {
+                              "backgroundColor": "#efefef",
+                              "height": 2,
+                              "width": "100%",
+                            }
+                          }
+                        />
+                      </View>
+                    </View>
+                    <View
+                      onFocusCapture={[Function]}
+                      onLayout={[Function]}
+                      style={null}
+                    >
+                      <View>
+                        <View
+                          style={
+                            {
+                              "alignItems": "center",
+                              "backgroundColor": "#f9f9f9",
+                              "flexDirection": "row",
+                              "justifyContent": "space-between",
+                              "paddingLeft": 36,
+                              "paddingRight": 30,
+                            }
+                          }
+                        >
+                          <Text
+                            style={
+                              {
+                                "color": "#484848",
+                                "fontSize": 15,
+                                "paddingBottom": 16,
+                                "paddingTop": 16,
+                              }
+                            }
+                            testID="cardName"
+                          >
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lobortis tellus dolor. Donec sed enim fringilla, congue tortor at, venenatis nunc. Morbi in magna vitae ex iaculis vehicula non non sem. Sed euismod in nulla eget feugiat. Praesent tempor molestie leo, id iaculis lectus. Pellentesque a nulla nunc. Aliquam id.
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            {
+                              "backgroundColor": "#efefef",
+                              "height": 2,
+                              "width": "100%",
+                            }
+                          }
+                        />
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </RCTScrollView>
+        </View>
+        <View
+          onFocusCapture={[Function]}
+          onLayout={[Function]}
+          style={null}
+        >
+          <RCTScrollView>
+            <View>
+              <View
+                accessibilityState={
+                  {
+                    "busy": undefined,
+                    "checked": undefined,
+                    "disabled": undefined,
+                    "expanded": undefined,
+                    "selected": undefined,
+                  }
+                }
+                accessibilityValue={
+                  {
+                    "max": undefined,
+                    "min": undefined,
+                    "now": undefined,
+                    "text": undefined,
+                  }
+                }
+                accessible={true}
+                collapsable={false}
+                focusable={true}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  {
+                    "opacity": 1,
+                  }
+                }
+                testID="accordionButton"
+              >
+                <View
+                  style={
+                    {
+                      "alignItems": "center",
+                      "flexDirection": "row",
+                      "height": 50,
+                      "justifyContent": "space-between",
+                      "paddingLeft": 28,
+                      "paddingRight": 30,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#484848",
+                        "fontSize": 15,
+                      }
+                    }
+                  >
+                    Maruti
+                  </Text>
+                  <View
+                    animatedStyle={
+                      {
+                        "value": {
+                          "transform": [
+                            {
+                              "rotateZ": "0deg",
+                            },
+                          ],
+                        },
+                      }
+                    }
+                    collapsable={false}
+                    style={
+                      {
+                        "transform": [
+                          {
+                            "rotateZ": "0deg",
+                          },
+                        ],
+                      }
+                    }
+                  >
+                    <Text
+                      allowFontScaling={false}
+                      selectable={false}
+                      style={
+                        [
+                          {
+                            "color": "#aaaaaa",
+                            "fontSize": 30,
+                          },
+                          undefined,
+                          {
+                            "fontFamily": "feather",
+                            "fontStyle": "normal",
+                            "fontWeight": "normal",
+                          },
+                          {},
+                        ]
+                      }
+                    >
+                      
+                    </Text>
+                  </View>
+                </View>
+              </View>
+              <View
+                style={
+                  {
+                    "backgroundColor": "#efefef",
+                    "height": 2,
+                    "width": "100%",
+                  }
+                }
+              />
+              <View
+                animatedStyle={
+                  {
+                    "value": {
+                      "height": 0,
+                    },
+                  }
+                }
+                collapsable={false}
+                style={
+                  {
+                    "height": 0,
+                    "overflow": "hidden",
+                  }
+                }
+                testID="card"
+              >
+                <View
+                  style={
+                    {
+                      "position": "absolute",
+                    }
+                  }
+                >
+                  <View
+                    data={
+                      [
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mi.",
+                      ]
+                    }
+                    getItem={[Function]}
+                    getItemCount={[Function]}
+                    keyExtractor={[Function]}
+                    onContentSizeChange={[Function]}
+                    onLayout={[Function]}
+                    onMomentumScrollBegin={[Function]}
+                    onMomentumScrollEnd={[Function]}
+                    onScroll={[Function]}
+                    onScrollBeginDrag={[Function]}
+                    onScrollEndDrag={[Function]}
+                    removeClippedSubviews={false}
+                    renderItem={[Function]}
+                    scrollEventThrottle={0.0001}
+                    stickyHeaderIndices={[]}
+                    viewabilityConfigCallbackPairs={[]}
+                  >
+                    <View
+                      onFocusCapture={[Function]}
+                      onLayout={[Function]}
+                      style={null}
+                    >
+                      <View>
+                        <View
+                          style={
+                            {
+                              "alignItems": "center",
+                              "backgroundColor": "#f9f9f9",
+                              "flexDirection": "row",
+                              "justifyContent": "space-between",
+                              "paddingLeft": 36,
+                              "paddingRight": 30,
+                            }
+                          }
+                        >
+                          <Text
+                            style={
+                              {
+                                "color": "#484848",
+                                "fontSize": 15,
+                                "paddingBottom": 16,
+                                "paddingTop": 16,
+                              }
+                            }
+                            testID="cardName"
+                          >
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mi.
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            {
+                              "backgroundColor": "#efefef",
+                              "height": 2,
+                              "width": "100%",
+                            }
+                          }
+                        />
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </RCTScrollView>
+        </View>
+      </View>
+    </RCTScrollView>
+  </View>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "opacity": 1,
+      }
+    }
+    testID="homepageButton"
+  >
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "alignSelf": "center",
+          "backgroundColor": "orange",
+          "justifyContent": "center",
+          "padding": 20,
+          "width": "50%",
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "fontSize": 20,
+            "fontWeight": "bold",
+          }
+        }
+      >
+        Open
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Homepage should have hiddden drawer 1`] = `
+<View>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "opacity": 1,
+      }
+    }
+    testID="homepageButton"
+  >
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "alignSelf": "center",
+          "backgroundColor": "orange",
+          "justifyContent": "center",
+          "padding": 20,
+          "width": "50%",
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "fontSize": 20,
+            "fontWeight": "bold",
+          }
+        }
+      >
+        Open
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Homepage should have visible drawer 1`] = `
+<View>
+  <View
+    animatedStyle={
+      {
+        "value": {
+          "transform": [
+            {
+              "translateY": 1334,
+            },
+          ],
+        },
+      }
+    }
+    collapsable={false}
+    style={
+      {
+        "backgroundColor": "white",
+        "height": 1334,
+        "transform": [
+          {
+            "translateY": 1334,
+          },
+        ],
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "height": 120,
+          "marginBottom": 4,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "paddingTop": 16,
+        }
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            {
+              "color": "#484848",
+              "fontSize": 16,
+              "fontWeight": "bold",
+            }
+          }
+        >
+          Select Your Make or Model
+        </Text>
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "opacity": 1,
+            }
+          }
+        >
+          <Text />
+        </View>
+      </View>
+      <TextInput
+        placeholder="Type to Select Make "
+        style={
+          {
+            "borderColor": "#d5d5d5",
+            "borderRadius": 4,
+            "borderStyle": "solid",
+            "borderWidth": 2,
+            "fontSize": 20,
+            "height": 50,
+            "marginTop": 10,
+            "padding": 5,
+            "width": "100%",
+          }
+        }
+      />
+    </View>
+    <RCTScrollView
+      data={
+        [
+          [
+            "Nikhil",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lobortis tellus dolor. Donec sed enim fringilla, congue tortor at, venenatis nunc. Morbi in magna vitae ex iaculis vehicula non non sem. Sed euismod in nulla eget feugiat. Praesent tempor molestie leo, id iaculis lectus. Pellentesque a nulla nunc. Aliquam id.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mi.",
+          ],
+          [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lobortis tellus dolor. Donec sed enim fringilla, congue tortor at, venenatis nunc. Morbi in magna vitae ex iaculis vehicula non non sem. Sed euismod in nulla eget feugiat. Praesent tempor molestie leo, id iaculis lectus. Pellentesque a nulla nunc. Aliquam id.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mi.",
+          ],
+          [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla miLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mi",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lobortis tellus dolor. Donec sed enim fringilla, congue tortor at, venenatis nunc. Morbi in magna vitae ex iaculis vehicula non non sem. Sed euismod in nulla eget feugiat. Praesent tempor molestie leo, id iaculis lectus. Pellentesque a nulla nunc. Aliquam id.",
+            "Lorem ipsum dolor sit amet",
+          ],
+          [
+            "Nikhil",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lobortis tellus dolor. Donec sed enim fringilla, congue tortor at, venenatis nunc. Morbi in magna vitae ex iaculis vehicula non non sem. Sed euismod in nulla eget feugiat. Praesent tempor molestie leo, id iaculis lectus. Pellentesque a nulla nunc. Aliquam id.",
+          ],
+          [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mi.",
+          ],
+        ]
+      }
+      getItem={[Function]}
+      getItemCount={[Function]}
+      keyExtractor={[Function]}
+      onContentSizeChange={[Function]}
+      onLayout={[Function]}
+      onMomentumScrollBegin={[Function]}
+      onMomentumScrollEnd={[Function]}
+      onScroll={[Function]}
+      onScrollBeginDrag={[Function]}
+      onScrollEndDrag={[Function]}
+      removeClippedSubviews={false}
+      renderItem={[Function]}
+      scrollEventThrottle={0.0001}
+      stickyHeaderIndices={[]}
+      viewabilityConfigCallbackPairs={[]}
+    >
+      <View>
+        <View
+          onFocusCapture={[Function]}
+          onLayout={[Function]}
+          style={null}
+        >
+          <RCTScrollView>
+            <View>
+              <View
+                accessibilityState={
+                  {
+                    "busy": undefined,
+                    "checked": undefined,
+                    "disabled": undefined,
+                    "expanded": undefined,
+                    "selected": undefined,
+                  }
+                }
+                accessibilityValue={
+                  {
+                    "max": undefined,
+                    "min": undefined,
+                    "now": undefined,
+                    "text": undefined,
+                  }
+                }
+                accessible={true}
+                collapsable={false}
+                focusable={true}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  {
+                    "opacity": 1,
+                  }
+                }
+                testID="accordionButton"
+              >
+                <View
+                  style={
+                    {
+                      "alignItems": "center",
+                      "flexDirection": "row",
+                      "height": 50,
+                      "justifyContent": "space-between",
+                      "paddingLeft": 28,
+                      "paddingRight": 30,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#484848",
+                        "fontSize": 15,
+                      }
+                    }
+                  >
+                    Maruti
+                  </Text>
+                  <View
+                    animatedStyle={
+                      {
+                        "value": {
+                          "transform": [
+                            {
+                              "rotateZ": "0deg",
+                            },
+                          ],
+                        },
+                      }
+                    }
+                    collapsable={false}
+                    style={
+                      {
+                        "transform": [
+                          {
+                            "rotateZ": "0deg",
+                          },
+                        ],
+                      }
+                    }
+                  >
+                    <Text />
+                  </View>
+                </View>
+              </View>
+              <View
+                style={
+                  {
+                    "backgroundColor": "#efefef",
+                    "height": 2,
+                    "width": "100%",
+                  }
+                }
+              />
+              <View
+                animatedStyle={
+                  {
+                    "value": {
+                      "height": 0,
+                    },
+                  }
+                }
+                collapsable={false}
+                style={
+                  {
+                    "height": 0,
+                    "overflow": "hidden",
+                  }
+                }
+                testID="card"
+              >
+                <View
+                  style={
+                    {
+                      "position": "absolute",
+                    }
+                  }
+                >
+                  <View
+                    data={
+                      [
+                        "Nikhil",
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lobortis tellus dolor. Donec sed enim fringilla, congue tortor at, venenatis nunc. Morbi in magna vitae ex iaculis vehicula non non sem. Sed euismod in nulla eget feugiat. Praesent tempor molestie leo, id iaculis lectus. Pellentesque a nulla nunc. Aliquam id.",
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mi.",
+                      ]
+                    }
+                    getItem={[Function]}
+                    getItemCount={[Function]}
+                    keyExtractor={[Function]}
+                    onContentSizeChange={[Function]}
+                    onLayout={[Function]}
+                    onMomentumScrollBegin={[Function]}
+                    onMomentumScrollEnd={[Function]}
+                    onScroll={[Function]}
+                    onScrollBeginDrag={[Function]}
+                    onScrollEndDrag={[Function]}
+                    removeClippedSubviews={false}
+                    renderItem={[Function]}
+                    scrollEventThrottle={0.0001}
+                    stickyHeaderIndices={[]}
+                    viewabilityConfigCallbackPairs={[]}
+                  >
+                    <View
+                      onFocusCapture={[Function]}
+                      onLayout={[Function]}
+                      style={null}
+                    >
+                      <View>
+                        <View
+                          style={
+                            {
+                              "alignItems": "center",
+                              "backgroundColor": "#f9f9f9",
+                              "flexDirection": "row",
+                              "justifyContent": "space-between",
+                              "paddingLeft": 36,
+                              "paddingRight": 30,
+                            }
+                          }
+                        >
+                          <Text
+                            style={
+                              {
+                                "color": "#484848",
+                                "fontSize": 15,
+                                "paddingBottom": 16,
+                                "paddingTop": 16,
+                              }
+                            }
+                            testID="cardName"
+                          >
+                            Nikhil
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            {
+                              "backgroundColor": "#efefef",
+                              "height": 2,
+                              "width": "100%",
+                            }
+                          }
+                        />
+                      </View>
+                    </View>
+                    <View
+                      onFocusCapture={[Function]}
+                      onLayout={[Function]}
+                      style={null}
+                    >
+                      <View>
+                        <View
+                          style={
+                            {
+                              "alignItems": "center",
+                              "backgroundColor": "#f9f9f9",
+                              "flexDirection": "row",
+                              "justifyContent": "space-between",
+                              "paddingLeft": 36,
+                              "paddingRight": 30,
+                            }
+                          }
+                        >
+                          <Text
+                            style={
+                              {
+                                "color": "#484848",
+                                "fontSize": 15,
+                                "paddingBottom": 16,
+                                "paddingTop": 16,
+                              }
+                            }
+                            testID="cardName"
+                          >
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lobortis tellus dolor. Donec sed enim fringilla, congue tortor at, venenatis nunc. Morbi in magna vitae ex iaculis vehicula non non sem. Sed euismod in nulla eget feugiat. Praesent tempor molestie leo, id iaculis lectus. Pellentesque a nulla nunc. Aliquam id.
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            {
+                              "backgroundColor": "#efefef",
+                              "height": 2,
+                              "width": "100%",
+                            }
+                          }
+                        />
+                      </View>
+                    </View>
+                    <View
+                      onFocusCapture={[Function]}
+                      onLayout={[Function]}
+                      style={null}
+                    >
+                      <View>
+                        <View
+                          style={
+                            {
+                              "alignItems": "center",
+                              "backgroundColor": "#f9f9f9",
+                              "flexDirection": "row",
+                              "justifyContent": "space-between",
+                              "paddingLeft": 36,
+                              "paddingRight": 30,
+                            }
+                          }
+                        >
+                          <Text
+                            style={
+                              {
+                                "color": "#484848",
+                                "fontSize": 15,
+                                "paddingBottom": 16,
+                                "paddingTop": 16,
+                              }
+                            }
+                            testID="cardName"
+                          >
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mi.
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            {
+                              "backgroundColor": "#efefef",
+                              "height": 2,
+                              "width": "100%",
+                            }
+                          }
+                        />
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </RCTScrollView>
+        </View>
+        <View
+          onFocusCapture={[Function]}
+          onLayout={[Function]}
+          style={null}
+        >
+          <RCTScrollView>
+            <View>
+              <View
+                accessibilityState={
+                  {
+                    "busy": undefined,
+                    "checked": undefined,
+                    "disabled": undefined,
+                    "expanded": undefined,
+                    "selected": undefined,
+                  }
+                }
+                accessibilityValue={
+                  {
+                    "max": undefined,
+                    "min": undefined,
+                    "now": undefined,
+                    "text": undefined,
+                  }
+                }
+                accessible={true}
+                collapsable={false}
+                focusable={true}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  {
+                    "opacity": 1,
+                  }
+                }
+                testID="accordionButton"
+              >
+                <View
+                  style={
+                    {
+                      "alignItems": "center",
+                      "flexDirection": "row",
+                      "height": 50,
+                      "justifyContent": "space-between",
+                      "paddingLeft": 28,
+                      "paddingRight": 30,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#484848",
+                        "fontSize": 15,
+                      }
+                    }
+                  >
+                    Maruti
+                  </Text>
+                  <View
+                    animatedStyle={
+                      {
+                        "value": {
+                          "transform": [
+                            {
+                              "rotateZ": "0deg",
+                            },
+                          ],
+                        },
+                      }
+                    }
+                    collapsable={false}
+                    style={
+                      {
+                        "transform": [
+                          {
+                            "rotateZ": "0deg",
+                          },
+                        ],
+                      }
+                    }
+                  >
+                    <Text />
+                  </View>
+                </View>
+              </View>
+              <View
+                style={
+                  {
+                    "backgroundColor": "#efefef",
+                    "height": 2,
+                    "width": "100%",
+                  }
+                }
+              />
+              <View
+                animatedStyle={
+                  {
+                    "value": {
+                      "height": 0,
+                    },
+                  }
+                }
+                collapsable={false}
+                style={
+                  {
+                    "height": 0,
+                    "overflow": "hidden",
+                  }
+                }
+                testID="card"
+              >
+                <View
+                  style={
+                    {
+                      "position": "absolute",
+                    }
+                  }
+                >
+                  <View
+                    data={
+                      [
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lobortis tellus dolor. Donec sed enim fringilla, congue tortor at, venenatis nunc. Morbi in magna vitae ex iaculis vehicula non non sem. Sed euismod in nulla eget feugiat. Praesent tempor molestie leo, id iaculis lectus. Pellentesque a nulla nunc. Aliquam id.",
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mi.",
+                      ]
+                    }
+                    getItem={[Function]}
+                    getItemCount={[Function]}
+                    keyExtractor={[Function]}
+                    onContentSizeChange={[Function]}
+                    onLayout={[Function]}
+                    onMomentumScrollBegin={[Function]}
+                    onMomentumScrollEnd={[Function]}
+                    onScroll={[Function]}
+                    onScrollBeginDrag={[Function]}
+                    onScrollEndDrag={[Function]}
+                    removeClippedSubviews={false}
+                    renderItem={[Function]}
+                    scrollEventThrottle={0.0001}
+                    stickyHeaderIndices={[]}
+                    viewabilityConfigCallbackPairs={[]}
+                  >
+                    <View
+                      onFocusCapture={[Function]}
+                      onLayout={[Function]}
+                      style={null}
+                    >
+                      <View>
+                        <View
+                          style={
+                            {
+                              "alignItems": "center",
+                              "backgroundColor": "#f9f9f9",
+                              "flexDirection": "row",
+                              "justifyContent": "space-between",
+                              "paddingLeft": 36,
+                              "paddingRight": 30,
+                            }
+                          }
+                        >
+                          <Text
+                            style={
+                              {
+                                "color": "#484848",
+                                "fontSize": 15,
+                                "paddingBottom": 16,
+                                "paddingTop": 16,
+                              }
+                            }
+                            testID="cardName"
+                          >
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lobortis tellus dolor. Donec sed enim fringilla, congue tortor at, venenatis nunc. Morbi in magna vitae ex iaculis vehicula non non sem. Sed euismod in nulla eget feugiat. Praesent tempor molestie leo, id iaculis lectus. Pellentesque a nulla nunc. Aliquam id.
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            {
+                              "backgroundColor": "#efefef",
+                              "height": 2,
+                              "width": "100%",
+                            }
+                          }
+                        />
+                      </View>
+                    </View>
+                    <View
+                      onFocusCapture={[Function]}
+                      onLayout={[Function]}
+                      style={null}
+                    >
+                      <View>
+                        <View
+                          style={
+                            {
+                              "alignItems": "center",
+                              "backgroundColor": "#f9f9f9",
+                              "flexDirection": "row",
+                              "justifyContent": "space-between",
+                              "paddingLeft": 36,
+                              "paddingRight": 30,
+                            }
+                          }
+                        >
+                          <Text
+                            style={
+                              {
+                                "color": "#484848",
+                                "fontSize": 15,
+                                "paddingBottom": 16,
+                                "paddingTop": 16,
+                              }
+                            }
+                            testID="cardName"
+                          >
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mi.
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            {
+                              "backgroundColor": "#efefef",
+                              "height": 2,
+                              "width": "100%",
+                            }
+                          }
+                        />
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </RCTScrollView>
+        </View>
+        <View
+          onFocusCapture={[Function]}
+          onLayout={[Function]}
+          style={null}
+        >
+          <RCTScrollView>
+            <View>
+              <View
+                accessibilityState={
+                  {
+                    "busy": undefined,
+                    "checked": undefined,
+                    "disabled": undefined,
+                    "expanded": undefined,
+                    "selected": undefined,
+                  }
+                }
+                accessibilityValue={
+                  {
+                    "max": undefined,
+                    "min": undefined,
+                    "now": undefined,
+                    "text": undefined,
+                  }
+                }
+                accessible={true}
+                collapsable={false}
+                focusable={true}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  {
+                    "opacity": 1,
+                  }
+                }
+                testID="accordionButton"
+              >
+                <View
+                  style={
+                    {
+                      "alignItems": "center",
+                      "flexDirection": "row",
+                      "height": 50,
+                      "justifyContent": "space-between",
+                      "paddingLeft": 28,
+                      "paddingRight": 30,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#484848",
+                        "fontSize": 15,
+                      }
+                    }
+                  >
+                    Maruti
+                  </Text>
+                  <View
+                    animatedStyle={
+                      {
+                        "value": {
+                          "transform": [
+                            {
+                              "rotateZ": "0deg",
+                            },
+                          ],
+                        },
+                      }
+                    }
+                    collapsable={false}
+                    style={
+                      {
+                        "transform": [
+                          {
+                            "rotateZ": "0deg",
+                          },
+                        ],
+                      }
+                    }
+                  >
+                    <Text />
+                  </View>
+                </View>
+              </View>
+              <View
+                style={
+                  {
+                    "backgroundColor": "#efefef",
+                    "height": 2,
+                    "width": "100%",
+                  }
+                }
+              />
+              <View
+                animatedStyle={
+                  {
+                    "value": {
+                      "height": 0,
+                    },
+                  }
+                }
+                collapsable={false}
+                style={
+                  {
+                    "height": 0,
+                    "overflow": "hidden",
+                  }
+                }
+                testID="card"
+              >
+                <View
+                  style={
+                    {
+                      "position": "absolute",
+                    }
+                  }
+                >
+                  <View
+                    data={
+                      [
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla miLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mi",
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lobortis tellus dolor. Donec sed enim fringilla, congue tortor at, venenatis nunc. Morbi in magna vitae ex iaculis vehicula non non sem. Sed euismod in nulla eget feugiat. Praesent tempor molestie leo, id iaculis lectus. Pellentesque a nulla nunc. Aliquam id.",
+                        "Lorem ipsum dolor sit amet",
+                      ]
+                    }
+                    getItem={[Function]}
+                    getItemCount={[Function]}
+                    keyExtractor={[Function]}
+                    onContentSizeChange={[Function]}
+                    onLayout={[Function]}
+                    onMomentumScrollBegin={[Function]}
+                    onMomentumScrollEnd={[Function]}
+                    onScroll={[Function]}
+                    onScrollBeginDrag={[Function]}
+                    onScrollEndDrag={[Function]}
+                    removeClippedSubviews={false}
+                    renderItem={[Function]}
+                    scrollEventThrottle={0.0001}
+                    stickyHeaderIndices={[]}
+                    viewabilityConfigCallbackPairs={[]}
+                  >
+                    <View
+                      onFocusCapture={[Function]}
+                      onLayout={[Function]}
+                      style={null}
+                    >
+                      <View>
+                        <View
+                          style={
+                            {
+                              "alignItems": "center",
+                              "backgroundColor": "#f9f9f9",
+                              "flexDirection": "row",
+                              "justifyContent": "space-between",
+                              "paddingLeft": 36,
+                              "paddingRight": 30,
+                            }
+                          }
+                        >
+                          <Text
+                            style={
+                              {
+                                "color": "#484848",
+                                "fontSize": 15,
+                                "paddingBottom": 16,
+                                "paddingTop": 16,
+                              }
+                            }
+                            testID="cardName"
+                          >
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla miLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mi
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            {
+                              "backgroundColor": "#efefef",
+                              "height": 2,
+                              "width": "100%",
+                            }
+                          }
+                        />
+                      </View>
+                    </View>
+                    <View
+                      onFocusCapture={[Function]}
+                      onLayout={[Function]}
+                      style={null}
+                    >
+                      <View>
+                        <View
+                          style={
+                            {
+                              "alignItems": "center",
+                              "backgroundColor": "#f9f9f9",
+                              "flexDirection": "row",
+                              "justifyContent": "space-between",
+                              "paddingLeft": 36,
+                              "paddingRight": 30,
+                            }
+                          }
+                        >
+                          <Text
+                            style={
+                              {
+                                "color": "#484848",
+                                "fontSize": 15,
+                                "paddingBottom": 16,
+                                "paddingTop": 16,
+                              }
+                            }
+                            testID="cardName"
+                          >
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lobortis tellus dolor. Donec sed enim fringilla, congue tortor at, venenatis nunc. Morbi in magna vitae ex iaculis vehicula non non sem. Sed euismod in nulla eget feugiat. Praesent tempor molestie leo, id iaculis lectus. Pellentesque a nulla nunc. Aliquam id.
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            {
+                              "backgroundColor": "#efefef",
+                              "height": 2,
+                              "width": "100%",
+                            }
+                          }
+                        />
+                      </View>
+                    </View>
+                    <View
+                      onFocusCapture={[Function]}
+                      onLayout={[Function]}
+                      style={null}
+                    >
+                      <View>
+                        <View
+                          style={
+                            {
+                              "alignItems": "center",
+                              "backgroundColor": "#f9f9f9",
+                              "flexDirection": "row",
+                              "justifyContent": "space-between",
+                              "paddingLeft": 36,
+                              "paddingRight": 30,
+                            }
+                          }
+                        >
+                          <Text
+                            style={
+                              {
+                                "color": "#484848",
+                                "fontSize": 15,
+                                "paddingBottom": 16,
+                                "paddingTop": 16,
+                              }
+                            }
+                            testID="cardName"
+                          >
+                            Lorem ipsum dolor sit amet
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            {
+                              "backgroundColor": "#efefef",
+                              "height": 2,
+                              "width": "100%",
+                            }
+                          }
+                        />
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </RCTScrollView>
+        </View>
+        <View
+          onFocusCapture={[Function]}
+          onLayout={[Function]}
+          style={null}
+        >
+          <RCTScrollView>
+            <View>
+              <View
+                accessibilityState={
+                  {
+                    "busy": undefined,
+                    "checked": undefined,
+                    "disabled": undefined,
+                    "expanded": undefined,
+                    "selected": undefined,
+                  }
+                }
+                accessibilityValue={
+                  {
+                    "max": undefined,
+                    "min": undefined,
+                    "now": undefined,
+                    "text": undefined,
+                  }
+                }
+                accessible={true}
+                collapsable={false}
+                focusable={true}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  {
+                    "opacity": 1,
+                  }
+                }
+                testID="accordionButton"
+              >
+                <View
+                  style={
+                    {
+                      "alignItems": "center",
+                      "flexDirection": "row",
+                      "height": 50,
+                      "justifyContent": "space-between",
+                      "paddingLeft": 28,
+                      "paddingRight": 30,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#484848",
+                        "fontSize": 15,
+                      }
+                    }
+                  >
+                    Maruti
+                  </Text>
+                  <View
+                    animatedStyle={
+                      {
+                        "value": {
+                          "transform": [
+                            {
+                              "rotateZ": "0deg",
+                            },
+                          ],
+                        },
+                      }
+                    }
+                    collapsable={false}
+                    style={
+                      {
+                        "transform": [
+                          {
+                            "rotateZ": "0deg",
+                          },
+                        ],
+                      }
+                    }
+                  >
+                    <Text />
+                  </View>
+                </View>
+              </View>
+              <View
+                style={
+                  {
+                    "backgroundColor": "#efefef",
+                    "height": 2,
+                    "width": "100%",
+                  }
+                }
+              />
+              <View
+                animatedStyle={
+                  {
+                    "value": {
+                      "height": 0,
+                    },
+                  }
+                }
+                collapsable={false}
+                style={
+                  {
+                    "height": 0,
+                    "overflow": "hidden",
+                  }
+                }
+                testID="card"
+              >
+                <View
+                  style={
+                    {
+                      "position": "absolute",
+                    }
+                  }
+                >
+                  <View
+                    data={
+                      [
+                        "Nikhil",
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lobortis tellus dolor. Donec sed enim fringilla, congue tortor at, venenatis nunc. Morbi in magna vitae ex iaculis vehicula non non sem. Sed euismod in nulla eget feugiat. Praesent tempor molestie leo, id iaculis lectus. Pellentesque a nulla nunc. Aliquam id.",
+                      ]
+                    }
+                    getItem={[Function]}
+                    getItemCount={[Function]}
+                    keyExtractor={[Function]}
+                    onContentSizeChange={[Function]}
+                    onLayout={[Function]}
+                    onMomentumScrollBegin={[Function]}
+                    onMomentumScrollEnd={[Function]}
+                    onScroll={[Function]}
+                    onScrollBeginDrag={[Function]}
+                    onScrollEndDrag={[Function]}
+                    removeClippedSubviews={false}
+                    renderItem={[Function]}
+                    scrollEventThrottle={0.0001}
+                    stickyHeaderIndices={[]}
+                    viewabilityConfigCallbackPairs={[]}
+                  >
+                    <View
+                      onFocusCapture={[Function]}
+                      onLayout={[Function]}
+                      style={null}
+                    >
+                      <View>
+                        <View
+                          style={
+                            {
+                              "alignItems": "center",
+                              "backgroundColor": "#f9f9f9",
+                              "flexDirection": "row",
+                              "justifyContent": "space-between",
+                              "paddingLeft": 36,
+                              "paddingRight": 30,
+                            }
+                          }
+                        >
+                          <Text
+                            style={
+                              {
+                                "color": "#484848",
+                                "fontSize": 15,
+                                "paddingBottom": 16,
+                                "paddingTop": 16,
+                              }
+                            }
+                            testID="cardName"
+                          >
+                            Nikhil
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            {
+                              "backgroundColor": "#efefef",
+                              "height": 2,
+                              "width": "100%",
+                            }
+                          }
+                        />
+                      </View>
+                    </View>
+                    <View
+                      onFocusCapture={[Function]}
+                      onLayout={[Function]}
+                      style={null}
+                    >
+                      <View>
+                        <View
+                          style={
+                            {
+                              "alignItems": "center",
+                              "backgroundColor": "#f9f9f9",
+                              "flexDirection": "row",
+                              "justifyContent": "space-between",
+                              "paddingLeft": 36,
+                              "paddingRight": 30,
+                            }
+                          }
+                        >
+                          <Text
+                            style={
+                              {
+                                "color": "#484848",
+                                "fontSize": 15,
+                                "paddingBottom": 16,
+                                "paddingTop": 16,
+                              }
+                            }
+                            testID="cardName"
+                          >
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lobortis tellus dolor. Donec sed enim fringilla, congue tortor at, venenatis nunc. Morbi in magna vitae ex iaculis vehicula non non sem. Sed euismod in nulla eget feugiat. Praesent tempor molestie leo, id iaculis lectus. Pellentesque a nulla nunc. Aliquam id.
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            {
+                              "backgroundColor": "#efefef",
+                              "height": 2,
+                              "width": "100%",
+                            }
+                          }
+                        />
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </RCTScrollView>
+        </View>
+        <View
+          onFocusCapture={[Function]}
+          onLayout={[Function]}
+          style={null}
+        >
+          <RCTScrollView>
+            <View>
+              <View
+                accessibilityState={
+                  {
+                    "busy": undefined,
+                    "checked": undefined,
+                    "disabled": undefined,
+                    "expanded": undefined,
+                    "selected": undefined,
+                  }
+                }
+                accessibilityValue={
+                  {
+                    "max": undefined,
+                    "min": undefined,
+                    "now": undefined,
+                    "text": undefined,
+                  }
+                }
+                accessible={true}
+                collapsable={false}
+                focusable={true}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  {
+                    "opacity": 1,
+                  }
+                }
+                testID="accordionButton"
+              >
+                <View
+                  style={
+                    {
+                      "alignItems": "center",
+                      "flexDirection": "row",
+                      "height": 50,
+                      "justifyContent": "space-between",
+                      "paddingLeft": 28,
+                      "paddingRight": 30,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#484848",
+                        "fontSize": 15,
+                      }
+                    }
+                  >
+                    Maruti
+                  </Text>
+                  <View
+                    animatedStyle={
+                      {
+                        "value": {
+                          "transform": [
+                            {
+                              "rotateZ": "0deg",
+                            },
+                          ],
+                        },
+                      }
+                    }
+                    collapsable={false}
+                    style={
+                      {
+                        "transform": [
+                          {
+                            "rotateZ": "0deg",
+                          },
+                        ],
+                      }
+                    }
+                  >
+                    <Text />
+                  </View>
+                </View>
+              </View>
+              <View
+                style={
+                  {
+                    "backgroundColor": "#efefef",
+                    "height": 2,
+                    "width": "100%",
+                  }
+                }
+              />
+              <View
+                animatedStyle={
+                  {
+                    "value": {
+                      "height": 0,
+                    },
+                  }
+                }
+                collapsable={false}
+                style={
+                  {
+                    "height": 0,
+                    "overflow": "hidden",
+                  }
+                }
+                testID="card"
+              >
+                <View
+                  style={
+                    {
+                      "position": "absolute",
+                    }
+                  }
+                >
+                  <View
+                    data={
+                      [
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mi.",
+                      ]
+                    }
+                    getItem={[Function]}
+                    getItemCount={[Function]}
+                    keyExtractor={[Function]}
+                    onContentSizeChange={[Function]}
+                    onLayout={[Function]}
+                    onMomentumScrollBegin={[Function]}
+                    onMomentumScrollEnd={[Function]}
+                    onScroll={[Function]}
+                    onScrollBeginDrag={[Function]}
+                    onScrollEndDrag={[Function]}
+                    removeClippedSubviews={false}
+                    renderItem={[Function]}
+                    scrollEventThrottle={0.0001}
+                    stickyHeaderIndices={[]}
+                    viewabilityConfigCallbackPairs={[]}
+                  >
+                    <View
+                      onFocusCapture={[Function]}
+                      onLayout={[Function]}
+                      style={null}
+                    >
+                      <View>
+                        <View
+                          style={
+                            {
+                              "alignItems": "center",
+                              "backgroundColor": "#f9f9f9",
+                              "flexDirection": "row",
+                              "justifyContent": "space-between",
+                              "paddingLeft": 36,
+                              "paddingRight": 30,
+                            }
+                          }
+                        >
+                          <Text
+                            style={
+                              {
+                                "color": "#484848",
+                                "fontSize": 15,
+                                "paddingBottom": 16,
+                                "paddingTop": 16,
+                              }
+                            }
+                            testID="cardName"
+                          >
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mi.
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            {
+                              "backgroundColor": "#efefef",
+                              "height": 2,
+                              "width": "100%",
+                            }
+                          }
+                        />
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </RCTScrollView>
+        </View>
+      </View>
+    </RCTScrollView>
+  </View>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "opacity": 1,
+      }
+    }
+    testID="homepageButton"
+  >
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "alignSelf": "center",
+          "backgroundColor": "orange",
+          "justifyContent": "center",
+          "padding": 20,
+          "width": "50%",
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "fontSize": 20,
+            "fontWeight": "bold",
+          }
+        }
+      >
+        Open
+      </Text>
+    </View>
+  </View>
+</View>
+`;
