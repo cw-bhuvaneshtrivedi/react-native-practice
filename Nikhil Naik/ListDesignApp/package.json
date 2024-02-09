@@ -10,7 +10,6 @@
     "web": "expo start --web"
   },
   "dependencies": {
-    "@shopify/flash-list": "^1.6.3",
     "@testing-library/react-native": "^12.4.3",
     "@types/jest": "^29.5.12",
     "expo": "~50.0.6",
@@ -28,9 +27,7 @@
   },
   "jest": {
     "preset": "jest-expo",
-    "setupFilesAfterEnv": [
-      "./jest-setup.js"
-    ]
+    "setupFilesAfterEnv": ["./jest-setup.js"]
   },
   "private": true
 }
