@@ -1,0 +1,361 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List Item Should match snapshot 1`] = `
+<View
+  style={
+    {
+      "borderColor": "#e1e1e1",
+      "borderRadius": 3,
+      "borderWidth": 1,
+      "height": 170,
+      "justifyContent": "space-between",
+      "margin": 7,
+      "width": 321,
+    }
+  }
+>
+  <View
+    style={
+      {
+        "flexDirection": "column",
+        "height": 130,
+        "justifyContent": "space-between",
+        "padding": 12,
+      }
+    }
+  >
+    <Text
+      style={
+        {
+          "color": "#0288d1",
+          "fontSize": 16,
+        }
+      }
+    >
+      VXi S-CNG
+    </Text>
+    <View
+      style={
+        [
+          {
+            "flexDirection": "row",
+          },
+          {
+            "justifyContent": "space-between",
+          },
+          {
+            "alignItems": "flex-end",
+          },
+        ]
+      }
+      testID="Specs"
+    >
+      <Text
+        style={
+          {
+            "color": "#aaaaaa",
+            "fontSize": 13,
+            "fontWeight": "600",
+          }
+        }
+      >
+        56 bhp
+      </Text>
+      <Text
+        style={
+          {
+            "color": "#aaaaaa",
+            "fontSize": 13,
+            "fontWeight": "600",
+          }
+        }
+      >
+        998 cc
+      </Text>
+      <Text
+        style={
+          {
+            "color": "#aaaaaa",
+            "fontSize": 13,
+            "fontWeight": "600",
+          }
+        }
+      >
+        Manual
+      </Text>
+      <Text
+        style={
+          {
+            "color": "#aaaaaa",
+            "fontSize": 13,
+            "fontWeight": "600",
+          }
+        }
+      >
+         CNG 
+      </Text>
+    </View>
+    <View
+      style={
+        [
+          {
+            "flexDirection": "row",
+          },
+          {
+            "justifyContent": "space-between",
+          },
+          {
+            "alignItems": "flex-end",
+          },
+        ]
+      }
+      testID="Price"
+    >
+      <Text
+        style={
+          {
+            "color": "#484848",
+            "fontSize": 16,
+            "fontWeight": "bold",
+          }
+        }
+      >
+        Rs. 6,91,983
+      </Text>
+      <Text
+        style={
+          {
+            "color": "#0288d1",
+            "fontSize": 13,
+          }
+        }
+      >
+        Show price in my city
+      </Text>
+      <Text
+        style={
+          {
+            "color": "#aaaaaa",
+            "fontSize": 13,
+            "fontStyle": "italic",
+          }
+        }
+        testID="versionList"
+      >
+        EMI
+      </Text>
+    </View>
+    <View
+      style={
+        [
+          {
+            "flexDirection": "row",
+          },
+          {
+            "justifyContent": "space-between",
+          },
+          {
+            "alignItems": "flex-end",
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#aaaaaa",
+            "fontSize": 12,
+          }
+        }
+      >
+        On-Road Price, Mumbai
+      </Text>
+      <Text
+        style={
+          {
+            "color": "#484848",
+            "fontStyle": "italic",
+          }
+        }
+      >
+        Rs. 12,497
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "#f9f9f9",
+          "height": 40,
+        },
+        {
+          "flexDirection": "row",
+        },
+      ]
+    }
+  >
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "opacity": 1,
+          "width": 120,
+        }
+      }
+      testID="ShortlistBtn"
+    >
+      <Text
+        allowFontScaling={false}
+        selectable={false}
+        style={
+          [
+            {
+              "color": "#6f6f6f",
+              "fontSize": 12,
+            },
+            undefined,
+            {
+              "fontFamily": "ionicons",
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+            },
+            {},
+          ]
+        }
+      >
+        
+      </Text>
+      <Text
+        style={
+          [
+            {
+              "color": "#6f6f6f",
+              "fontSize": 13,
+              "textAlign": "center",
+            },
+            {},
+          ]
+        }
+      >
+        Shortlist
+      </Text>
+    </View>
+    <Text
+      style={
+        {
+          "color": "#e1e1e1",
+          "fontSize": 30,
+        }
+      }
+    >
+      |
+    </Text>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "opacity": 1,
+          "width": 200,
+        }
+      }
+      testID="CompareBtn"
+    >
+      <Text
+        allowFontScaling={false}
+        selectable={false}
+        style={
+          [
+            {
+              "color": "#6f6f6f",
+              "fontSize": 12,
+            },
+            undefined,
+            {
+              "fontFamily": "FontAwesome",
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+            },
+            {},
+          ]
+        }
+      >
+        
+      </Text>
+      <Text
+        style={
+          [
+            {
+              "color": "#6f6f6f",
+              "fontSize": 13,
+              "textAlign": "center",
+            },
+            {},
+          ]
+        }
+      >
+        Add to Compare
+      </Text>
+    </View>
+  </View>
+</View>
+`;

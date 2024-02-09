@@ -1,5 +1,5 @@
 import React, { useCallback, useRef, useState } from "react";
-import { View, FlatList } from "react-native";
+import { View, FlatList, Dimensions } from "react-native";
 import globalStyles from "../Styles";
 import { TopRow } from "./TopRow";
 import { ListItem } from "./ListItem";
@@ -54,8 +54,9 @@ export const Card = ({ carData }: CardProps) => {
         style={{
           height: globalStyles.card.height,
           width: 6,
-          backgroundColor: count > 0 ? globalStyles.versionName.color : "white",
+          backgroundColor: count > 0 ? "#00afa0" : "white",
         }}
+        testID="LeftMargin"
       ></View>
       <View style={globalStyles.card}>
         <TopRow
@@ -69,6 +70,7 @@ export const Card = ({ carData }: CardProps) => {
         {/* <FlatList
           showsHorizontalScrollIndicator={false}
           horizontal={true}
+          initialNumToRender={100}
           data={versions}
           renderItem={({ item }) => (
             <ListItem version={item} setCount={setCount} />
@@ -79,9 +81,11 @@ export const Card = ({ carData }: CardProps) => {
           estimatedItemSize={321}
           showsHorizontalScrollIndicator={false}
           data={versions}
+          estimatedListSize={Dimensions.get("screen")}
           renderItem={({ item }) => (
             <ListItem version={item} setCount={setCount} />
           )}
+          getItemType={(item) => item.name}
         />
       </View>
     </View>
