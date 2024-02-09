@@ -1,11 +1,14 @@
 import { StyleSheet, Text, View, Dimensions } from "react-native";
 import React from "react";
 
-const AccordionItem = () => {
+interface AccordionItemProps {
+  itemName: string;
+}
+const AccordionItem: React.FC<AccordionItemProps> = ({ itemName }) => {
   return (
     <View style={styles.container}>
       <View style={styles.item}>
-        <Text style={styles.text}>AccordionItem</Text>
+        <Text style={styles.text}>{itemName}</Text>
       </View>
       <View style={styles.line}></View>
     </View>

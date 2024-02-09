@@ -1,4 +1,4 @@
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { StyleSheet, Text, TouchableOpacity, View, Dimensions } from "react-native";
 import React, { useState, useEffect } from "react";
 import { Entypo } from "@expo/vector-icons";
 import AccordionItem from "./AccordionItem";
@@ -8,55 +8,49 @@ import Animated, {
   withTiming,
   Easing,
 } from "react-native-reanimated";
-const Accordion = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [height, setHeight] = useState(0);
-  const rotateZ = useSharedValue(0);
 
-  const handleAccordionPress = () => {
-    setIsOpen(!isOpen);
-    rotateZ.value = withTiming(isOpen ? 0 : -180, {
-      duration: 250,
+interface AccordionProps {
+  title: string;
+  items: string[];
+  isOpen: boolean;
+  onPress: () => void;
+}
+
+const Accordion: React.FC<AccordionProps> = ({ title, items, isOpen, onPress }) => {
+  const rotateZ = useSharedValue(isOpen ? -180 : 0);
+
+  useEffect(() => {
+    rotateZ.value = withTiming(isOpen ? -180 : 0, {
+      duration: 350,
       easing: Easing.inOut(Easing.quad),
     });
+  }, [isOpen]);
+
+  const handleAccordionPress = () => {
+    onPress();
   };
 
   const animatedStyle = useAnimatedStyle(() => ({
     transform: [{ rotateZ: `${rotateZ.value}` + "deg" }],
   }));
-  const animatedItmeStyle = useAnimatedStyle(() => {
-    const animatedHeight = isOpen ? withTiming(height) : withTiming(0);
-    return {
-        height: animatedHeight,
-        overflow: "hidden"
-    }
-  });
-
-  const onLayout = (event) => {
-    const layoutHeight = event.nativeEvent.layout.height;
-    if(layoutHeight > 0 && layoutHeight !== height ){
-        setHeight(layoutHeight);
-    }
-  };
 
   return (
     <View>
       <TouchableOpacity style={styles.container} onPress={handleAccordionPress}>
-        <Text style={styles.accordionTitle}>Accordion</Text>
+        <Text style={styles.accordionTitle}>{title}</Text>
         <Animated.View style={animatedStyle}>
           <Entypo name="chevron-down" size={24} color="black" />
         </Animated.View>
       </TouchableOpacity>
       <View style={styles.line}></View>
 
-      <Animated.View style={animatedItmeStyle}>
-        <View onLayout={onLayout} style={{position: "absolute"}}>
-        <AccordionItem />
-        <AccordionItem />
-        <AccordionItem />
-        <AccordionItem />
+      {isOpen && (
+        <View>
+          {items.map((item, index) => (
+            <AccordionItem key={index} itemName={item} />
+          ))}
         </View>
-      </Animated.View>
+      )}
     </View>
   );
 };
