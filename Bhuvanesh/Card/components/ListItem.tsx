@@ -20,6 +20,70 @@ type ListItemProps = {
   setCount: (fn: (count: number) => number) => void;
 };
 
+const {
+  flexRow,
+  spaceBetween,
+  listCard,
+  buttonBackground,
+  buttonText,
+  specs,
+  eMI,
+  versionName,
+  offers,
+  price,
+  overviewLabel,
+  textList,
+  alignEnd,
+} = globalStyles;
+
+type SpecsProps = {
+  maxPower: string;
+  displacement: string;
+  transmission: string;
+  fuelType: string;
+};
+
+type PriceProps = {
+  priceOverview: {
+    price: string;
+    label: string;
+  };
+  emi: string;
+};
+export const Specs = ({
+  maxPower,
+  displacement,
+  transmission,
+  fuelType,
+}: SpecsProps) => {
+  return (
+    <View style={[flexRow, spaceBetween, alignEnd]} testID="Specs">
+      <Text style={specs}>{maxPower}</Text>
+      <Text style={specs}>{displacement}</Text>
+      <Text style={specs}>{transmission}</Text>
+      <Text style={specs}>{fuelType}</Text>
+    </View>
+  );
+};
+
+export const Price = ({ priceOverview, emi }: PriceProps) => {
+  return (
+    <>
+      <View style={[flexRow, spaceBetween, alignEnd]} testID="Price">
+        <Text style={price}>{priceOverview.price}</Text>
+        <Text style={offers}>Show price in my city</Text>
+        <Text style={eMI} testID="versionList">
+          EMI
+        </Text>
+      </View>
+      <View style={[flexRow, spaceBetween, alignEnd]}>
+        <Text style={overviewLabel}>{priceOverview.label}</Text>
+        <Text style={{ color: "#484848", fontStyle: "italic" }}>{emi}</Text>
+      </View>
+    </>
+  );
+};
+
 export const ListItem = ({ version, setCount }: ListItemProps) => {
   const [isShortList, setIsShortList] = useState(false);
   const [isCompare, setIsCompare] = useState(false);
@@ -33,21 +97,6 @@ export const ListItem = ({ version, setCount }: ListItemProps) => {
     priceOverview,
     emi,
   } = version;
-  const {
-    flexRow,
-    spaceBetween,
-    listCard,
-    buttonBackground,
-    buttonText,
-    specs,
-    eMI,
-    versionName,
-    offers,
-    price,
-    overviewLabel,
-    textList,
-    alignEnd,
-  } = globalStyles;
 
   const handleShortlistPress = () => {
     setCount((count: number) => count + (isShortList ? -1 : 1));
@@ -58,32 +107,6 @@ export const ListItem = ({ version, setCount }: ListItemProps) => {
     setIsCompare((state) => !state);
   };
 
-  const Price = () => {
-    return (
-      <>
-        <View style={[flexRow, spaceBetween, alignEnd]}>
-          <Text style={price}>{priceOverview.price}</Text>
-          <Text style={offers}>Show price in my city</Text>
-          <Text style={eMI}>EMI</Text>
-        </View>
-        <View style={[flexRow, spaceBetween, alignEnd]}>
-          <Text style={overviewLabel}>{priceOverview.label}</Text>
-          <Text style={{ color: "#484848", fontStyle: "italic" }}>{emi}</Text>
-        </View>
-      </>
-    );
-  };
-
-  const Specs = () => {
-    return (
-      <View style={[flexRow, spaceBetween, alignEnd]}>
-        <Text style={specs}>{maxPower}</Text>
-        <Text style={specs}>{displacement}</Text>
-        <Text style={specs}>{transmission}</Text>
-        <Text style={specs}>{fuelType}</Text>
-      </View>
-    );
-  };
   const Buttons = () => {
     const colorBeforeClick = "#6f6f6f";
     const colorAfterClick = "#00afa0";
@@ -95,6 +118,7 @@ export const ListItem = ({ version, setCount }: ListItemProps) => {
             { width: 120, justifyContent: "center", alignItems: "center" },
           ]}
           onPress={handleShortlistPress}
+          testID="ShortlistBtn"
         >
           <Ionicons
             name={isShortList ? "bookmark" : "bookmark-outline"}
@@ -112,6 +136,7 @@ export const ListItem = ({ version, setCount }: ListItemProps) => {
             { width: 200, justifyContent: "center", alignItems: "center" },
           ]}
           onPress={handleComparePress}
+          testID="CompareBtn"
         >
           <FontAwesome
             name="balance-scale"
@@ -130,8 +155,13 @@ export const ListItem = ({ version, setCount }: ListItemProps) => {
     <View style={listCard}>
       <View style={textList}>
         <Text style={versionName}>{name}</Text>
-        <Specs />
-        <Price />
+        <Specs
+          maxPower={maxPower}
+          displacement={displacement}
+          transmission={transmission}
+          fuelType={fuelType}
+        />
+        <Price priceOverview={priceOverview} emi={emi} />
       </View>
       <Buttons />
     </View>

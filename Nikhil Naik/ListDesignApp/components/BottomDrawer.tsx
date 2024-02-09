@@ -7,9 +7,8 @@ import {
   TextInput,
   TouchableOpacity,
   FlatList,
-  ActivityIndicator,
 } from "react-native";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect } from "react";
 import Animated, {
   useSharedValue,
   withTiming,
@@ -17,16 +16,12 @@ import Animated, {
 } from "react-native-reanimated";
 import Accordion from "./Accordion";
 import { AntDesign } from "@expo/vector-icons";
-import { FlashList } from "@shopify/flash-list";
-// import { data } from "./Mock/data";
+import { data } from "./Mock/data";
 
 const HEIGHT = Dimensions.get("screen").height;
 const WIDTH = Dimensions.get("screen").width;
 
 const BottomDrawer = ({ open }: any) => {
-  const [view, setView] = useState(-1);
-  const flashListRef = useRef(null);
-  const [data, setData] = useState([]);
   const translateY = useSharedValue(HEIGHT);
   const style = useAnimatedStyle(() => ({
     transform: [{ translateY: translateY.value }],
@@ -64,14 +59,6 @@ const BottomDrawer = ({ open }: any) => {
       translateY.value = withTiming(0, {
         duration: 300,
       });
-      fetch(
-        "https://www.carwale.com/api/v1/models/?makeId=-1&type=new&year=-1&application=1",
-        {
-          method: "GET",
-        }
-      )
-        .then((res) => res.json())
-        .then((res) => handleData(res));
     }
   }, [open]);
   return (
@@ -90,19 +77,10 @@ const BottomDrawer = ({ open }: any) => {
           style={styles.searchBox}
         />
       </View>
-      {data.length > 0 ? (
-        <FlashList
-          data={data}
-          renderItem={({ item, index }) => (
-            <Accordion data={item} idx={index} setView={setView} />
-          )}
-          estimatedItemSize={50}
-          ref={flashListRef}
-          getItemType={(item) => item.makeName}
-        />
-      ) : (
-        <ActivityIndicator size="large" style={{ top: "30%" }} />
-      )}
+      <FlatList
+        data={data}
+        renderItem={({ item }) => <Accordion data={item} />}
+      />
     </Animated.View>
   );
 };
@@ -111,7 +89,6 @@ export default BottomDrawer;
 
 const styles = StyleSheet.create({
   container: {
-    width: "100%",
     height: HEIGHT,
     backgroundColor: "white",
   },

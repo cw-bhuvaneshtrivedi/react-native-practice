@@ -35,4 +35,11 @@ describe("Top Row ", () => {
     const model = getByTestId("mdName");
     expect(model.props.children).toEqual("Thar");
   });
+
+  it("should match snapshot", () => {
+    const snap = render(
+      <TopRow makeName={mkName} modelName={mdName} imageUrl={imageUrl} />
+    );
+    expect(snap).toMatchSnapshot();
+  });
 });
