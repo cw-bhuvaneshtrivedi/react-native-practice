@@ -26,6 +26,28 @@ const BottomDrawer = ({ open }: any) => {
   const style = useAnimatedStyle(() => ({
     transform: [{ translateY: translateY.value }],
   }));
+
+  const handleData = (res) => {
+    const carData = res.reduce((acc, curr) => {
+      const { makeName, modelName, makeId } = curr;
+      const findOj = acc.find((o) => o.makeName === makeName);
+      if (!findOj) acc.push({ makeName, version: [modelName] });
+      else findOj.version.push(modelName);
+      return acc;
+    }, []);
+    setData(carData);
+  };
+
+  useEffect(() => {
+    if (view != -1) {
+      if (flashListRef.current) {
+        flashListRef.current.scrollToIndex({
+          index: view,
+          animated: true,
+        });
+      }
+    }
+  }, [view]);
   const CloseEffect = () => {
     translateY.value = withTiming(HEIGHT, {
       duration: 300,
