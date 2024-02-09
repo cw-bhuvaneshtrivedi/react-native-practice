@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
 
-const Card = ({ data }) => {
+const Card = ({ data }: { data: string }) => {
   return (
     <View>
       <View style={styles.container}>

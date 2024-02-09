@@ -24,6 +24,7 @@ const HEIGHT = Dimensions.get("screen").height;
 const WIDTH = Dimensions.get("screen").width;
 
 const BottomDrawer = ({ open }: any) => {
+  const [openedItem, setOpenItem] = useState(-1);
   const [view, setView] = useState(-1);
   const flashListRef = useRef(null);
   const [data, setData] = useState([]);
@@ -31,7 +32,6 @@ const BottomDrawer = ({ open }: any) => {
   const style = useAnimatedStyle(() => ({
     transform: [{ translateY: translateY.value }],
   }));
-
   const handleData = (res) => {
     const carData = res.reduce((acc, curr) => {
       const { makeName, modelName, makeId } = curr;
@@ -45,12 +45,14 @@ const BottomDrawer = ({ open }: any) => {
 
   useEffect(() => {
     if (view != -1) {
-      if (flashListRef.current) {
-        flashListRef.current.scrollToIndex({
-          index: view,
-          animated: true,
-        });
-      }
+      setTimeout(() => {
+        if (flashListRef.current) {
+          flashListRef.current.scrollToIndex({
+            index: view,
+            animated: true,
+          });
+        }
+      }, 400);
     }
   }, [view]);
   const CloseEffect = () => {
@@ -94,11 +96,12 @@ const BottomDrawer = ({ open }: any) => {
         <FlashList
           data={data}
           renderItem={({ item, index }) => (
-            <Accordion data={item} idx={index} setView={setView} />
+            <Accordion data={item} idx={index} setView={setView} view={view} />
           )}
           estimatedItemSize={50}
           ref={flashListRef}
           getItemType={(item) => item.makeName}
+          extraData={view}
         />
       ) : (
         <ActivityIndicator size="large" style={{ top: "30%" }} />
