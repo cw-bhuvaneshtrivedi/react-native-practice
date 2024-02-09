@@ -31,6 +31,7 @@ const BottomDrawer = ({ open }: any) => {
   const style = useAnimatedStyle(() => ({
     transform: [{ translateY: translateY.value }],
   }));
+
   const handleData = (res) => {
     const carData = res.reduce((acc, curr) => {
       const { makeName, modelName, makeId } = curr;
