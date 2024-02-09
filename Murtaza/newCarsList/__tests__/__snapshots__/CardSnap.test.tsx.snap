@@ -1,0 +1,1043 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    {
+      "flex": 1,
+      "flexDirection": "row",
+    }
+  }
+>
+  <View
+    style={
+      {
+        "backgroundColor": "white",
+        "height": 305,
+        "width": 5,
+      }
+    }
+    testID="sideLine"
+  />
+  <View
+    style={
+      {
+        "backgroundColor": "white",
+        "flex": 1,
+        "height": 305,
+        "justifyContent": "flex-end",
+        "paddingLeft": 10,
+        "paddingTop": 13,
+        "width": 360,
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "flexDirection": "row",
+          "justifyContent": "flex-start",
+          "paddingBottom": 20,
+          "paddingLeft": 7,
+          "paddingTop": 20,
+          "width": 360,
+        }
+      }
+    >
+      <Image
+        source={
+          {
+            "uri": "https://mock.url/600x337/mock-image.jpg",
+          }
+        }
+        style={
+          {
+            "height": 73,
+            "width": 130,
+          }
+        }
+        testID="carImage"
+      />
+      <View
+        style={
+          {
+            "paddingBottom": 15,
+            "paddingLeft": 16,
+            "paddingTop": 16,
+          }
+        }
+      >
+        <Text
+          style={
+            {
+              "color": "#aaaaaa",
+              "fontSize": 13,
+            }
+          }
+          testID="makerName"
+        >
+          Mock Make Name
+        </Text>
+        <Text
+          style={
+            {
+              "color": "#484848",
+              "fontSize": 18,
+              "paddingTop": 4,
+            }
+          }
+          testID="modelName"
+        >
+          Mock Model Name
+        </Text>
+      </View>
+      <View
+        style={
+          {
+            "alignSelf": "center",
+            "marginLeft": 66,
+          }
+        }
+      >
+        <Text />
+      </View>
+    </View>
+    <View
+      style={{}}
+    >
+      <RCTScrollView
+        applyWindowCorrection={[Function]}
+        canChangeSize={true}
+        contentContainerStyle={
+          {
+            "backgroundColor": undefined,
+            "minHeight": 1,
+            "minWidth": 1,
+            "paddingBottom": 0,
+            "paddingTop": 0,
+          }
+        }
+        contentHeight={170}
+        contentWidth={335}
+        data={
+          [
+            {
+              "displacement": "Mock Displacement",
+              "emi": "Mock EMI",
+              "fuelType": "Mock Fuel Type",
+              "maxPower": "Mock Max Power",
+              "name": "Mock Version Name",
+              "priceOverview": {
+                "label": "Mock Label",
+                "price": "Mock Price",
+                "reasonText": "Mock Reason Text",
+              },
+              "transmission": "Mock Transmission",
+            },
+          ]
+        }
+        dataProvider={
+          DataProvider {
+            "_data": [
+              {
+                "displacement": "Mock Displacement",
+                "emi": "Mock EMI",
+                "fuelType": "Mock Fuel Type",
+                "maxPower": "Mock Max Power",
+                "name": "Mock Version Name",
+                "priceOverview": {
+                  "label": "Mock Label",
+                  "price": "Mock Price",
+                  "reasonText": "Mock Reason Text",
+                },
+                "transmission": "Mock Transmission",
+              },
+            ],
+            "_firstIndexToProcess": 0,
+            "_hasStableIds": false,
+            "_requiresDataChangeHandling": false,
+            "_size": 1,
+            "getStableId": [Function],
+            "rowHasChanged": [Function],
+          }
+        }
+        disableRecycling={false}
+        estimatedItemSize={335}
+        extendedState={{}}
+        externalScrollView={[Function]}
+        finalRenderAheadOffset={250}
+        forceNonDeterministicRendering={true}
+        horizontal={true}
+        initialOffset={0}
+        initialRenderIndex={0}
+        isHorizontal={true}
+        layoutProvider={
+          GridLayoutProviderWithProps {
+            "_acceptableRelayoutDelta": 1,
+            "_getHeightOrWidth": [Function],
+            "_getLayoutTypeForIndex": [Function],
+            "_getSpan": [Function],
+            "_hasExpired": false,
+            "_isHorizontal": true,
+            "_lastLayoutManager": GridLayoutManager {
+              "_acceptableRelayoutDelta": 1,
+              "_getSpan": [Function],
+              "_isGridHorizontal": true,
+              "_isHorizontal": true,
+              "_layoutProvider": [Circular],
+              "_layouts": [
+                {
+                  "height": 170,
+                  "type": 0,
+                  "width": 335,
+                  "x": 0,
+                  "y": 0,
+                },
+              ],
+              "_maxSpan": 1,
+              "_renderWindowSize": {
+                "height": 170,
+                "width": 750,
+              },
+              "_totalHeight": 170,
+              "_totalWidth": 335,
+              "_window": {
+                "height": 170,
+                "width": 750,
+              },
+            },
+            "_maxSpan": 1,
+            "_renderWindowSize": {
+              "height": 170,
+              "width": 750,
+            },
+            "_setLayoutForType": [Function],
+            "_tempDim": {
+              "height": 0,
+              "width": 0,
+            },
+            "averageWindow": AverageWindow {
+              "currentAverage": 335,
+              "currentCount": 1,
+              "inputValues": [
+                335,
+                ,
+                ,
+                ,
+                ,
+                ,
+              ],
+              "nextIndex": 1,
+            },
+            "defaultEstimatedItemSize": 100,
+            "layoutObject": {
+              "size": undefined,
+              "span": undefined,
+            },
+            "props": {
+              "data": [
+                {
+                  "displacement": "Mock Displacement",
+                  "emi": "Mock EMI",
+                  "fuelType": "Mock Fuel Type",
+                  "maxPower": "Mock Max Power",
+                  "name": "Mock Version Name",
+                  "priceOverview": {
+                    "label": "Mock Label",
+                    "price": "Mock Price",
+                    "reasonText": "Mock Reason Text",
+                  },
+                  "transmission": "Mock Transmission",
+                },
+              ],
+              "estimatedItemSize": 335,
+              "estimatedListSize": {
+                "height": 170,
+                "width": 750,
+              },
+              "horizontal": true,
+              "numColumns": 1,
+              "renderItem": [Function],
+              "showsHorizontalScrollIndicator": false,
+            },
+            "renderWindowInsets": {
+              "height": 0,
+              "width": 0,
+            },
+            "shouldRefreshWithAnchoring": true,
+          }
+        }
+        layoutSize={
+          {
+            "height": 170,
+            "width": 750,
+          }
+        }
+        maxRenderAhead={750}
+        numColumns={1}
+        onEndReached={[Function]}
+        onEndReachedThreshold={0}
+        onEndReachedThresholdRelative={0}
+        onItemLayout={[Function]}
+        onLayout={[Function]}
+        onScroll={[Function]}
+        onScrollBeginDrag={[Function]}
+        onSizeChanged={[Function]}
+        onVisibleIndicesChanged={[Function]}
+        removeClippedSubviews={false}
+        renderAheadOffset={0}
+        renderAheadStep={250}
+        renderContentContainer={[Function]}
+        renderItem={[Function]}
+        renderItemContainer={[Function]}
+        rowRenderer={[Function]}
+        scrollEventThrottle={16}
+        scrollThrottle={16}
+        scrollViewProps={
+          {
+            "contentContainerStyle": {
+              "backgroundColor": undefined,
+              "minHeight": 1,
+              "minWidth": 1,
+              "paddingBottom": 0,
+              "paddingTop": 0,
+            },
+            "onLayout": [Function],
+            "onScrollBeginDrag": [Function],
+            "refreshControl": undefined,
+            "style": {
+              "minHeight": 1,
+              "minWidth": 1,
+            },
+          }
+        }
+        showsHorizontalScrollIndicator={false}
+        style={
+          {
+            "minHeight": 1,
+            "minWidth": 1,
+          }
+        }
+        suppressBoundedSizeException={true}
+        windowCorrectionConfig={
+          {
+            "applyToInitialOffset": true,
+            "applyToItemScroll": true,
+            "value": {
+              "endCorrection": 0,
+              "startCorrection": 0,
+              "windowShift": -0,
+            },
+          }
+        }
+      >
+        <View>
+          <View
+            style={
+              {
+                "flexDirection": "row",
+              }
+            }
+          >
+            <View
+              style={
+                {
+                  "paddingLeft": 0,
+                  "paddingTop": 0,
+                }
+              }
+            />
+            <View
+              style={
+                [
+                  undefined,
+                  undefined,
+                ]
+              }
+            />
+            <AutoLayoutView
+              enableInstrumentation={false}
+              horizontal={true}
+              onBlankAreaEvent={[Function]}
+              onLayout={[Function]}
+              renderAheadOffset={0}
+              scrollOffset={0}
+              style={
+                {
+                  "height": 170,
+                  "width": 335,
+                }
+              }
+              windowSize={750}
+            >
+              <CellContainer
+                index={0}
+                onLayout={[Function]}
+                style={
+                  {
+                    "alignItems": "stretch",
+                    "flexDirection": "row",
+                    "height": 170,
+                    "left": 0,
+                    "position": "absolute",
+                    "top": 0,
+                  }
+                }
+              >
+                <View
+                  style={
+                    {
+                      "flexDirection": "column",
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      {
+                        "backgroundColor": "white",
+                        "borderColor": "#e1e1e1",
+                        "borderRadius": 2,
+                        "borderWidth": 2,
+                        "height": 170,
+                        "justifyContent": "space-between",
+                        "marginRight": 14,
+                        "width": 321,
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        {
+                          "paddingLeft": 12,
+                          "paddingRight": 12,
+                        }
+                      }
+                    >
+                      <Text
+                        style={
+                          {
+                            "color": "#0288d1",
+                            "fontSize": 16,
+                            "paddingTop": 12,
+                          }
+                        }
+                        testID="carName"
+                      >
+                        Mock Version Name
+                      </Text>
+                      <View
+                        style={
+                          {
+                            "flexDirection": "row",
+                            "flexWrap": "wrap",
+                            "justifyContent": "space-between",
+                            "paddingTop": 8,
+                            "width": 233,
+                          }
+                        }
+                      >
+                        <Text
+                          style={
+                            {
+                              "color": "#aaaaaa",
+                              "fontSize": 13,
+                            }
+                          }
+                        >
+                          Mock Max Power
+                        </Text>
+                        <Text
+                          style={
+                            {
+                              "color": "#aaaaaa",
+                              "fontSize": 13,
+                            }
+                          }
+                        >
+                          Mock Displacement
+                        </Text>
+                        <Text
+                          style={
+                            {
+                              "color": "#aaaaaa",
+                              "fontSize": 13,
+                            }
+                          }
+                        >
+                          Mock Transmission
+                        </Text>
+                        <Text
+                          style={
+                            {
+                              "color": "#aaaaaa",
+                              "fontSize": 13,
+                            }
+                          }
+                        >
+                          Mock Fuel Type
+                        </Text>
+                      </View>
+                      <View>
+                        <View
+                          style={
+                            {
+                              "flexDirection": "row",
+                              "justifyContent": "space-between",
+                              "paddingTop": 16,
+                            }
+                          }
+                        >
+                          <Text
+                            style={
+                              {
+                                "color": "#484848",
+                                "fontSize": 16,
+                                "fontWeight": "bold",
+                              }
+                            }
+                          >
+                            Mock Price
+                          </Text>
+                          <Text
+                            style={
+                              {
+                                "alignSelf": "flex-end",
+                                "color": "#0288d1",
+                                "fontSize": 13,
+                              }
+                            }
+                          >
+                            Show price in my city
+                          </Text>
+                          <Text
+                            style={
+                              {
+                                "alignSelf": "flex-end",
+                                "color": "#aaaaaa",
+                                "fontSize": 13,
+                                "fontStyle": "italic",
+                              }
+                            }
+                          >
+                            EMI
+                          </Text>
+                        </View>
+                        <View
+                          style={
+                            {
+                              "flexDirection": "row",
+                              "height": 20,
+                              "justifyContent": "space-between",
+                              "paddingTop": 4,
+                            }
+                          }
+                        >
+                          <Text
+                            style={
+                              {
+                                "alignSelf": "flex-end",
+                                "color": "#aaaaaa",
+                                "fontSize": 12,
+                              }
+                            }
+                          >
+                            Avg.Ex-Showroom Price
+                          </Text>
+                          <Text
+                            style={
+                              {
+                                "fontStyle": "italic",
+                              }
+                            }
+                          >
+                            Mock EMI
+                          </Text>
+                        </View>
+                      </View>
+                    </View>
+                    <View
+                      style={
+                        {
+                          "backgroundColor": "#f9f9f9",
+                          "borderRadius": 2,
+                          "flexDirection": "row",
+                          "height": 40,
+                          "justifyContent": "space-between",
+                        }
+                      }
+                    >
+                      <View
+                        accessibilityState={
+                          {
+                            "busy": undefined,
+                            "checked": undefined,
+                            "disabled": undefined,
+                            "expanded": undefined,
+                            "selected": undefined,
+                          }
+                        }
+                        accessibilityValue={
+                          {
+                            "max": undefined,
+                            "min": undefined,
+                            "now": undefined,
+                            "text": undefined,
+                          }
+                        }
+                        accessible={true}
+                        collapsable={false}
+                        focusable={true}
+                        onClick={[Function]}
+                        onResponderGrant={[Function]}
+                        onResponderMove={[Function]}
+                        onResponderRelease={[Function]}
+                        onResponderTerminate={[Function]}
+                        onResponderTerminationRequest={[Function]}
+                        onStartShouldSetResponder={[Function]}
+                        style={
+                          {
+                            "justifyContent": "center",
+                            "opacity": 1,
+                          }
+                        }
+                        testID="shortlistOptionButton"
+                      >
+                        <View
+                          style={
+                            {
+                              "alignItems": "center",
+                              "flexDirection": "row",
+                              "justifyContent": "center",
+                              "width": 120,
+                            }
+                          }
+                          testID="shortlistOption"
+                        >
+                          <Text />
+                          <Text
+                            style={
+                              {
+                                "color": "#6f6f6f",
+                                "paddingLeft": 4,
+                              }
+                            }
+                          >
+                            Shortlist
+                          </Text>
+                        </View>
+                      </View>
+                      <View
+                        style={
+                          {
+                            "alignSelf": "center",
+                            "backgroundColor": "#e1e1e1",
+                            "height": 20,
+                            "width": 1,
+                          }
+                        }
+                      />
+                      <View
+                        accessibilityState={
+                          {
+                            "busy": undefined,
+                            "checked": undefined,
+                            "disabled": undefined,
+                            "expanded": undefined,
+                            "selected": undefined,
+                          }
+                        }
+                        accessibilityValue={
+                          {
+                            "max": undefined,
+                            "min": undefined,
+                            "now": undefined,
+                            "text": undefined,
+                          }
+                        }
+                        accessible={true}
+                        collapsable={false}
+                        focusable={true}
+                        onClick={[Function]}
+                        onResponderGrant={[Function]}
+                        onResponderMove={[Function]}
+                        onResponderRelease={[Function]}
+                        onResponderTerminate={[Function]}
+                        onResponderTerminationRequest={[Function]}
+                        onStartShouldSetResponder={[Function]}
+                        style={
+                          {
+                            "justifyContent": "center",
+                            "opacity": 1,
+                          }
+                        }
+                        testID="compareOptionButton"
+                      >
+                        <View
+                          style={
+                            {
+                              "alignSelf": "center",
+                              "flexDirection": "row",
+                              "justifyContent": "center",
+                              "width": 200,
+                            }
+                          }
+                          testID="compareOption"
+                        >
+                          <Text />
+                          <Text
+                            style={
+                              {
+                                "color": "#6f6f6f",
+                                "paddingLeft": 4,
+                              }
+                            }
+                          >
+                            Add to Compare
+                          </Text>
+                        </View>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </CellContainer>
+            </AutoLayoutView>
+            <CellContainer
+              index={-1}
+              style={
+                [
+                  undefined,
+                  undefined,
+                ]
+              }
+            />
+            <View
+              style={
+                {
+                  "paddingBottom": 0,
+                  "paddingRight": 0,
+                }
+              }
+            />
+            <View
+              pointerEvents="none"
+              style={
+                {
+                  "opacity": 0,
+                }
+              }
+            >
+              <View
+                style={
+                  {
+                    "backgroundColor": "white",
+                    "borderColor": "#e1e1e1",
+                    "borderRadius": 2,
+                    "borderWidth": 2,
+                    "height": 170,
+                    "justifyContent": "space-between",
+                    "marginRight": 14,
+                    "width": 321,
+                  }
+                }
+              >
+                <View
+                  style={
+                    {
+                      "paddingLeft": 12,
+                      "paddingRight": 12,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      {
+                        "color": "#0288d1",
+                        "fontSize": 16,
+                        "paddingTop": 12,
+                      }
+                    }
+                    testID="carName"
+                  >
+                    Mock Version Name
+                  </Text>
+                  <View
+                    style={
+                      {
+                        "flexDirection": "row",
+                        "flexWrap": "wrap",
+                        "justifyContent": "space-between",
+                        "paddingTop": 8,
+                        "width": 233,
+                      }
+                    }
+                  >
+                    <Text
+                      style={
+                        {
+                          "color": "#aaaaaa",
+                          "fontSize": 13,
+                        }
+                      }
+                    >
+                      Mock Max Power
+                    </Text>
+                    <Text
+                      style={
+                        {
+                          "color": "#aaaaaa",
+                          "fontSize": 13,
+                        }
+                      }
+                    >
+                      Mock Displacement
+                    </Text>
+                    <Text
+                      style={
+                        {
+                          "color": "#aaaaaa",
+                          "fontSize": 13,
+                        }
+                      }
+                    >
+                      Mock Transmission
+                    </Text>
+                    <Text
+                      style={
+                        {
+                          "color": "#aaaaaa",
+                          "fontSize": 13,
+                        }
+                      }
+                    >
+                      Mock Fuel Type
+                    </Text>
+                  </View>
+                  <View>
+                    <View
+                      style={
+                        {
+                          "flexDirection": "row",
+                          "justifyContent": "space-between",
+                          "paddingTop": 16,
+                        }
+                      }
+                    >
+                      <Text
+                        style={
+                          {
+                            "color": "#484848",
+                            "fontSize": 16,
+                            "fontWeight": "bold",
+                          }
+                        }
+                      >
+                        Mock Price
+                      </Text>
+                      <Text
+                        style={
+                          {
+                            "alignSelf": "flex-end",
+                            "color": "#0288d1",
+                            "fontSize": 13,
+                          }
+                        }
+                      >
+                        Show price in my city
+                      </Text>
+                      <Text
+                        style={
+                          {
+                            "alignSelf": "flex-end",
+                            "color": "#aaaaaa",
+                            "fontSize": 13,
+                            "fontStyle": "italic",
+                          }
+                        }
+                      >
+                        EMI
+                      </Text>
+                    </View>
+                    <View
+                      style={
+                        {
+                          "flexDirection": "row",
+                          "height": 20,
+                          "justifyContent": "space-between",
+                          "paddingTop": 4,
+                        }
+                      }
+                    >
+                      <Text
+                        style={
+                          {
+                            "alignSelf": "flex-end",
+                            "color": "#aaaaaa",
+                            "fontSize": 12,
+                          }
+                        }
+                      >
+                        Avg.Ex-Showroom Price
+                      </Text>
+                      <Text
+                        style={
+                          {
+                            "fontStyle": "italic",
+                          }
+                        }
+                      >
+                        Mock EMI
+                      </Text>
+                    </View>
+                  </View>
+                </View>
+                <View
+                  style={
+                    {
+                      "backgroundColor": "#f9f9f9",
+                      "borderRadius": 2,
+                      "flexDirection": "row",
+                      "height": 40,
+                      "justifyContent": "space-between",
+                    }
+                  }
+                >
+                  <View
+                    accessibilityState={
+                      {
+                        "busy": undefined,
+                        "checked": undefined,
+                        "disabled": undefined,
+                        "expanded": undefined,
+                        "selected": undefined,
+                      }
+                    }
+                    accessibilityValue={
+                      {
+                        "max": undefined,
+                        "min": undefined,
+                        "now": undefined,
+                        "text": undefined,
+                      }
+                    }
+                    accessible={true}
+                    collapsable={false}
+                    focusable={true}
+                    onClick={[Function]}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    style={
+                      {
+                        "justifyContent": "center",
+                        "opacity": 1,
+                      }
+                    }
+                    testID="shortlistOptionButton"
+                  >
+                    <View
+                      style={
+                        {
+                          "alignItems": "center",
+                          "flexDirection": "row",
+                          "justifyContent": "center",
+                          "width": 120,
+                        }
+                      }
+                      testID="shortlistOption"
+                    >
+                      <Text />
+                      <Text
+                        style={
+                          {
+                            "color": "#6f6f6f",
+                            "paddingLeft": 4,
+                          }
+                        }
+                      >
+                        Shortlist
+                      </Text>
+                    </View>
+                  </View>
+                  <View
+                    style={
+                      {
+                        "alignSelf": "center",
+                        "backgroundColor": "#e1e1e1",
+                        "height": 20,
+                        "width": 1,
+                      }
+                    }
+                  />
+                  <View
+                    accessibilityState={
+                      {
+                        "busy": undefined,
+                        "checked": undefined,
+                        "disabled": undefined,
+                        "expanded": undefined,
+                        "selected": undefined,
+                      }
+                    }
+                    accessibilityValue={
+                      {
+                        "max": undefined,
+                        "min": undefined,
+                        "now": undefined,
+                        "text": undefined,
+                      }
+                    }
+                    accessible={true}
+                    collapsable={false}
+                    focusable={true}
+                    onClick={[Function]}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    style={
+                      {
+                        "justifyContent": "center",
+                        "opacity": 1,
+                      }
+                    }
+                    testID="compareOptionButton"
+                  >
+                    <View
+                      style={
+                        {
+                          "alignSelf": "center",
+                          "flexDirection": "row",
+                          "justifyContent": "center",
+                          "width": 200,
+                        }
+                      }
+                      testID="compareOption"
+                    >
+                      <Text />
+                      <Text
+                        style={
+                          {
+                            "color": "#6f6f6f",
+                            "paddingLeft": 4,
+                          }
+                        }
+                      >
+                        Add to Compare
+                      </Text>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </RCTScrollView>
+    </View>
+  </View>
+</View>
+`;
