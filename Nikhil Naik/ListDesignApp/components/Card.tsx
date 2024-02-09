@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
 
-const Card = ({ data }: { data: string }) => {
+const Card = ({ data }) => {
   return (
     <View>
       <View style={styles.container}>
@@ -18,19 +18,18 @@ export default Card;
 
 const styles = StyleSheet.create({
   container: {
-    // position: "absolute",
-    paddingLeft: 36,
-    paddingRight: 30,
     flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
+    justifyContent: "flex-start",
+    paddingLeft: 38,
     backgroundColor: "#f9f9f9",
+    width: "100%",
   },
   containerText: {
     color: "#484848",
     fontSize: 15,
     paddingTop: 16,
     paddingBottom: 16,
+    // width: "50%",
   },
   seperator: {
     width: "100%",

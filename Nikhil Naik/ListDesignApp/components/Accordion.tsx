@@ -14,7 +14,7 @@ import Animated, {
   withTiming,
 } from "react-native-reanimated";
 
-const Accordion = ({ data }: { data: string[] }) => {
+const Accordion = ({ data, idx, setView }) => {
   const [close, setClose] = useState(false);
   const rotateZ = useSharedValue(0);
   const style = useAnimatedStyle(() => ({
@@ -31,11 +31,19 @@ const Accordion = ({ data }: { data: string[] }) => {
         onPress={() => {
           setClose(!close);
           handle();
+          if (!close) {
+            setView((i: number) => {
+              return idx;
+            });
+          } else
+            setView((i: number) => {
+              return -1;
+            });
         }}
         testID="accordionButton"
       >
         <View style={styles.container}>
-          <Text style={styles.accordionText}>Maruti</Text>
+          <Text style={styles.accordionText}>{data.makeName}</Text>
           <Animated.View style={[style]}>
             <Feather name="chevron-down" size={30} color="#aaaaaa" />
           </Animated.View>
