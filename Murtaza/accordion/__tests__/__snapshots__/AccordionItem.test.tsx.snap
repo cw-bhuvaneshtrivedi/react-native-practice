@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders AccordionItem correctly 1`] = `
+<View
+  style={
+    {
+      "width": 750,
+    }
+  }
+>
+  <View
+    style={
+      {
+        "backgroundColor": "#f9f9f9",
+        "height": 50,
+        "paddingBottom": 16,
+        "paddingLeft": 36,
+        "paddingTop": 16,
+      }
+    }
+  >
+    <Text
+      style={
+        {
+          "color": "#484848",
+          "fontSize": 15,
+        }
+      }
+    >
+      AccordionItem
+    </Text>
+  </View>
+  <View
+    style={
+      {
+        "backgroundColor": "#efefef",
+        "height": 1,
+        "width": "100%",
+      }
+    }
+  />
+</View>
+`;
