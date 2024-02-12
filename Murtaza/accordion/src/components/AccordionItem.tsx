@@ -6,9 +6,9 @@ interface AccordionItemProps {
 }
 const AccordionItem: React.FC<AccordionItemProps> = ({ itemName }) => {
   return (
-    <View style={styles.container}>
+    <View style={styles.container} testID="accordion-item">
       <View style={styles.item}>
-        <Text style={styles.text}>{itemName}</Text>
+        <Text style={styles.text} >{itemName}</Text>
       </View>
       <View style={styles.line}></View>
     </View>

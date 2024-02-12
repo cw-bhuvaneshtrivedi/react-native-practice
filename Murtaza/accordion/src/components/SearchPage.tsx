@@ -92,14 +92,14 @@ const SearchPage = ({ clicked }: any) => {
     transform: [{ translateY: translateY.value }],
   }));
   return (
-    <Animated.View style={[styles.container, animatedStyle]}>
+    <Animated.View style={[styles.container, animatedStyle]} >
       {loading ? (
-        <View style={styles.loaderContainer}>
-          <ActivityIndicator size="large" color="#0000ff" />
+        <View style={styles.loaderContainer} testID="loading-indicator">
+          <ActivityIndicator size="large" color="#0000ff" testID="loading-indicator" />
         </View>
       ) : (
         <>
-          <View style={styles.searchHead}>
+          <View style={styles.searchHead} testID="search-title">
             <View style={[styles.searchTitleBar]}>
               <Text style={styles.titleText}>Select Your Make or Model</Text>
               <TouchableOpacity onPress={handleClose} testID="close-button">
@@ -111,7 +111,7 @@ const SearchPage = ({ clicked }: any) => {
               style={styles.searchBar}
             />
           </View>
-          <ScrollView ref={scrollViewRef}>
+          <ScrollView ref={scrollViewRef} >
             {Array.from(structuredData).map(([makeName, models], index) => (
               <Accordion
                 key={makeName}
