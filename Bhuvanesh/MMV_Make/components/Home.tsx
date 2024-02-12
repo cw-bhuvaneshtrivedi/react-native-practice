@@ -16,6 +16,7 @@ import Animated, {
 import { Entypo } from "@expo/vector-icons";
 import Accordion from "./Accordion";
 import { FlashList } from "@shopify/flash-list";
+import { act } from "@testing-library/react-native";
 
 const { height: SCREEN_HEIGHT } = Dimensions.get("screen");
 
@@ -29,7 +30,9 @@ export default function Home({ setOpen }: any) {
   let initialState: Props[] = [];
   const [carData, setCarData] = useState(initialState);
   const [view, setView] = useState(-1);
+  const [searchText, setSearchText] = useState("");
   const listRef = useRef(null);
+  const [filteredData, setFilteredData] = useState(initialState);
 
   const animatedStyles = useAnimatedStyle(() => ({
     transform: [{ translateY: translateY.value }],
@@ -58,12 +61,29 @@ export default function Home({ setOpen }: any) {
     }
   }, [setOpen]);
 
+  const handleTextChange = (e) => {
+    setSearchText(e);
+    let data: { makeName: string; version: string[] }[] = [];
+    carData.filter((item) => {
+      let tmp = item.version.filter((model) =>
+        model.toLowerCase().includes(e.toLowerCase())
+      );
+      // console.log(tmp, item.version);
+      if (tmp.length > 0) {
+        data.push({ makeName: item.makeName, version: tmp });
+      }
+    });
+    // console.log(carData);
+    console.log(data);
+    setFilteredData(data);
+  };
+
   const getData = async () => {
     const url =
       "https://www.carwale.com/api/v1/models/?makeId=-1&type=new&year=-1&application=1";
     let data: { makeName: string; modelName: string; makeId: number }[] =
       await fetch(url)
-        .then((response) => {
+        .then(async (response) => {
           if (response.status !== 200) throw Error(response.statusText);
           return response.json();
         })
@@ -78,6 +98,8 @@ export default function Home({ setOpen }: any) {
       return acc;
     }, []);
     setCarData(data);
+    setFilteredData(data);
+    // await act(() => setCarData(data));
     // console.log(carData);
   };
 
@@ -90,13 +112,19 @@ export default function Home({ setOpen }: any) {
         </TouchableOpacity>
       </View>
       {/* <AntDesign name="search1" size={24} color="black" /> */}
-      <TextInput placeholder="Type to Select Make" style={styles.input} />
-      {carData.length > 0 ? (
+      <TextInput
+        placeholder="Type to Select Make"
+        style={styles.input}
+        value={searchText}
+        onChangeText={handleTextChange}
+      />
+      {filteredData.length > 0 ? (
         <FlashList
-          data={carData}
+          data={filteredData}
           ref={listRef}
           getItemType={(item) => item.makeName}
           estimatedItemSize={50}
+          estimatedListSize={{ height: 500, width: SCREEN_HEIGHT }}
           extraData={view}
           renderItem={({ item, index }) => (
             <Accordion

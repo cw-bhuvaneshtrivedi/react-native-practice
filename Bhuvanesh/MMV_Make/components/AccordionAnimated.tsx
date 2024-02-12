@@ -60,7 +60,7 @@ const AccordionAnimated = ({ open, data }: AccordionAnimatedProps) => {
   return (
     <Animated.View style={[style.view, aniStyle]} testID="AnimatedH">
       <View
-        style={{ position: "absolute", width: SCREEN_WIDTH }}
+        style={{ position: "absolute", width: SCREEN_WIDTH, minHeight: 3 }}
         onLayout={(e: LayoutChangeEvent) => {
           setTmpHeight(e.nativeEvent.layout.height);
         }}

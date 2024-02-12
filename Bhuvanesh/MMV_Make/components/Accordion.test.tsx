@@ -1,8 +1,6 @@
 import { fireEvent, render } from "@testing-library/react-native";
 import Accordion from "./Accordion";
 import React, { useState } from "react";
-import data from "./data";
-import AccordionAnimated from "./AccordionAnimated";
 
 jest.mock("react", () => ({
   ...jest.requireActual("react"),
@@ -11,13 +9,38 @@ jest.mock("react", () => ({
 
 describe("Accordion Tests", () => {
   const setOpen = jest.fn((open: boolean) => !open);
-  const setHeight = jest.fn((height: number) => {});
+  const setView = jest.fn((index: number) => index);
   //   let open = jest.;
+  const data = {
+    makeName: "BMW",
+    version: [
+      "X1",
+      "7 Series",
+      "2 Series Gran Coupe",
+      "X7",
+      "3 Series Gran Limousine",
+      "Z4",
+      "M4 Competition",
+      "M340i",
+      "M8",
+      "6 Series GT",
+      "X5",
+      "XM",
+      "M2",
+      "X3",
+      "X4 M40i",
+      "i7",
+      "i4",
+      "iX1",
+      "X3 M40i",
+      "X5 M",
+      "iX",
+    ],
+  };
   beforeEach(() => {
     useState.mockImplementation((open: boolean) => [open, setOpen]);
     setOpen.mockImplementation((open) => !open);
     // useState.mockImplementation((height: number) => [height, setHeight]);
-    setHeight.mockImplementation((height: number) => {});
     jest.useFakeTimers();
   });
 
@@ -25,19 +48,38 @@ describe("Accordion Tests", () => {
     jest.useRealTimers();
   });
   it("check animated component", () => {
-    const { getByTestId } = render(<Accordion name="Maruti" data={data[0]} />);
+    const { getByTestId } = render(
+      <Accordion
+        makeName={data.makeName}
+        version={data.version}
+        view={0}
+        setView={setView}
+      />
+    );
     expect(getByTestId("drawer")).not.toBeNull();
   });
 
   it("Check button onclick function", () => {
-    const { getByTestId } = render(<Accordion name="Maruti" data={data[0]} />);
+    const { getByTestId } = render(
+      <Accordion
+        makeName={data.makeName}
+        version={data.version}
+        setView={setView}
+      />
+    );
     let element = getByTestId("drawer");
     fireEvent.press(element);
     expect(setOpen).toHaveBeenCalled();
   });
 
   it("Check state change", () => {
-    const { getByTestId } = render(<Accordion name="Maruti" data={data[0]} />);
+    const { getByTestId } = render(
+      <Accordion
+        makeName={data.makeName}
+        version={data.version}
+        setView={setView}
+      />
+    );
     setOpen.mockClear();
     setOpen(false);
     let element = getByTestId("drawer");
