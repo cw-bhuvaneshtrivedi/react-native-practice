@@ -18,6 +18,7 @@ import Animated, {
 import Accordion from "./Accordion";
 import { AntDesign } from "@expo/vector-icons";
 import { FlashList } from "@shopify/flash-list";
+import { act } from "@testing-library/react-native";
 // import { data } from "./Mock/data";
 
 const HEIGHT = Dimensions.get("screen").height;
@@ -32,7 +33,7 @@ const BottomDrawer = ({ open }: any) => {
   const style = useAnimatedStyle(() => ({
     transform: [{ translateY: translateY.value }],
   }));
-  const handleData = (res) => {
+  const handleData = async (res) => {
     const carData = res.reduce((acc, curr) => {
       const { makeName, modelName, makeId } = curr;
       const findOj = acc.find((o) => o.makeName === makeName);
@@ -40,9 +41,9 @@ const BottomDrawer = ({ open }: any) => {
       else findOj.version.push(modelName);
       return acc;
     }, []);
-    setData(carData);
+    await setData(carData);
+    // console.log(data);
   };
-
   useEffect(() => {
     if (view != -1) {
       setTimeout(() => {
@@ -62,18 +63,21 @@ const BottomDrawer = ({ open }: any) => {
     setTimeout(() => open(false), 250);
   };
   useEffect(() => {
+    let temp = [];
     if (open) {
       translateY.value = withTiming(0, {
         duration: 300,
       });
-      fetch(
-        "https://www.carwale.com/api/v1/models/?makeId=-1&type=new&year=-1&application=1",
-        {
-          method: "GET",
-        }
-      )
-        .then((res) => res.json())
-        .then((res) => handleData(res));
+      const _data = async () => {
+        temp = await fetch(
+          "https://www.carwale.com/api/v1/models/?makeId=-1&type=new&year=-1&application=1",
+          {
+            method: "GET",
+          }
+        ).then((res) => res.json());
+        handleData(temp);
+      };
+      _data();
     }
   }, [open]);
   return (
@@ -102,6 +106,7 @@ const BottomDrawer = ({ open }: any) => {
           ref={flashListRef}
           getItemType={(item) => item.makeName}
           extraData={view}
+          estimatedListSize={{ height: 500, width: 300 }}
         />
       ) : (
         <ActivityIndicator size="large" style={{ top: "30%" }} />

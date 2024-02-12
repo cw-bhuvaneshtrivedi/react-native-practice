@@ -44,7 +44,7 @@ const Accordion = ({ data, idx, setView, view }) => {
     }
   };
   return (
-    <ScrollView>
+    <ScrollView testID="accordion">
       <TouchableOpacity onPress={handlePress} testID="accordionButton">
         <View style={styles.container}>
           <Text style={styles.accordionText}>{data.makeName}</Text>
