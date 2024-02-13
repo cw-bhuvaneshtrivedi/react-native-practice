@@ -1,4 +1,10 @@
-import { StyleSheet, Text, TouchableOpacity, View, Dimensions } from "react-native";
+import {
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+  Dimensions,
+} from "react-native";
 import React, { useState, useEffect } from "react";
 import { Entypo } from "@expo/vector-icons";
 import AccordionItem from "./AccordionItem";
@@ -14,9 +20,16 @@ interface AccordionProps {
   items: string[];
   isOpen: boolean;
   onPress: () => void;
+  searchText: string;
 }
 
-const Accordion: React.FC<AccordionProps> = ({ title, items, isOpen, onPress }) => {
+const Accordion: React.FC<AccordionProps> = ({
+  title,
+  items,
+  isOpen,
+  onPress,
+  searchText,
+}) => {
   const rotateZ = useSharedValue(isOpen ? -180 : 0);
 
   useEffect(() => {
@@ -47,7 +60,11 @@ const Accordion: React.FC<AccordionProps> = ({ title, items, isOpen, onPress }) 
       {isOpen && (
         <View>
           {items.map((item, index) => (
-            <AccordionItem key={index} itemName={item} />
+            <AccordionItem
+              key={index}
+              itemName={item}
+              searchText={searchText}
+            />
           ))}
         </View>
       )}

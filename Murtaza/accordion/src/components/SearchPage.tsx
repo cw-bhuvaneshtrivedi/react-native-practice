@@ -7,7 +7,6 @@ import {
   TextInput,
   ActivityIndicator,
   ScrollView,
-  NativeScrollEvent,
 } from "react-native";
 import React, { useEffect, useMemo, useState, useRef } from "react";
 import { Ionicons } from "@expo/vector-icons";
@@ -17,16 +16,19 @@ import Animated, {
   useAnimatedStyle,
 } from "react-native-reanimated";
 import Accordion from "./Accordion";
+import AccordionItem from "./AccordionItem";
 
 const scHeight = Dimensions.get("screen").height;
 const API_URL =
   "https://www.carwale.com/api/v1/models/?makeId=-1&type=new&year=-1&application=1";
+
 const SearchPage = ({ clicked }: any) => {
   const [data, setData] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
   const translateY = useSharedValue(scHeight);
   const scrollViewRef = useRef<ScrollView>(null);
   const [openAccordion, setOpenAccordion] = useState<string | null>(null);
+  const [searchText, setSearchText] = useState<string>("");
 
   const handleClose = () => {
     translateY.value = withTiming(scHeight, {
@@ -34,6 +36,7 @@ const SearchPage = ({ clicked }: any) => {
     });
     setTimeout(() => clicked(false), 250);
   };
+
   useEffect(() => {
     if (clicked) {
       translateY.value = withTiming(0, {
@@ -49,7 +52,6 @@ const SearchPage = ({ clicked }: any) => {
         const jsonData = await response.json();
         setData(jsonData);
         setLoading(false);
-        // console.log(data);
       } catch (error) {
         console.error("Error fetching data:", error);
         setLoading(false);
@@ -58,9 +60,23 @@ const SearchPage = ({ clicked }: any) => {
     fetchData();
   }, []);
 
+  const filteredData = useMemo(() => {
+    if (!searchText || !searchText.trim()) return data;
+
+    const filteredAccordions = data.filter((item) =>
+      item.modelName.toLowerCase().includes(searchText.toLowerCase())
+    );
+
+    const otherAccordions = data.filter(
+      (item) => !filteredAccordions.includes(item)
+    );
+
+    return [...filteredAccordions, ...otherAccordions];
+  }, [data, searchText]);
+
   const structuredData = useMemo(() => {
     const makeMap = new Map<string, string[]>();
-    data.forEach((item) => {
+    filteredData.forEach((item) => {
       const makeName = item.makeName;
       const modelName = item.modelName;
       if (makeMap.has(makeName)) {
@@ -72,15 +88,26 @@ const SearchPage = ({ clicked }: any) => {
       }
     });
     return makeMap;
-  }, [data]);
-  //   console.log(data);
-  //   console.log(structuredData);
+  }, [filteredData]);
+
+  useEffect(() => {
+    // Open the accordion containing the searched item automatically
+    const accordionWithSearchedItem = filteredData.find((item) =>
+      item.modelName.toLowerCase().includes(searchText.toLowerCase())
+    );
+
+    if (accordionWithSearchedItem) {
+      setOpenAccordion(accordionWithSearchedItem.makeName);
+    } else {
+      setOpenAccordion(null);
+    }
+  }, [filteredData, searchText]);
+
   const handleAccordionPress = (makeName: string) => {
     setOpenAccordion(makeName === openAccordion ? null : makeName);
   };
 
   const handleAccordionPressScroll = (index: number) => {
-    // console.log(index);
     scrollViewRef.current?.scrollTo({
       x: 0,
       y: index * 50 + 16,
@@ -91,27 +118,30 @@ const SearchPage = ({ clicked }: any) => {
   const animatedStyle = useAnimatedStyle(() => ({
     transform: [{ translateY: translateY.value }],
   }));
+
   return (
-    <Animated.View style={[styles.container, animatedStyle]} >
+    <Animated.View style={[styles.container, animatedStyle]}>
       {loading ? (
         <View style={styles.loaderContainer} testID="loading-indicator">
-          <ActivityIndicator size="large" color="#0000ff" testID="loading-indicator" />
+          <ActivityIndicator size="large" color="#0000ff" />
         </View>
       ) : (
         <>
-          <View style={styles.searchHead} testID="search-title">
-            <View style={[styles.searchTitleBar]}>
+          <View style={styles.searchHead}>
+            <View style={styles.searchTitleBar}>
               <Text style={styles.titleText}>Select Your Make or Model</Text>
-              <TouchableOpacity onPress={handleClose} testID="close-button">
+              <TouchableOpacity onPress={handleClose}>
                 <Ionicons name="close-circle" size={27} color="#484848" />
               </TouchableOpacity>
             </View>
             <TextInput
-              placeholder="Type to Select Make "
+              placeholder="Type to Select Make"
               style={styles.searchBar}
+              value={searchText}
+              onChangeText={setSearchText}
             />
           </View>
-          <ScrollView ref={scrollViewRef} >
+          <ScrollView ref={scrollViewRef}>
             {Array.from(structuredData).map(([makeName, models], index) => (
               <Accordion
                 key={makeName}
@@ -122,7 +152,7 @@ const SearchPage = ({ clicked }: any) => {
                   handleAccordionPress(makeName);
                   handleAccordionPressScroll(index);
                 }}
-                // onPress={() => {handleAccordionPress(index);}}
+                searchText={searchText}
               />
             ))}
           </ScrollView>
@@ -136,7 +166,6 @@ export default SearchPage;
 
 const styles = StyleSheet.create({
   container: {
-    // flex: 1,
     height: scHeight,
     backgroundColor: "white",
     marginBottom: 20,
