@@ -1,11 +1,5 @@
-import {
-  Text,
-  TouchableOpacity,
-  StyleSheet,
-  View,
-  FlatList,
-} from "react-native";
-import React, { useState } from "react";
+import { Text, TouchableOpacity, StyleSheet, View } from "react-native";
+import React, { ForwardedRef, useEffect, useState } from "react";
 import { Entypo } from "@expo/vector-icons";
 import AccordionAnimated from "./AccordionAnimated";
 import Animated, {
@@ -15,18 +9,40 @@ import Animated, {
 } from "react-native-reanimated";
 
 type AccordionProps = {
-  name: string;
-  data: string[];
+  makeName: string;
+  version: string[];
+  setView: (index: number) => { index: number };
+  index: number;
+  view: number;
 };
-export default function Accordion({ name, data }: AccordionProps) {
+const Accordion = ({
+  makeName,
+  version,
+  setView,
+  index,
+  view,
+}: AccordionProps) => {
   const [open, setOpen] = useState(false);
   const angle = useSharedValue(0);
 
   const handlePress = () => {
     setOpen(!open);
-    if (open) angle.value = withTiming(0);
-    else angle.value = withTiming(180);
+    if (open) {
+      angle.value = withTiming(0);
+      setView(-1);
+    } else {
+      angle.value = withTiming(180);
+      // setOpen(false);
+      setView(index);
+    }
   };
+
+  useEffect(() => {
+    if (view != index && open) {
+      setOpen(false);
+      angle.value = withTiming(0);
+    }
+  }, [view]);
 
   const rotateIcon = useAnimatedStyle(() => ({
     transform: [{ rotateZ: `${angle.value}deg` }],
@@ -39,25 +55,27 @@ export default function Accordion({ name, data }: AccordionProps) {
         onPress={handlePress}
         testID="drawer"
       >
-        <Text style={styles.text}>{name}</Text>
+        <Text style={styles.text}>{makeName}</Text>
         <Animated.View style={rotateIcon}>
-          <Entypo name="chevron-down" size={24} color="black" />
+          <Entypo name="chevron-down" size={24} color="#aaaaaa" />
         </Animated.View>
       </TouchableOpacity>
-      <AccordionAnimated name="Maruti" open={open} data={data} />
+      <AccordionAnimated open={open} data={version} />
       <View style={styles.border}></View>
     </View>
   );
-}
-
+};
+export default Accordion;
 const styles = StyleSheet.create({
   container: {
     overflow: "hidden",
   },
   flexRow: {
+    paddingLeft: 28,
     height: 54,
+    paddingRight: 28,
     flexDirection: "row",
-    justifyContent: "space-around",
+    justifyContent: "space-between",
     alignItems: "center",
   },
   text: {
