@@ -29,7 +29,7 @@ export default function AccordionAnimation({
   }, [open]);
   return (
     <Animated.View style={[styles.container, style]} testID="card">
-      <View style={{ position: "absolute", width: "100%" }}>
+      <View style={{ position: "absolute", width: "100%", minHeight: 2 }}>
         <FlashList
           data={data.version}
           renderItem={({ item }) => <Card data={item} />}

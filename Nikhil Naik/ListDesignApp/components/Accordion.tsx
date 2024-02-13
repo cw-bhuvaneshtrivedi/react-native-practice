@@ -5,7 +5,7 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Feather } from "@expo/vector-icons";
 import AccordionAnimation from "./AccordionAnimation";
 import Animated, {
@@ -16,6 +16,7 @@ import Animated, {
 
 const Accordion = ({ data, idx, setView, view }) => {
   const [close, setClose] = useState(false);
+  // const close = useRef(false);
   const rotateZ = useSharedValue(0);
   const style = useAnimatedStyle(() => ({
     transform: [{ rotateZ: `${rotateZ.value}` + "deg" }],
@@ -26,12 +27,30 @@ const Accordion = ({ data, idx, setView, view }) => {
     else rotateZ.value = withTiming(rotateZ.value - 180, { duration: 300 });
   };
   useEffect(() => {
+    // if (close.current && view != -1 && view != idx) {
+    //   handle();
+    //   // setClose(false);
+    //   close.current = false;
+    // }
     if (close && view != -1 && view != idx) {
       handle();
       setClose(false);
+      // close.current = false;
     }
   }, [view]);
   const handlePress = () => {
+    // if (close.current) {
+    //   // setClose(!close);
+    //   close.current = false;
+    //   handle();
+    // } else {
+    //   // setClose(!close);
+    //   close.current = true;
+    //   handle();
+    //   setView((item: number) => {
+    //     return idx;
+    //   });
+    // }
     if (close) {
       setClose(!close);
       handle();
