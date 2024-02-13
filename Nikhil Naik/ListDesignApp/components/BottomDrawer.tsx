@@ -25,7 +25,8 @@ const HEIGHT = Dimensions.get("screen").height;
 const WIDTH = Dimensions.get("screen").width;
 
 const BottomDrawer = ({ open }: any) => {
-  const [openedItem, setOpenItem] = useState(-1);
+  const [filterData, setFilterData] = useState([]);
+  const [search, setSearch] = useState("");
   const [view, setView] = useState(-1);
   const flashListRef = useRef(null);
   const [data, setData] = useState([]);
@@ -42,6 +43,7 @@ const BottomDrawer = ({ open }: any) => {
       return acc;
     }, []);
     await setData(carData);
+    await setFilterData(carData);
     // console.log(data);
   };
   useEffect(() => {
@@ -80,6 +82,24 @@ const BottomDrawer = ({ open }: any) => {
       _data();
     }
   }, [open]);
+  useEffect(() => {
+    if (search.length > 1) {
+      let temp = [];
+      const filter = [];
+      const newData = data.filter((item, idx) => {
+        temp = item.version;
+        temp = temp.filter((items) => {
+          return items.toLowerCase().indexOf(search.toLowerCase()) != -1;
+        });
+        if (temp.length > 0) {
+          filter.push({ makeName: item.makeName, version: temp });
+        }
+      });
+      setFilterData(filter);
+    } else {
+      setFilterData(data);
+    }
+  }, [search]);
   return (
     <Animated.View style={[styles.container, style]}>
       <View style={styles.mainHeader}>
@@ -94,11 +114,13 @@ const BottomDrawer = ({ open }: any) => {
         <TextInput
           placeholder="Type to Select Make "
           style={styles.searchBox}
+          value={search}
+          onChangeText={setSearch}
         />
       </View>
-      {data.length > 0 ? (
+      {filterData.length > 0 ? (
         <FlashList
-          data={data}
+          data={filterData}
           renderItem={({ item, index }) => (
             <Accordion data={item} idx={index} setView={setView} view={view} />
           )}
@@ -106,7 +128,7 @@ const BottomDrawer = ({ open }: any) => {
           ref={flashListRef}
           getItemType={(item) => item.makeName}
           extraData={view}
-          estimatedListSize={{ height: 500, width: 300 }}
+          estimatedListSize={{ height: HEIGHT, width: WIDTH }}
         />
       ) : (
         <ActivityIndicator size="large" style={{ top: "30%" }} />
