@@ -14,9 +14,9 @@ import Animated, {
   withTiming,
 } from "react-native-reanimated";
 import { Entypo } from "@expo/vector-icons";
+import { Feather } from "@expo/vector-icons";
 import Accordion from "./Accordion";
 import { FlashList } from "@shopify/flash-list";
-import { act } from "@testing-library/react-native";
 
 const { height: SCREEN_HEIGHT } = Dimensions.get("screen");
 
@@ -33,6 +33,7 @@ export default function Home({ setOpen }: any) {
   const [searchText, setSearchText] = useState("");
   const listRef = useRef(null);
   const [filteredData, setFilteredData] = useState(initialState);
+  const [makeInFilter, setMakeInFilter] = useState("");
 
   const animatedStyles = useAnimatedStyle(() => ({
     transform: [{ translateY: translateY.value }],
@@ -45,14 +46,13 @@ export default function Home({ setOpen }: any) {
 
   useEffect(() => {
     getData();
-    console.log("useeffect called");
   }, []);
 
   useEffect(() => {
     setTimeout(() => {
       if (listRef.current !== null)
         listRef.current.scrollToIndex({ index: view, animated: true });
-    }, 500);
+    }, 250);
   }, [view]);
 
   useEffect(() => {
@@ -60,6 +60,11 @@ export default function Home({ setOpen }: any) {
       translateY.value = withTiming(0);
     }
   }, [setOpen]);
+
+  const handleFilterCancel = () => {
+    setMakeInFilter("");
+    setView(-1);
+  };
 
   const handleTextChange = (e) => {
     setSearchText(e);
@@ -74,7 +79,6 @@ export default function Home({ setOpen }: any) {
       }
     });
     // console.log(carData);
-    console.log(data);
     setFilteredData(data);
   };
 
@@ -112,12 +116,23 @@ export default function Home({ setOpen }: any) {
         </TouchableOpacity>
       </View>
       {/* <AntDesign name="search1" size={24} color="black" /> */}
-      <TextInput
-        placeholder="Type to Select Make"
-        style={styles.input}
-        value={searchText}
-        onChangeText={handleTextChange}
-      />
+      <View style={styles.input}>
+        {makeInFilter !== "" ? (
+          <View style={styles.makeFilter}>
+            <Text>{makeInFilter}</Text>
+            <TouchableOpacity onPress={handleFilterCancel}>
+              <Entypo name="cross" size={24} color="#6f6f6f" />
+            </TouchableOpacity>
+          </View>
+        ) : (
+          <Feather name="search" size={24} color="#6f6f6f" />
+        )}
+        <TextInput
+          placeholder="Type to Select Make"
+          value={searchText}
+          onChangeText={handleTextChange}
+        />
+      </View>
       {filteredData.length > 0 ? (
         <FlashList
           data={filteredData}
@@ -132,6 +147,7 @@ export default function Home({ setOpen }: any) {
               version={item.version}
               index={index}
               setView={setView}
+              setMakeInFilter={setMakeInFilter}
               view={view}
             />
           )}
@@ -164,7 +180,15 @@ const styles = StyleSheet.create({
     marginLeft: 16,
     marginRight: 16,
     height: 44,
-    paddingLeft: 16,
+    paddingLeft: 6,
     marginTop: 31,
+    flexDirection: "row",
+    alignItems: "center",
+  },
+  makeFilter: {
+    backgroundColor: "#efefef",
+    color: "black",
+    height: 28,
+    flexDirection: "row",
   },
 });

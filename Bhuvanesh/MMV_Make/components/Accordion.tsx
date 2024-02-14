@@ -14,6 +14,7 @@ type AccordionProps = {
   setView: (index: number) => { index: number };
   index: number;
   view: number;
+  setMakeInFilter: (makeName: string) => { makeName: string };
 };
 const Accordion = ({
   makeName,
@@ -21,6 +22,7 @@ const Accordion = ({
   setView,
   index,
   view,
+  setMakeInFilter,
 }: AccordionProps) => {
   const [open, setOpen] = useState(false);
   const angle = useSharedValue(0);
@@ -30,10 +32,12 @@ const Accordion = ({
     if (open) {
       angle.value = withTiming(0);
       setView(-1);
+      setMakeInFilter("");
     } else {
       angle.value = withTiming(180);
       // setOpen(false);
       setView(index);
+      setMakeInFilter(makeName);
     }
   };
 

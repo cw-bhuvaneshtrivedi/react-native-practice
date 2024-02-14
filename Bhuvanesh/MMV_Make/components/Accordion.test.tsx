@@ -1,6 +1,7 @@
 import { fireEvent, render } from "@testing-library/react-native";
 import Accordion from "./Accordion";
 import React, { useState } from "react";
+import { mockedCarData as data } from "./data";
 
 jest.mock("react", () => ({
   ...jest.requireActual("react"),
@@ -11,32 +12,7 @@ describe("Accordion Tests", () => {
   const setOpen = jest.fn((open: boolean) => !open);
   const setView = jest.fn((index: number) => index);
   //   let open = jest.;
-  const data = {
-    makeName: "BMW",
-    version: [
-      "X1",
-      "7 Series",
-      "2 Series Gran Coupe",
-      "X7",
-      "3 Series Gran Limousine",
-      "Z4",
-      "M4 Competition",
-      "M340i",
-      "M8",
-      "6 Series GT",
-      "X5",
-      "XM",
-      "M2",
-      "X3",
-      "X4 M40i",
-      "i7",
-      "i4",
-      "iX1",
-      "X3 M40i",
-      "X5 M",
-      "iX",
-    ],
-  };
+
   beforeEach(() => {
     useState.mockImplementation((open: boolean) => [open, setOpen]);
     setOpen.mockImplementation((open) => !open);

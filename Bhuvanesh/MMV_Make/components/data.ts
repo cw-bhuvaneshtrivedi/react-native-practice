@@ -2,6 +2,33 @@
 
 // export default data;
 
+export const mockedCarData = {
+  makeName: "BMW",
+  version: [
+    "X1",
+    "7 Series",
+    "2 Series Gran Coupe",
+    "X7",
+    "3 Series Gran Limousine",
+    "Z4",
+    "M4 Competition",
+    "M340i",
+    "M8",
+    "6 Series GT",
+    "X5",
+    "XM",
+    "M2",
+    "X3",
+    "X4 M40i",
+    "i7",
+    "i4",
+    "iX1",
+    "X3 M40i",
+    "X5 M",
+    "iX",
+  ],
+};
+
 const data = [
   {
     modelId: 1729,
