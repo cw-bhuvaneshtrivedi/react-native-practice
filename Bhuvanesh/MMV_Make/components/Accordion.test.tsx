@@ -11,6 +11,7 @@ jest.mock("react", () => ({
 describe("Accordion Tests", () => {
   const setOpen = jest.fn((open: boolean) => !open);
   const setView = jest.fn((index: number) => index);
+  const setMakeInFilter = jest.fn((makeInFilter: string) => makeInFilter);
   //   let open = jest.;
 
   beforeEach(() => {
@@ -30,6 +31,7 @@ describe("Accordion Tests", () => {
         version={data.version}
         view={0}
         setView={setView}
+        setMakeInFilter={setMakeInFilter}
       />
     );
     expect(getByTestId("drawer")).not.toBeNull();
@@ -41,6 +43,7 @@ describe("Accordion Tests", () => {
         makeName={data.makeName}
         version={data.version}
         setView={setView}
+        setMakeInFilter={setMakeInFilter}
       />
     );
     let element = getByTestId("drawer");
@@ -54,6 +57,7 @@ describe("Accordion Tests", () => {
         makeName={data.makeName}
         version={data.version}
         setView={setView}
+        setMakeInFilter={setMakeInFilter}
       />
     );
     setOpen.mockClear();

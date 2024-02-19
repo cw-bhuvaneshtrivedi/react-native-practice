@@ -162,20 +162,28 @@ exports[`App Component should show home component: App_2.test.tsx.snap 1`] = `
         <Text />
       </View>
     </View>
-    <TextInput
-      placeholder="Type to Select Make"
+    <View
       style={
         {
+          "alignItems": "center",
           "borderColor": "#d5d5d5",
           "borderWidth": 1,
+          "flexDirection": "row",
           "height": 44,
           "marginLeft": 16,
           "marginRight": 16,
           "marginTop": 31,
-          "paddingLeft": 16,
+          "paddingLeft": 6,
         }
       }
-    />
+    >
+      <Text />
+      <TextInput
+        onChangeText={[Function]}
+        placeholder="Type to Select Make"
+        value=""
+      />
+    </View>
     <ActivityIndicator
       size="large"
     />
