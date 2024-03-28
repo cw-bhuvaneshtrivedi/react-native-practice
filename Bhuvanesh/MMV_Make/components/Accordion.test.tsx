@@ -1,8 +1,7 @@
 import { fireEvent, render } from "@testing-library/react-native";
 import Accordion from "./Accordion";
 import React, { useState } from "react";
-import data from "./data";
-import AccordionAnimated from "./AccordionAnimated";
+import { mockedCarData as data } from "./data";
 
 jest.mock("react", () => ({
   ...jest.requireActual("react"),
@@ -11,13 +10,14 @@ jest.mock("react", () => ({
 
 describe("Accordion Tests", () => {
   const setOpen = jest.fn((open: boolean) => !open);
-  const setHeight = jest.fn((height: number) => {});
+  const setView = jest.fn((index: number) => index);
+  const setMakeInFilter = jest.fn((makeInFilter: string) => makeInFilter);
   //   let open = jest.;
+
   beforeEach(() => {
     useState.mockImplementation((open: boolean) => [open, setOpen]);
     setOpen.mockImplementation((open) => !open);
     // useState.mockImplementation((height: number) => [height, setHeight]);
-    setHeight.mockImplementation((height: number) => {});
     jest.useFakeTimers();
   });
 
@@ -25,19 +25,41 @@ describe("Accordion Tests", () => {
     jest.useRealTimers();
   });
   it("check animated component", () => {
-    const { getByTestId } = render(<Accordion name="Maruti" data={data[0]} />);
+    const { getByTestId } = render(
+      <Accordion
+        makeName={data.makeName}
+        version={data.version}
+        view={0}
+        setView={setView}
+        setMakeInFilter={setMakeInFilter}
+      />
+    );
     expect(getByTestId("drawer")).not.toBeNull();
   });
 
   it("Check button onclick function", () => {
-    const { getByTestId } = render(<Accordion name="Maruti" data={data[0]} />);
+    const { getByTestId } = render(
+      <Accordion
+        makeName={data.makeName}
+        version={data.version}
+        setView={setView}
+        setMakeInFilter={setMakeInFilter}
+      />
+    );
     let element = getByTestId("drawer");
     fireEvent.press(element);
     expect(setOpen).toHaveBeenCalled();
   });
 
   it("Check state change", () => {
-    const { getByTestId } = render(<Accordion name="Maruti" data={data[0]} />);
+    const { getByTestId } = render(
+      <Accordion
+        makeName={data.makeName}
+        version={data.version}
+        setView={setView}
+        setMakeInFilter={setMakeInFilter}
+      />
+    );
     setOpen.mockClear();
     setOpen(false);
     let element = getByTestId("drawer");

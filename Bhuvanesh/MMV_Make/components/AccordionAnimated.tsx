@@ -10,11 +10,11 @@ import {
   View,
   LayoutChangeEvent,
   ScrollView,
+  Dimensions,
 } from "react-native";
-import { FlatList } from "react-native";
+import { FlashList } from "@shopify/flash-list";
 
 type AccordionAnimatedProps = {
-  name: string;
   open: boolean;
   data: string[];
 };
@@ -22,18 +22,25 @@ type AccordionAnimatedProps = {
 const Card = ({ name }: { name: string }) => {
   const accordion = StyleSheet.create({
     text: { fontSize: 15 },
+    container: {
+      backgroundColor: "#f9f9f9",
+      height: 50,
+      justifyContent: "center",
+      paddingLeft: 36,
+    },
   });
   return (
-    <View>
+    <View style={accordion.container}>
       <Text style={accordion.text}>{name}</Text>
     </View>
   );
 };
 
-const AccordionAnimated = ({ name, open, data }: AccordionAnimatedProps) => {
+const AccordionAnimated = ({ open, data }: AccordionAnimatedProps) => {
   const height = useSharedValue(0);
   const [tmpHeight, setTmpHeight] = useState(0);
 
+  const SCREEN_WIDTH = Dimensions.get("screen").width;
   useEffect(() => {
     if (open) height.value = withTiming(tmpHeight);
     else height.value = withTiming(0);
@@ -52,17 +59,18 @@ const AccordionAnimated = ({ name, open, data }: AccordionAnimatedProps) => {
   });
   return (
     <Animated.View style={[style.view, aniStyle]} testID="AnimatedH">
-      <ScrollView
-        style={{ position: "absolute" }}
+      <View
+        style={{ position: "absolute", width: SCREEN_WIDTH, minHeight: 3 }}
         onLayout={(e: LayoutChangeEvent) => {
           setTmpHeight(e.nativeEvent.layout.height);
         }}
       >
-        <FlatList
+        <FlashList
           data={data}
-          renderItem={({ item }) => <Card name={`${item}`} />}
+          estimatedItemSize={54}
+          renderItem={({ item }) => <Card name={item} />}
         />
-      </ScrollView>
+      </View>
     </Animated.View>
   );
 };
